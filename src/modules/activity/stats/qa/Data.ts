@@ -10,19 +10,19 @@ import {
 import {InteractionReplyComponent} from '../../../../services/interaction.js'
 import {ChannelId, UserId} from '../../../../types/base.type.js'
 import {PageData} from '../../../../types/data.type.js'
-import {QaEmoji} from '../../../qa/enums/QaEmoji.enum.js'
 import {QaStatus} from '../../../qa/enums/QaStatus.enum.js'
 import {DATA_AFTER, DATA_INDEX, DATA_NEXT, DATA_PREV} from './enums/CustomIds.enum.js'
+import {QaStatusEmoji} from './enums/QaStatusEmoji.enum.js'
 import {BaseQa} from './structures/BaseQa.js'
 import {AfterQaData} from './types/data.type.js'
 
 const limit: number = 20
 
-const emoji: Record<QaStatus, string> = {
-    [QaStatus.WRITE]: '',
-    [QaStatus.RESPONSE]: '',
-    [QaStatus.ADDITIONAL]: '',
-    [QaStatus.RESOLVE]: ''
+const emoji: Record<QaStatus, QaStatusEmoji> = {
+    [QaStatus.WRITE]: QaStatusEmoji.Write,
+    [QaStatus.RESPONSE]: QaStatusEmoji.Response,
+    [QaStatus.ADDITIONAL]: QaStatusEmoji.Additional,
+    [QaStatus.RESOLVE]: QaStatusEmoji.Resolved
 }
 
 export class Data extends BaseQa {
