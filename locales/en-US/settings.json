@@ -1,6 +1,6 @@
 {
   "settings": "Settings",
-  "select_module": "Управляйте внешним видом, функциональностью и поведением бота с помощью настроек модулей. Изменяйте параметры, чтобы настроить бота под свои нужды.\n\nВыберите модуль, чтобы продолжить настройку.",
+  "select_module": "Manage the appearance, functionality, and behavior of the bot using module settings. Modify the parameters to customize the bot to your needs.\n\nSelect a module to continue the configuration.",
   "options": {
     "base": "Main",
     "clan": "Clan",
