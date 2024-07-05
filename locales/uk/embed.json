@@ -1,42 +1,42 @@
 {
   "author": {
     "label": "Автор",
-    "description": "Имя, URL, URL значка",
+    "description": "Ім'я, URL, URL значка",
     "options": {
-      "name": "Имя автора",
+      "name": "Ім'я автора",
       "url": "URL автора",
       "iconUrl": "URL значка автора"
     }
   },
   "body": {
-    "label": "Тело",
-    "description": "Цвет, Заголовок, URL, Описание",
+    "label": "Тіло",
+    "description": "Колір, Заголовок, URL, Опис",
     "options": {
-      "color": "HEX цвет",
+      "color": "HEX-колір",
       "title": "Заголовок",
       "url": "URL",
-      "description": "Описание"
+      "description": "Опис"
     }
   },
   "fields": {
     "label": "Поля",
-    "description": "Массив полей: Название, Значение, В линию",
+    "description": "Масив полів: Назва, Значення, В лінію",
     "options": {
-      "name": "Название",
-      "value": "Значение",
-      "inline": "В линию"
+      "name": "Назва",
+      "value": "Значення",
+      "inline": "В лінію"
     }
   },
   "images": {
-    "label": "Изображения",
-    "description": "Изображение, Миниатюра",
+    "label": "Зображення",
+    "description": "Зображення, Мініатюра",
     "options": {
-      "image": "Изображение",
-      "thumbnail": "Миниатюра"
+      "image": "Зображення",
+      "thumbnail": "Мініатюра"
     }
   },
   "footer": {
-    "label": "Нижняя сноска",
+    "label": "Нижня виноска",
     "description": "Текст, URL значка",
     "options": {
       "text": "Текст",
