@@ -138,11 +138,11 @@
     }
   },
   "appearance": {
-    "name": "облик",
-    "description": "Изменить облик клана"
+    "name": "appearance",
+    "description": "Change clan appearance"
   },
   "ad": {
-    "name": "реклама",
-    "description": "Управление рекламой"
+    "name": "ad",
+    "description": "Ad Management"
   }
 }
