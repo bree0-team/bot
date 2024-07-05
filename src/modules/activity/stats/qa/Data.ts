@@ -39,7 +39,6 @@ export class Data extends BaseQa {
             items, totalPages, totalItems
         } = this.getQa(userId, channelId, lookBack, page, limit)
         const channels = items.map((i, index) =>
-            // todo
             inlineCode('#' + Number(totalItems-(page*limit+index))) + ' ' + emoji[i.status] + ' '
             + hyperlink(i.messageId, messageLink(channelId, i.messageId, this.guildId)) + ' - ' + time(i.createdAt))
             .join('\n')
