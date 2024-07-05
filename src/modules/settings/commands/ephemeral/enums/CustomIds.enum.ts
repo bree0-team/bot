@@ -1,0 +1,1 @@
+export const EPHEMERAL_SWITCH: string = '9aa<A!-8Uj9DB-Zakskj-5XGrRL'

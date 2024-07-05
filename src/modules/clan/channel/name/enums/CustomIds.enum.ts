@@ -1,0 +1,3 @@
+export const CLAN_CHANNEL_NAME_SELECT = 'x9TxMA-4QVdyK-2kehr2-QSCTiM'
+export const CLAN_CHANNEL_NAME_MODAL = 'uLSgjX-C3adzC-5L7kWZ-Ugf5Sc'
+export const CLAN_CHANNEL_NAME_MODAL_VALUE = '5p9N2L-iagmTd-yFXzLn-2DRXpY'

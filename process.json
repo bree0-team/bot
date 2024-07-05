@@ -1,0 +1,10 @@
+{
+    "apps": [
+        {
+            "name": "bree0",
+            "script": "dist/manager.js",
+            "node_args": ["--enable-source-maps"],
+            "restart_delay": 10000
+        }
+    ]
+}

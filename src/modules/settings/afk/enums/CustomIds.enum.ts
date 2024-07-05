@@ -1,0 +1,7 @@
+export const AFK_SWITCH: string = 'X2KtPa-Znfua#-WUek4^-j2ma4X'
+export const AFK_CHANNELS_SELECT: string = 'zJK"M7-tw:Bmd-u4kKZf-8TRn2J'
+export const AFK_ROLES_SELECT: string = '7+|RJZ-m3Hq2j-fweWgS-V9uWLH'
+export const AFK_SLEEP_EDIT: string = 'UMtHw=-4iYpXs-R7d=gF-5CH6mH'
+export const AFK_SLEEP_EDIT_MODAL: string = 'y8y*76-KMiCLd-@RWp2y-AwzzxL'
+export const AFK_SLEEP_EDIT_MODAL_VALUE: string = '3<bCCL-nkVFsY-95sgiK-7uP|Pd'
+export const AFK_SLEEP_RESET: string = 'zZa=qn-ifgW6H-4[p4Cj-gGax4E'

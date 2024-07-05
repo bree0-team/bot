@@ -1,0 +1,7 @@
+export enum EmbedColors {
+    SUCCESS = 3066993,
+    DENIED = 15158332,
+    WARNING = 15844367,
+    SECONDARY = 9807270,
+    EMPTY = 2829617
+}

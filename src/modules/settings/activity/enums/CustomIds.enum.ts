@@ -1,0 +1,5 @@
+export const ACTIVITY_MEMBER_TYPES: string = 'qgU{Qx-sp7c2s-ZWPH3f-DaBK"5'
+export const ACTIVITY_VOICE_STATES: string = 'pxJ~62-;FAGhH-8CLZm2-fUkvrA'
+export const ACTIVITY_CHANNELS: string = 'h7A6^t-PUJbRt-ZRD}25-wzQKpa'
+export const ACTIVITY_ROLES: string = 'xm3]Yb-2u6Qhi-wDc#We-4MiCcz'
+export const ACTIVITY_SHOW_DELETED_SWITCH: string = '[9RgYL-.pwTSq-x5wJir-u2Np8C'

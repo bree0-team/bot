@@ -1,0 +1,62 @@
+{
+  "emoji": "Emoji",
+  "name": "Name",
+  "yes": "Yes",
+  "no": "No",
+  "use": "Use",
+  "before": "Before",
+  "after": "After",
+  "from": "From",
+  "to": "To",
+  "level": "Level",
+  "rank": "Rank",
+  "limit": "Limit",
+  "duration": "Duration",
+  "back": "Back",
+  "turn": {
+    "on": "Turn on",
+    "off": "Turn off"
+  },
+  "edit": "Edit",
+  "reset": "Reset",
+  "not_set": "Not set",
+  "hex": "HEX color",
+  "rights": "Rights",
+  "cooldown": "Cooldown",
+  "create": "Create",
+  "delete": "Delete",
+  "add": "Add",
+  "send": "Send",
+  "paginator": {
+    "jump": "Go to page",
+    "page": "Page # (Maximum: {max})"
+  },
+  "ignored": {
+    "channels": "Ignored channels",
+    "roles": "Ignored roles"
+  },
+  "voice_states": "Voice state",
+  "xp": "Xp",
+  "created_at": "Created At",
+  "joined_at": "Joined At",
+  "title": "Title",
+  "description": "Description",
+  "nickname": "Nickname",
+  "roles": "Roles",
+  "modal": {
+    "title": "Edit Data"
+  },
+  "write": "Write",
+  "jump_to_message": "Jump to message",
+  "statuses": {
+    "online": "Online",
+    "dnd": "Do Not Disturb",
+    "idle": "Idle",
+    "streaming": "Stream",
+    "offline": "Offline"
+  },
+  "error": {
+    "cooldown": "You have recently already used the command, try {time}",
+    "paginator_max_page": "You have specified a page that does not exist"
+  }
+}

@@ -1,0 +1,1 @@
+export const ROLE_TYPE_SELECT: string = 'Mjf{sC-B9Pa3E-RWx2nH-aX7bD.'

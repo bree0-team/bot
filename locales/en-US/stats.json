@@ -1,0 +1,19 @@
+{
+  "n/a": "There is no data for this period",
+  "lookback": {
+    "day": "1 day",
+    "week": "7 days",
+    "month": "30 days"
+  },
+  "after": "Data after date",
+  "data_after": "Data for the date range",
+  "server_rank": "Server Rank",
+  "message": "Messages",
+  "voice": "Voice Activity",
+  "rank_voice": "Voice",
+  "top": {
+    "channels": "Top Channels",
+    "users": "Top Members"
+  },
+  "contributors": "Contributors"
+}

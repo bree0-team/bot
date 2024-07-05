@@ -1,0 +1,10 @@
+{
+  "name": "roles",
+  "description": "Change member roles",
+  "options": {
+    "user": {
+      "name": "user",
+      "description": "Select the member whose roles you want to change"
+    }
+  }
+}

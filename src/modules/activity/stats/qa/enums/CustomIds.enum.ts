@@ -1,0 +1,5 @@
+export const DATA_AFTER: string = 'N*Ryqd-77gPM7-Zz)UuN-DvS2FD'
+export const DATA_PREV: string = 'c=bJJ8-eZ2PyY-SQ7iVS-2q]DkV'
+export const DATA_INDEX: string = '3dePTK-UB:dx9-pt)rCk-7ZRi4Y'
+export const DATA_INDEX_MODAL: string = ',X5AXY-zpsy?u-8PABay-9Tf3Aa'
+export const DATA_NEXT: string = 'kE5LKG-fzALzW-iez5)7-^ENE6f'

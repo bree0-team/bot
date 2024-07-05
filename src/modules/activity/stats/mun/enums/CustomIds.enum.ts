@@ -1,0 +1,5 @@
+export const MUN_AFTER: string = '+pAsrE-5am6V3-EjrquS-6P}KyS'
+export const MUN_PREV: string = 'PrwbiE->iUkD2-K47BCm-]E7BsK'
+export const MUN_INDEX: string = 'wD"L3u-YJ`iZ2-C6gWv6-wLHeSa'
+export const MUN_INDEX_MODAL: string = '@cjF[B-8jf2qp-NuWaW4-RcQm7J'
+export const MUN_NEXT: string = 'Uesj5N-v/PsC7-Y2vzUV-B#V5sx'

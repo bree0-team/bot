@@ -1,0 +1,46 @@
+{
+  "info": {
+    "appStarted": "Application started.",
+    "commandActionView": "\n\tLocal and remote:\n\t{LOCAL_ON_REMOTE}\nLocal only:\n\t{LOCAL}\nRemote only:\n\t{REMOTE}",
+    "commandActionRegisterStart": "Started creating {COMMAND_SIZE} application (/) commands ({COMMAND_LIST}).",
+    "commandActionRegisterEnd": "Successfully created {COMMAND_SIZE} application (/) commands ({COMMAND_LIST}).",
+    "commandActionRefreshStart": "Started refreshing {COMMAND_SIZE} application (/) commands ({COMMAND_LIST}).",
+    "commandActionRefreshEnd": "Successfully reloaded {COMMAND_SIZE} application (/) commands ({COMMAND_LIST}).",
+    "commandActionRenameStart": "Started renaming '{OLD_COMMAND_NAME}' > '{NEW_COMMAND_NAME}' application (/) command.",
+    "commandActionRenameEnd": "Successfully renamed application (/) command.",
+    "commandActionDeleteStart": "Started deleting '{COMMAND_NAME}' application (/) command.",
+    "commandActionDeleteEnd": "Successfully deleted '{COMMAND_NAME}' application (/) command.",
+    "commandActionClearStart": "Started cleared {COMMAND_SIZE} application (/) commands.",
+    "commandActionClearEnd": "Successfully cleared application (/) commands.",
+    "managerSpawningShards": "Spawning {SHARD_COUNT} shards: [{SHARD_LIST}].",
+    "managerLaunchedShard": "Launched Shard {SHARD_ID}.",
+    "managerAllShardsSpawned": "All shards have been spawned.",
+    "clientLogin": "Logged in as '{USER_TAG}'.",
+    "clientReady": "Client is ready!"
+  },
+  "warn": {
+    "managerNoShards": "No shards to spawn.",
+    "loaderCommandMissingProperty": "The command at {FILE_PATH} is missing a required 'data' or 'chatInputRun' property.",
+    "loaderEventMissingProperty": "The event at {FILE_PATH} is missing a required 'process' property.",
+    "loaderInteractionMissingProperty": "The interaction at {FILE_PATH} is missing a required 'customId' property."
+  },
+  "error": {
+    "unspecified": "An unspecified error occurred.",
+    "unhandledRejection": "An unhandled promise rejection occurred.",
+    "retrieveShards": "An error occurred while retrieving which shards to spawn.",
+    "managerSpawningShards": "An error occurred while spawning shards.",
+    "commandAction": "An error occurred while running a command action.",
+    "commandActionNotFound": "Could not find a command with the name '{COMMAND_NAME}'.",
+    "commandActionRenameMissingArg": "Please supply the current command name and new command name.",
+    "commandActionDeleteMissingArg": "Please supply a command name to delete.",
+    "clientLogin": "An error occurred while the client attempted to login.",
+    "interactionNotFound": "[{INTERACTION_ID}] A interaction could not be found.",
+    "interaction": "[{INTERACTION_ID}] An error occurred while processing a interaction.",
+    "commandNotFound": "[{INTERACTION_ID}] A command with the name '{COMMAND_NAME}' could not be found.",
+    "autocompleteNotFound": "[{INTERACTION_ID}] An autocomplete method for the '{COMMAND_NAME}' command could not be found.",
+    "commandGuild": "[{INTERACTION_ID}] An error occurred while executing the '{COMMAND_NAME}' command for user '{USER_TAG}' ({USER_ID}) in channel '{CHANNEL_NAME}' ({CHANNEL_ID}) in guild '{GUILD_NAME}' ({GUILD_ID}).",
+    "autocompleteGuild": "[{INTERACTION_ID}] An error occurred while autocompleting the '{OPTION_NAME}' option for the '{COMMAND_NAME}' command for user '{USER_TAG}' ({USER_ID}) in channel '{CHANNEL_NAME}' ({CHANNEL_ID}) in guild '{GUILD_NAME}' ({GUILD_ID}).",
+    "commandOther": "[{INTERACTION_ID}] An error occurred while executing the '{COMMAND_NAME}' command for user '{USER_TAG}' ({USER_ID}).",
+    "autocompleteOther": "[{INTERACTION_ID}] An error occurred while autocompleting the '{OPTION_NAME}' option for the '{COMMAND_NAME}' command for user '{USER_TAG}' ({USER_ID})."
+  }
+}

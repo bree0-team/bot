@@ -1,0 +1,6 @@
+{
+  "chose_lang": "Choose the language that will be prioritized for your client",
+  "selected_lang": "Selected language",
+  "locale": "You have changed the language to `{language}`",
+  "server_locale": "Server Language"
+}

@@ -1,0 +1,7 @@
+{
+  "add": "{user} ({id}) assigns roles",
+  "remove": "{user} ({id}) takes roles",
+  "error": {
+    "no_access": "You do not have any available roles for this command"
+  }
+}

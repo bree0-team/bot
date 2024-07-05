@@ -1,0 +1,5 @@
+{
+  "set": "{user} has been assigned the nickname: {nick}",
+  "reset": "Nickname reset for {user}",
+  "reason": "{user} changed nickname"
+}

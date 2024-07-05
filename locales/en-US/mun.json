@@ -1,0 +1,33 @@
+{
+  "title": "Request to change nickname from {user}",
+  "current": "Current",
+  "desired": "Desired",
+  "status": "Status",
+  "statuses": {
+    "accepted": "Accepted",
+    "rejected": "Rejected",
+    "cleared": "Cleared",
+    "assigned": "Assigned"
+  },
+  "executer": "Executor",
+  "changed_at": "Changed At",
+  "rejected_at": "Rejected At",
+  "buttons": {
+    "accept": "Accept",
+    "reject": "Reject",
+    "clear": "Clear",
+    "assign": "Assign"
+  },
+  "assign_modal": "Set another nickname",
+  "write_modal": {
+    "title": "Request nickname",
+    "placeholder": "Baby Shark"
+  },
+  "error": {
+    "not_in_this_channel": "This channel does not include managing the nicknames of members",
+    "you_dont_have_rights": "You don't have permission to perform this action",
+    "already_managed": "Member nickname is already managed",
+    "not_on_server": "Error: Member is not on the server",
+    "no_rights": "I do not have the rights to modify the member's nickname"
+  }
+}

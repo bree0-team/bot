@@ -1,0 +1,1 @@
+export const USAGE_SWITCH: string = 'VLxrDs-iSSQ[q-JLu7s6-AE3w/2'

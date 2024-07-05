@@ -1,0 +1,5 @@
+export const QA_INTERFACE: string = 'M]iuDX-VPFt9R-Dj9N8H-4tcu!j'
+export const QA_INTERFACE_MODAL: string = '86f6[u-PbZ3Uj-kp#Qhw-mRxDGZ'
+export const QA_INTERFACE_MODAL_TITLE: string = 'PKb~Cn-9Xq7zt-D3B6.Z-eQkbTM'
+export const QA_INTERFACE_MODAL_DESCRIPTION: string = 'MPPv3Z-kRLGb~-Pf32G|-9reUqx'
+export const QA_SEND: string = 'YRkS%N-_GRtmK-v97Dis-3XH2bz'

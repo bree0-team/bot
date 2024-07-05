@@ -1,0 +1,1 @@
+export const defaultValue: number = 10*60

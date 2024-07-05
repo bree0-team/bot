@@ -1,0 +1,1 @@
+export const SERVER_LANGUAGE: string = 'DVrVZr-iHa7Wk-bi8vGx-22KVCc'

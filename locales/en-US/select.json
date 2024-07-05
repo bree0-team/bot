@@ -1,0 +1,20 @@
+{
+  "role": "Select role",
+  "roles": "Select roles",
+  "channel": "Select channel",
+  "channels": "Select channels",
+  "ed_channels": "Selected channels",
+  "commands": "Select commands",
+  "user": "Select user",
+  "users": "Select users",
+  "rights": "Select rights",
+  "voice_states": {
+    "placeholder": "Select voice states",
+    "Normal": "Normal",
+    "SelfMute": "Microphone muted",
+    "SelfDeaf": "Sound muted",
+    "ServerMute": "Server: Microphone muted",
+    "ServerDeaf": "Server: Sound muted",
+    "Afk": "Away from keyboard"
+  }
+}

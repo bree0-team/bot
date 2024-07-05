@@ -1,0 +1,5 @@
+export const TEXT_GIVE: string = 'XhnZH8-nGgj@5-mK4Tn6-M{XfPD'
+export const TEXT_GIVE_MODAL: string = '25tKa;-g,kaA2-Sgv2DT-NeFzPM'
+export const TEXT_GIVE_MODAL_VALUE_FROM: string = '6wvFKt-Qu#59A-mY[i5f-RABKng'
+export const TEXT_GIVE_MODAL_VALUE_TO: string = 'ds?WfG-yF5Znj-7UmiQf-/5T5Vs'
+export const TEXT_GIVE_RESET: string = 'sgqMrS-h45m:C-EjUzv#-x9W9VP'

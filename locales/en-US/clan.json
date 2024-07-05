@@ -1,0 +1,127 @@
+{
+  "OWNER": "Owner",
+  "CHIEF": "Chief",
+  "CAPTAIN": "Captain",
+  "RECRUITER": "Recruiter",
+  "MEMBER": "Member",
+  "clan": "Clan",
+  "list": "A list of clans {guild_name}",
+  "create": "Create Clan?",
+  "created": "Clan created",
+  "create_for_user": "Select the member for whom a clan will be created",
+  "invite": {
+    "send": "{user}, you are invited to a clan by {author}",
+    "accept": "{user} accepted an invitation to a clan",
+    "reject": "{user} declined an invitation to a clan"
+  },
+  "leave": {
+    "send": "Are you sure you want to leave a clan?",
+    "confirm": "{user} left a clan"
+  },
+  "kick": {
+    "send": "Do you want to kick {user}?",
+    "confirm": "{author} kicked {user}"
+  },
+  "rank": "{author} updated a rank for {user} to `{rank}`",
+  "role": {
+    "new": "{user} сreated the role: `{name}`",
+    "list": "A list of roles for a clan {name}",
+    "delete": "{user} removed a role: `{role}`",
+    "rename": "{user} renamed a role",
+    "give": "{author} updated a role for {user} to `{role}`"
+  },
+  "transfer": {
+    "alert": "ATTENTION! You are going to give a clan **{name}** to the user {user}!\nThis is an important decision, and it's essential to ensure that your choice aligns with the clan's long-term goals and the new owner's readiness for this responsibility.\nPlease keep in mind that this process cannot be undone.\nAre you entirely sure about your choice?",
+    "confirm": "{author} gave a clan to {user}"
+  },
+  "appearance": {
+    "modification": "Clan modification",
+    "options": {
+      "color": "Color",
+      "description": "Description",
+      "avatar": "Avatar",
+      "banner": "Banner"
+    }
+  },
+  "channel": {
+    "select_channels_description": "Select channels for interaction to continue",
+    "voice_channel": "Voice channel created: {channel}",
+    "text_channel": "Text channel created: {channel}",
+    "user_rights": {
+      "description": "Select the category of rights to which you want to assign new rights, and then the rights themselves that will be assigned.\nFor the category `{right}`, prohibitive rights will be assigned unlike the others.",
+      "options": {
+        "clanMember": "Clan member",
+        "clanGuest": "Clan Guest",
+        "everyone": "Everyone"
+      },
+      "updated": "New channel rights have been set for `{right}`"
+    },
+    "name": {
+      "modal": {
+        "title": "Change channel names"
+      },
+      "set": "A new name has been set for the channels: `{name}`"
+    },
+    "delete": "Channels deleted: {channels}",
+    "members_limit": {
+      "modal": {
+        "title": "Set limit for members in the channel"
+      },
+      "set": "A new channel members limit has been set: `{limit}`"
+    },
+    "rights": {
+      "description": "Select the participants that you want to add as guests to your channels or remove them",
+      "select": {
+        "add": "Select who to add",
+        "remove": "Select who to remove"
+      },
+      "add": "Guests have been added to channels",
+      "remove": "Guests have been removed from channels"
+    },
+    "kick_user": {
+      "description": "Select who needs to be kicked out of the room",
+      "confirmed": "You kicked members out of the channel"
+    }
+  },
+  "ad": {
+    "description": "You can create a new ad or choose an existing one for settings and modifications.",
+    "modal": {
+      "title": "Creating a new ads"
+    },
+    "edit": "Change the name",
+    "delete": "Delete ad",
+    "created": "A new advertisement has been created: `{ad}`"
+  },
+  "error": {
+    "not_exists": "There are no clans on the server **{guild_name}**",
+    "you_exist": "You are already a member of a clan",
+    "member_exist": "{user} is already a member of a clan",
+    "you_not_exist": "You are not a member of a clan",
+    "member_not_exist": "{user} is not a member of a clan",
+    "cmd_for_rank": "This command is not available for your rank",
+    "owner_leave": "As the owner of a clan, you are not allowed to leave it",
+    "not_exist": "This clan doesn't exist",
+    "kick_yourself": "You cannot kick yourself",
+    "kick_same_rank": "It is prohibited to kick a member who has the same or higher rank than you",
+    "change_same_rank": "It is prohibited to alter the rank of a member who has the same or higher rank than you",
+    "rank_yourself": "You are not allowed to change your rank",
+    "same_rank": "You are not allowed to honor a rank that is higher than yours",
+    "role_not_exist": "This role doesn't exist",
+    "delete_system_role": "System role cannot be deleted",
+    "transfer_yourself": "You cannot give a clan to yourself",
+    "transfer_disabled": "Clan transfer disabled on the server",
+    "invite_limit": "The clan already has a maximum number of members",
+    "you_dont_have_role_to_create": "You do not have the authorized role to create a clan",
+    "channel_missing_category": "Category not set",
+    "dont_have_channels": "You do not have clan channels",
+    "members_limit_more_or_less": "Limit cannot be greater than 99 and not less than 0",
+    "you_not_in_clan_voice": "You are not in the clan voice channel",
+    "no_one_in_voice": "There is no one in your voice channel",
+    "channel_limit_exceeded": "Channel limit exceeded",
+    "appearance_disabled": "All external modifications are disabled on the server",
+    "ad_channel_not_set": "Ad channel not set",
+    "ad_cooldown": "You have recently already sent an advertisement, try {time}",
+    "ad_disabled": "Clan ad disabled on the server",
+    "interaction_not_for_you": "You are not allowed to interact with this"
+  }
+}

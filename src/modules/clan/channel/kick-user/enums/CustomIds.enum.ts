@@ -1,0 +1,1 @@
+export const CLAN_CHANNEL_KU_SELECT = 'SZWJxu-Ce6rp7-G3DBpJ-UYMM4a'

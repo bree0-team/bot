@@ -1,0 +1,47 @@
+{
+  "name": "stats",
+  "user": {
+    "name": "user",
+    "description": "View your activity statistics or another member",
+    "options": {
+      "user": {
+        "name": "user",
+        "description": "Select the member whose statistics you want to view"
+      }
+    }
+  },
+  "channel": {
+    "name": "channel",
+    "description": "View the channel's activity statistics",
+    "options": {
+      "channel": {
+        "name": "channel",
+        "description": "Select the channel whose statistics you want to view"
+      }
+    }
+  },
+  "qa": {
+    "name": "qa",
+    "description": "Check the statistics of question/answer",
+    "options": {
+      "channel": {
+        "name": "channel",
+        "description": "Select the channel whose statistics you want to view"
+      },
+      "user": {
+        "name": "user",
+        "description": "Select the member whose statistics you want to view"
+      }
+    }
+  },
+  "mun": {
+    "name": "mun",
+    "description": "Check the statistics of the Manage users nickname",
+    "options": {
+      "user": {
+        "name": "user",
+        "description": "Select the member whose statistics you want to view"
+      }
+    }
+  }
+}

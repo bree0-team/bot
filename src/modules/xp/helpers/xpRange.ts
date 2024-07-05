@@ -1,0 +1,1 @@
+export const xpRange = (from: number, to: number): number => Math.round(Math.random() * (to - from) + from)

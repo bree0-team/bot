@@ -1,0 +1,46 @@
+{
+  "author": {
+    "label": "Author",
+    "description": "Name, URL, Icon URL",
+    "options": {
+      "name": "Author name",
+      "url": "Author URL",
+      "iconUrl": "Author icon URL"
+    }
+  },
+  "body": {
+    "label": "Body",
+    "description": "Color, Title, URL, Description",
+    "options": {
+      "color": "HEX color",
+      "title": "Title",
+      "url": "URL",
+      "description": "Description"
+    }
+  },
+  "fields": {
+    "label": "Fields",
+    "description": "Array of fields: Name, Value, Inline",
+    "options": {
+      "name": "Name",
+      "value": "Value",
+      "inline": "Inline"
+    }
+  },
+  "images": {
+    "label": "Images",
+    "description": "Image, Thumbnail",
+    "options": {
+      "image": "Image",
+      "thumbnail": "Thumbnail"
+    }
+  },
+  "footer": {
+    "label": "Footer",
+    "description": "Text, icon URL",
+    "options": {
+      "text": "Text",
+      "iconUrl": "Icon URL"
+    }
+  }
+}

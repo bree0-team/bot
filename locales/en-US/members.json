@@ -1,0 +1,7 @@
+{
+  "title": "Role members: {role}",
+  "size": "Number of role members: {size}",
+  "error": {
+    "everyone": "Cannot check members of the role @everyone"
+  }
+}

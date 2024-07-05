@@ -1,0 +1,1 @@
+export const LOCALE_SELECT: string = '5aNGgr-rTemSm-Lh6uhZ-T8p9DH'

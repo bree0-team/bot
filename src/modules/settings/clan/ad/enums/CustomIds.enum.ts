@@ -1,0 +1,6 @@
+export const AD_SWITCH: string = 'SKtibC-Y4[8Fw-air6dY-4rRc$e'
+export const AD_CHANNEL: string = '2FDU3d-Gnb>z9-wBeWbd-6XifZ}'
+export const AD_COOLDOWN_EDIT: string = 'WD@g88-7RRMZz-iwUr{U-cy7gvG'
+export const AD_COOLDOWN_RESET: string = '2W4JMX-qj2mBU-9zMF]P-!nxwbs'
+export const AD_COOLDOWN_MODAL: string = 'Tr8]7J-z6hmxZ-geaMSE-Ti:2fK'
+export const AD_COOLDOWN_MODAL_VALUE: string = '2BbmSU-Rcw*cM-4Pvf9w-TTkb<4'

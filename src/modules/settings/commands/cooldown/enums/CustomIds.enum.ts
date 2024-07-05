@@ -1,0 +1,5 @@
+export const COOLDOWN_EDIT: string = 'cG9Prm-yzNU3H-2ExMM/-q6>ysy'
+export const COOLDOWN_EDIT_MODAL: string = '{SA7vh-LMHN+q-x33p8j-MZAbdU'
+export const COOLDOWN_EDIT_MODAL_VALUE: string = 'z[Lqw!-Js9Uhp-rFAUEF-N46hJ8'
+export const COOLDOWN_RESET: string = 'Y5ujhN-T6ysX6-azj5+F-ij)BPt'
+export const COOLDOWN_TYPE_SELECT: string = 'jWRRdq-s3uuHz-A96hWX->+zrH6'

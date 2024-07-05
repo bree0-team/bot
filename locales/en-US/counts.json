@@ -1,0 +1,52 @@
+{
+  "years": [
+    "year",
+    "years",
+    "years"
+  ],
+  "months": [
+    "month",
+    "months",
+    "months"
+  ],
+  "weeks": [
+    "week",
+    "weeks",
+    "weeks"
+  ],
+  "days": [
+    "day",
+    "days",
+    "days"
+  ],
+  "hours": [
+    "hour",
+    "hours",
+    "hours"
+  ],
+  "minutes": [
+    "minute",
+    "minutes",
+    "minutes"
+  ],
+  "seconds": [
+    "second",
+    "seconds",
+    "seconds"
+  ],
+  "messages": [
+    "message",
+    "messages",
+    "messages"
+  ],
+  "users": [
+    "user",
+    "users",
+    "users"
+  ],
+  "channels": [
+    "channel",
+    "channels",
+    "channels"
+  ]
+}

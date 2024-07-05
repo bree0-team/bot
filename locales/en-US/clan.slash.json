@@ -1,0 +1,140 @@
+{
+  "name": "clan",
+  "list": {
+    "name": "list",
+    "description": "List of clans"
+  },
+  "members": {
+    "name": "members",
+    "description": "List of clan members",
+    "options": {
+      "clan": {
+        "name": "clan",
+        "description": "Clan for check"
+      }
+    }
+  },
+  "leave": {
+    "name": "leave",
+    "description": "Leave the clan"
+  },
+  "invite": {
+    "name": "invite",
+    "description": "Invite a member to the clan",
+    "options": {
+      "user": {
+        "name": "user",
+        "description": "Select the member to invite to the clan"
+      }
+    }
+  },
+  "kick": {
+    "name": "kick",
+    "description": "Kick a member out of the clan",
+    "options": {
+      "user": {
+        "name": "user",
+        "description": "Select the member you want to kick from the clan"
+      }
+    }
+  },
+  "rank": {
+    "name": "rank",
+    "description": "Give a rank to a clan member",
+    "options": {
+      "user": {
+        "name": "user",
+        "description": "Select the member to whom you want to give the rank"
+      },
+      "rank": {
+        "name": "rank",
+        "description": "Choose a rank",
+        "choices": {
+          "Chief": "Chief",
+          "Captain": "Captain",
+          "Recruiter": "Recruiter",
+          "Member": "Member"
+        }
+      }
+    }
+  },
+  "create": {
+    "name": "create",
+    "description": "Create Clan",
+    "options": {
+      "emoji": {
+        "name": "emoji",
+        "description": "Enter Emoji (only default)"
+      },
+      "name": {
+        "name": "name",
+        "description": "Enter clan name"
+      }
+    }
+  },
+  "role": {
+    "name": "role",
+    "list": {
+      "name": "list",
+      "description": "The list of roles of the clan"
+    },
+    "new": {
+      "name": "new",
+      "description": "Create a clan role",
+      "options": {
+        "name": {
+          "name": "name",
+          "description": "Enter clan role name"
+        }
+      }
+    },
+    "delete": {
+      "name": "delete",
+      "description": "Delete the clan role",
+      "options": {
+        "role": {
+          "name": "role",
+          "description": "Select the role you want to delete"
+        }
+      }
+    },
+    "rename": {
+      "name": "rename",
+      "description": "Rename the clan role",
+      "options": {
+        "role": {
+          "name": "role",
+          "description": "Select the role you want to rename"
+        },
+        "name": {
+          "name": "name",
+          "description": "Enter new clan role name"
+        }
+      }
+    },
+    "give": {
+      "name": "give",
+      "description": "Give the role to a member of the clan",
+      "options": {
+        "user": {
+          "name": "user",
+          "description": "Select the member to whom you want to give the clan role"
+        },
+        "role": {
+          "name": "role",
+          "description": "Clan role"
+        }
+      }
+    }
+  },
+  "transfer": {
+    "name": "transfer",
+    "description": "Transfer clan ownership to another member",
+    "options": {
+      "user": {
+        "name": "user",
+        "description": "Select the member to transfer the clan to"
+      }
+    }
+  }
+}
