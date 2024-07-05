@@ -1,0 +1,46 @@
+{
+  "author": {
+    "label": "Автор",
+    "description": "Ім'я, URL, URL значка",
+    "options": {
+      "name": "Ім'я автора",
+      "url": "URL автора",
+      "iconUrl": "URL значка автора"
+    }
+  },
+  "body": {
+    "label": "Тіло",
+    "description": "Колір, Заголовок, URL, Опис",
+    "options": {
+      "color": "HEX-колір",
+      "title": "Заголовок",
+      "url": "URL",
+      "description": "Опис"
+    }
+  },
+  "fields": {
+    "label": "Поля",
+    "description": "Масив полів: Назва, Значення, В лінію",
+    "options": {
+      "name": "Назва",
+      "value": "Значення",
+      "inline": "В лінію"
+    }
+  },
+  "images": {
+    "label": "Зображення",
+    "description": "Зображення, Мініатюра",
+    "options": {
+      "image": "Зображення",
+      "thumbnail": "Мініатюра"
+    }
+  },
+  "footer": {
+    "label": "Нижня виноска",
+    "description": "Текст, URL значка",
+    "options": {
+      "text": "Текст",
+      "iconUrl": "URL значка"
+    }
+  }
+}

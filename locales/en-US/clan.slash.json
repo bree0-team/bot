@@ -136,5 +136,13 @@
         "description": "Select the member to transfer the clan to"
       }
     }
+  },
+  "appearance": {
+    "name": "appearance",
+    "description": "Change clan appearance"
+  },
+  "ad": {
+    "name": "ad",
+    "description": "Ad Management"
   }
 }
