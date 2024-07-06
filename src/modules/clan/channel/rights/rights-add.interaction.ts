@@ -1,7 +1,6 @@
 import {channelMention, TextChannel, userMention, VoiceChannel} from 'discord.js'
 import _ from 'lodash'
 import {PublicHandler, SelectManyValuesHandlerOptions} from '../../../../handlers/interaction.js'
-import {channels as ch, users} from '../../../../helpers/counts.js'
 import {EmbedField} from '../../../../helpers/embed.js'
 import {titleCase} from '../../../../helpers/title.js'
 import {UserId} from '../../../../types/base.type.js'

@@ -1,6 +1,5 @@
 import {userMention} from 'discord.js'
 import {PublicHandler, SelectManyValuesHandlerOptions} from '../../../../handlers/interaction.js'
-import {users} from '../../../../helpers/counts.js'
 import {EmbedField} from '../../../../helpers/embed.js'
 import {titleCase} from '../../../../helpers/title.js'
 import {UserId} from '../../../../types/base.type.js'

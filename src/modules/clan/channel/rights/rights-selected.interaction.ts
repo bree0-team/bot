@@ -65,7 +65,7 @@ class RightsSelectedInteraction extends PublicHandler {
         const select = new StringSelectMenuBuilder({
             customId: CLAN_CHANNEL_RIGHTS_REMOVE_SELECT,
             placeholder: interaction.t('clan:channel:rights:select:remove'),
-            maxValues: overwritesUniq.length,
+            maxValues: overwritesUniq.length || 1,
         }).setOptions(...(await Promise.all(overwritesUniq.map(async i => {
             const user = await interaction.guild.members.fetch(i)
             return new StringSelectMenuOptionBuilder()
@@ -73,7 +73,6 @@ class RightsSelectedInteraction extends PublicHandler {
                 .setLabel(user.displayName)
                 .setValue(i)
         }))))
-
         if (!overwritesUniq.length) select.setDisabled(true).setOptions(StringEmptyOption)
         return StringSelectRowBuilder(select)
     }
