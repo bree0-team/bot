@@ -14,6 +14,6 @@ export const rankAccess = async (
     const memberManager = ClanMemberManager.findOneByGuildId(interaction.guildId, interaction.user.id)
     const craManager = await SettingsClanCommandRankAccessManager
         .getOne(interaction.guildId)
-    if (craManager[memberManager?.rank.toLowerCase()].includes(command)) return memberManager
+    if (craManager[memberManager?.rank.toLowerCase()]?.includes(command)) return memberManager
     if (doThrow) throw new ClanCommandForRankError(interaction)
 }
