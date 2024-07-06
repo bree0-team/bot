@@ -1,4 +1,5 @@
 import {TextChannel} from 'discord.js'
+import {UnknownChannelError} from '../../../../../errors/notfound.js'
 import {ButtonHandlerOptions, PrivateHandler} from '../../../../../handlers/interaction.js'
 import SettingsClanAdManager from '../../../../settings/clan/ad/managers/settings-clan-ad.manager.js'
 import {CLAN_AD_SEND} from '../../enums/CustomIds.enum.js'
@@ -33,6 +34,7 @@ class SendInteraction extends PrivateHandler {
         const cooldown = await adCooldown(interaction.guildId, clan.id)
         if (cooldown) throw new ClanAdCooldownError(interaction, cooldown as string)
         const channel = interaction.guild.channels.resolve(adManager.channelId) as TextChannel
+        if (!channel) throw new UnknownChannelError(interaction)
         return channel.send({embeds: [embed]})
     }
 }
