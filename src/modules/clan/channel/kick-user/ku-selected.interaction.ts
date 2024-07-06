@@ -16,7 +16,10 @@ class KickUserSelectedInteraction extends PublicHandler {
         const embed = (await clanTitleEmbed(clan, interaction.t('clan:clan')))
             .setDescription(interaction.t('clan:channel:kick_user:confirmed'))
             .setFields(
-                EmbedField(titleCase(users(interaction, 1)), values.map(i => userMention(i)).join('\n'))
+                EmbedField(
+                    titleCase(interaction.t('counts:users', {count: values.length})),
+                    values.map(i => userMention(i)).join('\n')
+                )
             )
         return interaction.editReply({embeds: [embed], components: []})
     }
