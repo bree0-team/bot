@@ -17,7 +17,7 @@ class AfkMoveEvent extends VoiceStateUpdateEventBuilder {
     getRoles(guild: Guild, roles: RoleId[]): UserId[] {
         const members = roles
             .map(roleId => guild.roles.resolve(roleId))
-            .filter(role => !role)
+            .filter(role => role)
             .map(role => role.members.map(i => i))
         const uniqMembers = _.uniq([].concat(...members)) as GuildMember[]
         return uniqMembers.map(member => member.id)
