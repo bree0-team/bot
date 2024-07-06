@@ -76,8 +76,8 @@ class ChannelSendInteraction extends PrivateHandler {
     }
     protected async run({interaction, data}: ButtonHandlerOptions<ChannelRankAccessData>) {
         const channelManager = await SettingsClanChannelManager.getOne(interaction.guildId)
-        const categoryChannel = channelManager.channelId &&
-            interaction.guild.channels.resolve(channelManager.channelId)
+        const categoryChannel = channelManager.categoryId &&
+            interaction.guild.channels.resolve(channelManager.categoryId)
 
         if (!categoryChannel) {
             const embed = GuildEmbed(interaction.guildId)
