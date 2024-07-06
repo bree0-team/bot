@@ -19,7 +19,7 @@ import {CLAN_TRANSFER_CANCEL, CLAN_TRANSFER_CONFIRM} from './enums/CustomIds.enu
 
 export class Transfer extends BaseClan {
 	async run() {
-		if (this.isOwner()) throw new ClanCommandForRankError(this.i)
+		if (!this.isOwner()) throw new ClanCommandForRankError(this.i)
 
 		const user = this.getMember('user')
 		if (!(user instanceof GuildMember)) throw new UnknownMemberError(this.i)

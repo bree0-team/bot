@@ -9,7 +9,7 @@ import {Transfer} from '../Transfer.js'
 
 class TransferConfirmInteraction extends PrivateHandler {
     protected async run({interaction, data}: ButtonHandlerOptions<TransferData>) {
-        if (RankUtils.isOwner(interaction.guildId, interaction.user.id)) throw new ClanCommandForRankError(interaction)
+        if (!RankUtils.isOwner(interaction.guildId, interaction.user.id)) throw new ClanCommandForRankError(interaction)
         const {clanId, userId} = data
         await ClanMemberManager.update(clanId, userId, {rank: ClanRank.OWNER})
         await ClanMemberManager.update(clanId, interaction.user.id, {rank: ClanRank.MEMBER})
