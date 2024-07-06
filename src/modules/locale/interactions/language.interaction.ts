@@ -1,14 +1,13 @@
-import {Locale} from 'discord.js'
 import {PrivateHandler, SelectOneValueHandlerOptions} from '../../../handlers/interaction.js'
 import {GuildEmbed} from '../../../helpers/embed.js'
 import {LOCALE_SELECT} from '../enums/CustomIds.enum.js'
-import {languageChoices, SERVER_LANGUAGE} from '../helpers/consts.js'
+import {AppLocaleValues, languageChoices, SERVER_LANGUAGE} from '../helpers/consts.js'
 import {Language} from '../Language.js'
 import LocaleManager from '../managers/locale.manager.js'
 
 class LanguageInteraction extends PrivateHandler {
     protected async runValue(
-        {interaction, value}: SelectOneValueHandlerOptions<Locale | typeof SERVER_LANGUAGE>
+        {interaction, value}: SelectOneValueHandlerOptions<AppLocaleValues | typeof SERVER_LANGUAGE>
     ) {
         const language = languageChoices(interaction.t)
             .find(i => i.value === value)

@@ -2,6 +2,7 @@ import {ApiProperty, PartialType} from '@nestjs/swagger'
 import {IsInt, IsString} from 'class-validator'
 import {Locale} from 'discord.js'
 import {BaseGuildDto} from '../../../../dto/base-guild.dto.js'
+import {AppLocaleValues} from '../../../locale/helpers/consts.js'
 
 export class SettingsGeneralDto extends PartialType(BaseGuildDto) {
     @ApiProperty({
@@ -10,7 +11,7 @@ export class SettingsGeneralDto extends PartialType(BaseGuildDto) {
         example: Locale.Russian
     })
     @IsString()
-    readonly server_language: Locale
+    readonly server_language: AppLocaleValues
 
     @ApiProperty({
         description: 'System color for messages',
