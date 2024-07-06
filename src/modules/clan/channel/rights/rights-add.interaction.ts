@@ -28,10 +28,14 @@ class RightsAddInteraction extends PublicHandler {
         const embed = (await clanTitleEmbed(clan, interaction.t('clan:clan')))
             .setDescription(interaction.t('clan:channel:rights:add'))
             .setFields(
-                EmbedField(titleCase(users(interaction, finalUsers.length)), finalUsers
-                    .map(i => userMention(i)).join('\n'), true),
-                EmbedField(titleCase(ch(interaction, channels.length)), channels.map(i => channelMention(i))
-                    .join('\n'), true)
+                EmbedField(
+                    titleCase(interaction.t('counts:users', {count: finalUsers.length})),
+                    finalUsers.map(i => userMention(i)).join('\n'), true
+                ),
+                EmbedField(
+                    titleCase(interaction.t('counts:channels', {count: channels.length})),
+                    channels.map(i => channelMention(i)).join('\n'), true
+                )
             )
         return interaction.editReply({embeds: [embed], components: []})
     }
