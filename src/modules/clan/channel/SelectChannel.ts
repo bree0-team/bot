@@ -17,7 +17,13 @@ const emoji = {
 export class SelectChannel extends BaseClan {
     async selectRow(clanId: ClanId, customId: CustomId, filterType?: ChannelType): Promise<ActionStringSelectRow> {
         const channelManager = ClanChannelManager.findAllByClanId(clanId)
-        let channels = channelManager.map(i => this.guild.channels.resolve(i.channelId))
+        let channels = channelManager
+            .map(i => {
+                const channel = this.guild.channels.resolve(i.channelId)
+                if (!channel) ClanChannelManager.remove(i.channelId)
+                return channel
+            })
+            .filter(i => i)
             .sort((a, b) => a.type - b.type)
         if (filterType) channels = channels.filter(i => i.type === filterType)
         if (!channels.length) throw new ClanChannelDontHaveError(this.i)
