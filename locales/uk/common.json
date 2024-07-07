@@ -1,63 +1,63 @@
 {
-  "emoji": "Емодзі",
-  "name": "Назва",
-  "yes": "Так",
-  "no": "Ні",
-  "use": "Використовуйте",
-  "before": "До",
-  "after": "Після",
-  "from": "Вiд",
-  "to": "До",
-  "level": "Рівень",
-  "rank": "Ранг",
-  "limit": "Ліміт",
-  "duration": "Тривалість",
-  "back": "Назад",
+  "emoji": "",
+  "name": "",
+  "yes": "",
+  "no": "",
+  "use": "",
+  "before": "",
+  "after": "",
+  "from": "",
+  "to": "",
+  "level": "",
+  "rank": "",
+  "limit": "",
+  "duration": "",
+  "back": "",
   "turn": {
-    "on": "Увімкнути",
-    "off": "Вимкнути"
+    "on": "",
+    "off": ""
   },
-  "edit": "Змінити",
-  "reset": "Скинути",
-  "not_set": "Не встановлено",
-  "hex": "HEX-колір",
-  "rights": "Права",
-  "cooldown": "Затримка",
-  "create": "Створити",
-  "delete": "Видалити",
-  "add": "Додати",
-  "send": "Надіслати",
+  "edit": "",
+  "reset": "",
+  "not_set": "",
+  "hex": "",
+  "rights": "",
+  "cooldown": "",
+  "create": "",
+  "delete": "",
+  "add": "",
+  "send": "",
   "paginator": {
-    "jump": "Перейти на сторінку",
-    "page": "Сторінка # (Максимум: {max})"
+    "jump": "",
+    "page": ""
   },
   "ignored": {
-    "channels": "Канали, що ігноруються",
-    "roles": "Ролі, що ігноруються"
+    "channels": "",
+    "roles": ""
   },
-  "voice_states": "Голосовий стан",
-  "xp": "Досвід",
-  "created_at": "Створено",
-  "joined_at": "Приєднався",
-  "title": "Заголовок",
-  "description": "Опис",
-  "nickname": "Нікнейм",
-  "roles": "Ролі",
+  "voice_states": "",
+  "xp": "",
+  "created_at": "",
+  "joined_at": "",
+  "title": "",
+  "description": "",
+  "nickname": "",
+  "roles": "",
   "modal": {
-    "title": "Змінити дані"
+    "title": ""
   },
-  "write": "Написати",
-  "jump_to_message": "Перейти до повідомлення",
+  "write": "",
+  "jump_to_message": "",
   "statuses": {
-    "online": "В мережі",
-    "dnd": "Відійшов",
-    "idle": "Неактивний",
-    "streaming": "Трансляція",
-    "offline": "Не в мережі"
+    "online": "",
+    "dnd": "",
+    "idle": "",
+    "streaming": "",
+    "offline": ""
   },
-  "channel": "Канал",
+  "channel": "",
   "error": {
-    "cooldown": "Ви недавно вже надсилали рекламу, спробуйте {time}",
-    "paginator_max_page": "Ви вказали сторінку якої не існує"
+    "cooldown": "",
+    "paginator_max_page": ""
   }
 }
