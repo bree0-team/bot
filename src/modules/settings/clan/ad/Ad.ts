@@ -39,7 +39,7 @@ export class Ad extends BaseSettingsClan {
                 '',
                 SwitchEmoji(adManager.value) + ' ' + bold(this.t('settings:clan:options:ad')),
                 '',
-                InteractionEmoji.MINUS + ' ' + bold(titleCase(channels(this.i, 1)) + ': ')
+                InteractionEmoji.MINUS + ' ' + bold(this.t('channel') + ': ')
                 + (adManager.channelId ? channelMention(adManager.channelId) : this.t('no')),
                 InteractionEmoji.MINUS + ' ' + bold(this.t('cooldown') + ': ')
                 + minutes(this.i, adManager.cooldown)

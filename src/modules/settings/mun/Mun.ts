@@ -50,7 +50,7 @@ export class Mun extends BaseSettingsMun {
             .setDescription([
                 this.t('settings:mun:description'),
                 '',
-                bold(titleCase(this.t('counts:channels')) + ': ') + channelMention(munManager.channelId),
+                bold(this.t('channel') + ': ') + channelMention(munManager.channelId),
                 '',
                 bold(this.t('settings:mun:roles') + ':'),
                 munManager.roles.map(i => roleMention(i)).join(', ') || this.t('no'),
