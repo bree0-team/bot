@@ -13,6 +13,7 @@ class MessageActivityEvent extends MessageCreateEventBuilder {
             channelId,
             createdAt
         } = message
+        if (!guildId) return;
         const activityManager = await SettingsActivityManager.getOne(guildId)
         const filter = new ActivityFilter(activityManager)
         if (!filter.types(member)) return;

@@ -13,6 +13,7 @@ class MessageActivityEvent extends MessageCreateEventBuilder {
             guildId,
             channelId
         } = message
+        if (!guildId) return;
         if (member.user.bot) return;
         const xpManager = await SettingsXpManager.getOne(guildId)
         const filter = new XpFilter(xpManager)
