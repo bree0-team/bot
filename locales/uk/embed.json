@@ -1,46 +1,46 @@
 {
   "author": {
-    "label": "Автор",
-    "description": "Ім'я, URL, URL значка",
+    "label": "",
+    "description": "",
     "options": {
-      "name": "Ім'я автора",
-      "url": "URL автора",
-      "iconUrl": "URL значка автора"
+      "name": "",
+      "url": "",
+      "iconUrl": ""
     }
   },
   "body": {
-    "label": "Тіло",
-    "description": "Колір, Заголовок, URL, Опис",
+    "label": "",
+    "description": "",
     "options": {
-      "color": "HEX-колір",
-      "title": "Заголовок",
-      "url": "URL",
-      "description": "Опис"
+      "color": "",
+      "title": "",
+      "url": "",
+      "description": ""
     }
   },
   "fields": {
-    "label": "Поля",
-    "description": "Масив полів: Назва, Значення, В лінію",
+    "label": "",
+    "description": "",
     "options": {
-      "name": "Назва",
-      "value": "Значення",
-      "inline": "В лінію"
+      "name": "",
+      "value": "",
+      "inline": ""
     }
   },
   "images": {
-    "label": "Зображення",
-    "description": "Зображення, Мініатюра",
+    "label": "",
+    "description": "",
     "options": {
-      "image": "Зображення",
-      "thumbnail": "Мініатюра"
+      "image": "",
+      "thumbnail": ""
     }
   },
   "footer": {
-    "label": "Нижня виноска",
-    "description": "Текст, URL значка",
+    "label": "",
+    "description": "",
     "options": {
-      "text": "Текст",
-      "iconUrl": "URL значка"
+      "text": "",
+      "iconUrl": ""
     }
   }
 }
