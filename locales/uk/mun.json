@@ -1,33 +1,33 @@
 {
-  "title": "Запит на зміну нікнейму від {user}",
-  "current": "Поточний",
-  "desired": "Бажаний",
-  "status": "Статус",
+  "title": "",
+  "current": "",
+  "desired": "",
+  "status": "",
   "statuses": {
-    "accepted": "Прийнято",
-    "rejected": "Відхилено",
-    "cleared": "Скинуто",
-    "assigned": "Задано"
+    "accepted": "",
+    "rejected": "",
+    "cleared": "",
+    "assigned": ""
   },
-  "executer": "Виконавець",
-  "changed_at": "Змінено",
-  "rejected_at": "Відхилено",
+  "executer": "",
+  "changed_at": "",
+  "rejected_at": "",
   "buttons": {
-    "accept": "Прийняти",
-    "reject": "Відхилити",
-    "clear": "Скинути",
-    "assign": "Задати"
+    "accept": "",
+    "reject": "",
+    "clear": "",
+    "assign": ""
   },
-  "assign_modal": "Задати інший нікнейм",
+  "assign_modal": "",
   "write_modal": {
-    "title": "Запросити нікнейм",
-    "placeholder": "Baby Shark"
+    "title": "",
+    "placeholder": ""
   },
   "error": {
-    "not_in_this_channel": "У цьому каналі не ввімкнено керування нікнеймами учасників",
-    "you_dont_have_rights": "У вас немає прав для цієї взаємодії",
-    "already_managed": "Нікнейм учасника вже оброблено",
-    "not_on_server": "Помилка: Учасника немає на сервері",
-    "no_rights": "У мене немає прав для зміни нікнейму цього учасника"
+    "not_in_this_channel": "",
+    "you_dont_have_rights": "",
+    "already_managed": "",
+    "not_on_server": "",
+    "no_rights": ""
   }
 }
