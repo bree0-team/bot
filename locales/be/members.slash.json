@@ -1,10 +1,10 @@
 {
-  "name": "участники",
-  "description": "Список участников в роли",
+  "name": "",
+  "description": "",
   "options": {
     "role": {
-      "name": "роль",
-      "description": "Выберите роль, участников которой вы хотите увидеть"
+      "name": "",
+      "description": ""
     }
   }
 }
