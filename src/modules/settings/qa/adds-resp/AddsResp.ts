@@ -15,7 +15,6 @@ export class AddsResp extends BaseSettingsQa {
             .setDescription([
                 bold(this.t('settings:qa:adds_resp:title') + ':'),
                 codeBlock(qaManager.addsResp),
-                '',
                 bold(this.t('settings:qa:adds_resp:content') + ':'),
                 codeBlock(qaManager.addsRespContent)
             ].join('\n'))
