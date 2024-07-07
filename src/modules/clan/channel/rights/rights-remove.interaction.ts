@@ -1,7 +1,6 @@
 import {channelMention, TextChannel, userMention, VoiceChannel} from 'discord.js'
-import {users, channels as ch} from '../../../../helpers/counts.js'
+import {PublicHandler, SelectManyValuesHandlerOptions} from '../../../../handlers/interaction.js'
 import {EmbedField} from '../../../../helpers/embed.js'
-import {InteractionHandler, PublicHandler, SelectManyValuesHandlerOptions} from '../../../../handlers/interaction.js'
 import {titleCase} from '../../../../helpers/title.js'
 import {UserId} from '../../../../types/base.type.js'
 import {clanTitleEmbed} from '../../helpers/embed.js'
@@ -22,9 +21,9 @@ class RightsRemoveInteraction extends PublicHandler {
         const embed = (await clanTitleEmbed(clan, interaction.t('clan:clan')))
             .setDescription(interaction.t('clan:channel:rights:remove'))
             .setFields(
-                EmbedField(titleCase(users(interaction, values.length)), values
+                EmbedField(titleCase(interaction.t('counts:users', {count: values.length})), values
                     .map(i => userMention(i)).join('\n'), true),
-                EmbedField(titleCase(ch(interaction, channels.length)), channels
+                EmbedField(titleCase(interaction.t('counts:channels', {count: channels.length})), channels
                     .map(i => channelMention(i)).join('\n'), true)
             )
         return interaction.editReply({embeds: [embed], components: []})

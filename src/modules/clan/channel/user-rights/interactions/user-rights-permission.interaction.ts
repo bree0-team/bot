@@ -1,7 +1,6 @@
 import {channelMention, OverwriteType, PermissionFlagsBits, TextChannel, VoiceChannel} from 'discord.js'
-import {users, channels as ch} from '../../../../../helpers/counts.js'
-import {GuildEmbed, EmbedField} from '../../../../../helpers/embed.js'
-import {InteractionHandler, PublicHandler, SelectManyValuesHandlerOptions} from '../../../../../handlers/interaction.js'
+import {PublicHandler, SelectManyValuesHandlerOptions} from '../../../../../handlers/interaction.js'
+import {EmbedField} from '../../../../../helpers/embed.js'
 import {titleCase} from '../../../../../helpers/title.js'
 import {clanTitleEmbed} from '../../../helpers/embed.js'
 import {allCheck} from '../../helpers/allCheck.js'
@@ -28,8 +27,10 @@ class UserRightsPermissionInteraction extends PublicHandler {
             }))
             .addFields(
                 EmbedField(interaction.t('rights'), values.join('\n'), true),
-                EmbedField(titleCase(ch(interaction, channels.length)), channels.map(i =>
-                    channelMention(i)).join('\n'), true)
+                EmbedField(
+                    titleCase(interaction.t('counts:channels', {count: channels.length})),
+                    channels.map(i => channelMention(i)).join('\n'), true
+                )
             )
         return interaction.editReply({embeds: [embed], components: []})
     }
