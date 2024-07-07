@@ -1,10 +1,10 @@
 {
-  "name": "роли",
-  "description": "Изменить роли участника",
+  "name": "",
+  "description": "",
   "options": {
     "user": {
-      "name": "участник",
-      "description": "Выберите участника, чьи роли хотите изменить"
+      "name": "",
+      "description": ""
     }
   }
 }
