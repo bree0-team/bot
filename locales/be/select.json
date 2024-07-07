@@ -1,20 +1,20 @@
 {
-  "role": "Выберите роль",
-  "roles": "Выберите роли",
-  "channel": "Выберите канал",
-  "channels": "Выберите каналы",
-  "ed_channels": "Выбранные каналы",
-  "commands": "Выберите команды",
-  "user": "Выберите участника",
-  "users": "Выберите участников",
-  "rights": "Выберите права",
+  "role": "",
+  "roles": "",
+  "channel": "",
+  "channels": "",
+  "ed_channels": "",
+  "commands": "",
+  "user": "",
+  "users": "",
+  "rights": "",
   "voice_states": {
-    "placeholder": "Выберите голосовые состояния",
-    "Normal": "Нормальное",
-    "SelfMute": "Отключен микрофон",
-    "SelfDeaf": "Отключен звук",
-    "ServerMute": "Сервер: Отключен микрофон",
-    "ServerDeaf": "Сервер: Отключен звук",
-    "Afk": "Афк"
+    "placeholder": "",
+    "Normal": "",
+    "SelfMute": "",
+    "SelfDeaf": "",
+    "ServerMute": "",
+    "ServerDeaf": "",
+    "Afk": ""
   }
 }
