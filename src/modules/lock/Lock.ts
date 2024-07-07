@@ -18,7 +18,9 @@ export class Lock extends BaseStructure {
 
         await voice.edit({
             userLimit,
-            reason: this.t('lock:reason:' + (userLimit === 0 ? 'open' : 'close'), {user: this.user})
+            reason: this.t('lock:reason:' + (userLimit === 0 ? 'open' : 'close'), {
+                user: this.user.displayName
+            })
         })
         const embed = new EmbedBuilder({
             color, author: {name: this.user.displayName, iconURL: this.user.avatarURL()},
