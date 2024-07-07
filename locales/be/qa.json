@@ -1,24 +1,24 @@
 {
   "actions": {
-    "reply": "Ответить",
-    "edit": "Изменить",
-    "resolve": "Решено",
-    "delete": "Удалить"
+    "reply": "",
+    "edit": "",
+    "resolve": "",
+    "delete": ""
   },
-  "deleted": "Сообщение от {user} удалено",
-  "edited": "Ваше сообщение изменено",
+  "deleted": "",
+  "edited": "",
   "modal": {
-    "title": "Написать сообщение",
-    "label": "Заголовок (Необязательно)"
+    "title": "",
+    "label": ""
   },
-  "replied": "Вы ответили на сообщение",
-  "replied_at": "Отвечено",
-  "resolved": "Вы отметили сообщение как решенное",
-  "resolved_at": "Решено",
+  "replied": "",
+  "replied_at": "",
+  "resolved": "",
+  "resolved_at": "",
   "error": {
-    "user_no_rights": "У вас нет прав для взаимодействий с этим сообщением",
-    "not_in_this_channel": "В этом канале не включена функция Вопрос / Ответ",
-    "you_dont_have_rights": "У вас нет прав для этого взаимодействия",
-    "already_resolved": "Сообщение уже решено"
+    "user_no_rights": "",
+    "not_in_this_channel": "",
+    "you_dont_have_rights": "",
+    "already_resolved": ""
   }
 }
