@@ -10,7 +10,7 @@ export class Nickname extends BaseStructure {
         const nick = this.getString('nick', false)
         if (!(user instanceof GuildMember)) throw new UnknownMemberError(this.i)
         await InteractionUtils.editMember(this.i, user,{
-            nick, reason: this.t('nickname:reason', {user: user.displayName})
+            nick, reason: this.t('nickname:reason', {user: this.user.displayName})
         })
         const embed = new EmbedBuilder({
             color: EmbedColors[nick ? 'SUCCESS' : 'WARNING'],
