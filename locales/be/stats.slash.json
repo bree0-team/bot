@@ -1,46 +1,46 @@
 {
-  "name": "статистика",
+  "name": "",
   "user": {
-    "name": "участник",
-    "description": "Посмотреть свою статистику активности или другого участника",
+    "name": "",
+    "description": "",
     "options": {
       "user": {
-        "name": "участник",
-        "description": "Выберите участника, чью статистику хотите посмотреть"
+        "name": "",
+        "description": ""
       }
     }
   },
   "channel": {
-    "name": "канал",
-    "description": "Посмотреть статистику активности канала",
+    "name": "",
+    "description": "",
     "options": {
       "channel": {
-        "name": "канал",
-        "description": "Выберите канал, статистику которого хотите посмотреть"
+        "name": "",
+        "description": ""
       }
     }
   },
   "qa": {
-    "name": "во",
-    "description": "Проверить статистику вопрос/ответ",
+    "name": "",
+    "description": "",
     "options": {
       "channel": {
-        "name": "канал",
-        "description": "Выберите канал, статистику которого хотите посмотреть"
+        "name": "",
+        "description": ""
       },
       "user": {
-        "name": "участник",
-        "description": "Выберите участника, чью статистику хотите посмотреть"
+        "name": "",
+        "description": ""
       }
     }
   },
   "mun": {
-    "name": "уну",
-    "description": "Проверить статистику Управления никнеймов участника",
+    "name": "",
+    "description": "",
     "options": {
       "user": {
-        "name": "участник",
-        "description": "Выберите участника, чью статистику хотите посмотреть"
+        "name": "",
+        "description": ""
       }
     }
   }
