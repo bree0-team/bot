@@ -11,7 +11,8 @@
     "unknown_member": "Неизвестный Участник",
     "unknown_emoji": "Неизвестный Эмодзи",
     "unknown_voice": "Вас нет в голосовом канале",
-    "unknown_role": "Неизвестная Роль"
+    "unknown_role": "Неизвестная Роль",
+    "unknown_channel": "Неизвестный канал"
   },
   "servererror": {
     "valid_url": "Эта ссылка не валидна"
