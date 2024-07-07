@@ -83,7 +83,7 @@
       "category": {
         "name": "Clans",
         "for_create": "Category in which channels will be created",
-        "not_set": "Category for clan channels is not set, create a new one?",
+        "not_set": "",
         "created": "Category created, continue?"
       },
       "interface": "Interface",
@@ -227,6 +227,10 @@
     },
     "background": "Background",
     "elements": "Elements",
+    "grid": {
+      "on": "",
+      "off": ""
+    },
     "graph": {
       "x": "X Coordinate",
       "y": "Y Coordinate",
