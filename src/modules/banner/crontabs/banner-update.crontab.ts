@@ -15,7 +15,7 @@ class BannerUpdateCrontab extends CrontabBuilder {
                 if (!guild.available) return;
                 if (!guild.features.includes(GuildFeature.Banner))
                     return SettingsBannerManager.createOrUpdate(guildId, {enabled: false})
-                const buffer = await new BannerImage(guild).run(true)
+                const buffer = await new BannerImage(guild).run(true, false)
                 return guild.setBanner(buffer)
             })
     }

@@ -1,7 +1,9 @@
 import {createCanvas, loadImage} from '@napi-rs/canvas'
 import {ActivityType, ChannelType, Collection, Guild, GuildMember, Snowflake} from 'discord.js'
+import {join} from 'node:path'
 import {request} from 'undici'
 import {defaultLocale} from '../../helpers/defaults.js'
+import {__dirname} from '../../services/file.js'
 import {SplitUtils} from '../../utils/split.js'
 import {AppLocaleValues} from '../locale/helpers/consts.js'
 import {defaultMaxX, defaultMaxY} from '../settings/banner/constants/defaults.js'
@@ -32,10 +34,11 @@ interface TextOptions extends Omit<GraphData, 'type' | 'position'>{
 }
 
 export class BannerImage {
+    private readonly grid = join(__dirname, 'modules', 'banner', 'assets', 'grid.png')
     private readonly canvas = createCanvas(defaultMaxX*2, defaultMaxY*2)
     private readonly context = this.canvas.getContext('2d')
     constructor(private readonly guild: Guild) {}
-    async run(forced: boolean = false): Promise<Buffer> {
+    async run(forced: boolean = false, grid: boolean = true): Promise<Buffer> {
         const imageManager = BannerImageManager.findOne(this.guild.id)
         const dataManager = SettingsBannerDataManager.findAllByGuildId(this.guild.id)
         const bannerManager = SettingsBannerManager.findOne(this.guild.id)
@@ -46,6 +49,10 @@ export class BannerImage {
                 return imageManager.attachment
         }
         if (bannerManager?.url) await this.setBg(bannerManager.url)
+        if (grid) {
+            const background = await loadImage(this.grid)
+            this.context.drawImage(background, 0, 0, this.canvas.width, this.canvas.height)
+        }
         if (this.guild.members.cache.size !== this.guild.memberCount) await this.guild.members.fetch()
         const generalManager = SettingsGeneralManager.findOne(this.guild.id)
         dataManager.map(i => i.data)
@@ -75,9 +82,9 @@ export class BannerImage {
                 }
                 return this.text({text: count, x: position, y, scale, color})
             })
-        const final = await this.canvas.encode('png')
-        BannerImageManager.set(this.guild.id, {attachment: final, updatedAt: new Date()})
-        return final
+        const attachment = await this.canvas.encode('png')
+        BannerImageManager.set(this.guild.id, {attachment, grid, updatedAt: new Date()})
+        return attachment
     }
     private async setBg(url: string): Promise<void> {
         const bg = await this.request(url);
