@@ -13,10 +13,10 @@ class MessageActivityEvent extends MessageCreateEventBuilder {
             channelId,
             createdAt
         } = message
-        if (!guildId) return;
+        if (!member) return;
         const activityManager = await SettingsActivityManager.getOne(guildId)
         const filter = new ActivityFilter(activityManager)
-        if (!filter.types(member)) return;
+        if (!filter.types(member.user)) return;
         if (!filter.channelsRoles(member, channelId)) return;
         MessageSendService.set(id, guildId, channelId, member.id, createdAt)
     }

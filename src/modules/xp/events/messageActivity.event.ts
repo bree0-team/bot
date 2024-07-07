@@ -8,13 +8,13 @@ import {XpSendService} from '../services/xp-send.service.js'
 class MessageActivityEvent extends MessageCreateEventBuilder {
     async process(client: Client, message: Message) {
         const {
+            author,
             member,
             id,
             guildId,
             channelId
         } = message
-        if (!guildId) return;
-        if (member.user.bot) return;
+        if (!member || author.bot) return;
         const xpManager = await SettingsXpManager.getOne(guildId)
         const filter = new XpFilter(xpManager)
         if (!filter.channelsRoles(member, channelId)) return;

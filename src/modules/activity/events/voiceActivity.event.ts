@@ -9,7 +9,7 @@ class VoiceActivityEvent extends VoiceStateUpdateEventBuilder {
         const {guild, member} = (oldState ?? newState)
         const activityManager = await SettingsActivityManager.getOne(guild.id)
         const filter = new ActivityFilter(activityManager)
-        if (!filter.types(member)) return;
+        if (!filter.types(member.user)) return;
         await VoiceJoinLeaveService.leave(guild.id, oldState.channelId, member.id)
         if (!filter.states(guild, newState) || !newState.channel) return;
         if (!filter.channelsRoles(member, newState.channelId)) return;

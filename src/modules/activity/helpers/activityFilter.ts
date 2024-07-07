@@ -1,4 +1,4 @@
-import {Guild, GuildMember, VoiceState} from 'discord.js'
+import {Guild, GuildMember, User, VoiceState} from 'discord.js'
 import _ from 'lodash'
 import {ChannelId, RoleId} from '../../../types/base.type.js'
 import {MemberType} from '../../settings/activity/enums/MemberType.enum.js'
@@ -22,10 +22,10 @@ export class ActivityFilter {
         this.channels = channels
         this.roles = roles
     }
-    types(member: GuildMember): boolean {
+    types(user: User): boolean {
         if (!this.memberTypes.length) return false
-        return !!((this.memberTypes.includes(MemberType.USERS) && !member.user.bot) ||
-            (this.memberTypes.includes(MemberType.BOTS) && member.user.bot))
+        return !!((this.memberTypes.includes(MemberType.USERS) && !user.bot) ||
+            (this.memberTypes.includes(MemberType.BOTS) && user.bot))
     }
     states(guild: Guild, voiceState: VoiceState): boolean {
         let bool: boolean = false
@@ -52,7 +52,7 @@ export class ActivityFilter {
     }
     runVoice(voiceState: VoiceState): boolean {
         const {guild, member, channelId} = voiceState
-        if (!this.types(member)) return false
+        if (!this.types(member.user)) return false
         if (!this.states(guild, voiceState) || !voiceState.channel) return false
         return this.channelsRoles(member, channelId)
     }
