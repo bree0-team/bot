@@ -1,33 +1,33 @@
 {
-  "title": "Запрос на смену никнейма от {user}",
-  "current": "Текущий",
-  "desired": "Желаемый",
-  "status": "Статус",
+  "title": "",
+  "current": "",
+  "desired": "",
+  "status": "",
   "statuses": {
-    "accepted": "Принят",
-    "rejected": "Отклонен",
-    "cleared": "Сброшен",
-    "assigned": "Задан"
+    "accepted": "",
+    "rejected": "",
+    "cleared": "",
+    "assigned": ""
   },
-  "executer": "Исполнитель",
-  "changed_at": "Изменено",
-  "rejected_at": "Отклонено",
+  "executer": "",
+  "changed_at": "",
+  "rejected_at": "",
   "buttons": {
-    "accept": "Принять",
-    "reject": "Отклонить",
-    "clear": "Сбросить",
-    "assign": "Задать"
+    "accept": "",
+    "reject": "",
+    "clear": "",
+    "assign": ""
   },
-  "assign_modal": "Задать другой никнейм",
+  "assign_modal": "",
   "write_modal": {
-    "title": "Запросить никнейм",
-    "placeholder": "Baby Shark"
+    "title": "",
+    "placeholder": ""
   },
   "error": {
-    "not_in_this_channel": "В этом канале не включено управление никнеймами участников",
-    "you_dont_have_rights": "У вас нет прав для этого взаимодействия",
-    "already_managed": "Никнейм участника уже обработан",
-    "not_on_server": "Ошибка: Участника нет на сервере",
-    "no_rights": "У меня нет прав для изменения никнейма этого участника"
+    "not_in_this_channel": "",
+    "you_dont_have_rights": "",
+    "already_managed": "",
+    "not_on_server": "",
+    "no_rights": ""
   }
 }
