@@ -55,7 +55,7 @@
     "streaming": "Stream",
     "offline": "Offline"
   },
-  "channel": "Канал",
+  "channel": "Channel",
   "error": {
     "cooldown": "You have recently already used the command, try {time}",
     "paginator_max_page": "You have specified a page that does not exist"
