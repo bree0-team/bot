@@ -1,19 +1,19 @@
 {
-  "n/a": "За этот период нет данных",
+  "n/a": "",
   "lookback": {
-    "day": "1 день",
-    "week": "7 дней",
-    "month": "30 дней"
+    "day": "",
+    "week": "",
+    "month": ""
   },
-  "after": "Данные после даты",
-  "data_after": "Данные за промежуток даты",
-  "server_rank": "Ранг сервера",
-  "message": "Сообщения",
-  "voice": "Голосовая Активность",
-  "rank_voice": "Голосовой",
+  "after": "",
+  "data_after": "",
+  "server_rank": "",
+  "message": "",
+  "voice": "",
+  "rank_voice": "",
   "top": {
-    "channels": "Топ Каналы",
-    "users": "Топ Участники"
+    "channels": "",
+    "users": ""
   },
-  "contributors": "Составители"
+  "contributors": ""
 }
