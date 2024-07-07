@@ -1,7 +1,6 @@
 {
   "emoji": "Emoji",
   "name": "Name",
-  "yes": "Yes",
   "no": "No",
   "use": "Use",
   "before": "Before",
@@ -11,8 +10,6 @@
   "level": "Level",
   "rank": "Rank",
   "limit": "Limit",
-  "duration": "Duration",
-  "back": "Back",
   "turn": {
     "on": "Turn on",
     "off": "Turn off"
