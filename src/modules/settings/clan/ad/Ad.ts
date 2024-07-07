@@ -1,8 +1,7 @@
 import {bold, channelMention, ChannelSelectMenuBuilder, ChannelType, InteractionReplyOptions} from 'discord.js'
 import {InteractionEmoji} from '../../../../enums/InteractionEmoji.enum.js'
 import {SwitchEmoji} from '../../../../helpers/buttons.js'
-import {channels, minutes} from '../../../../helpers/counts.js'
-import {titleCase} from '../../../../helpers/title.js'
+import {minutes} from '../../../../helpers/counts.js'
 import {
     ActionChannelSelectRow,
     ChannelSelectRowBuilder,
@@ -13,12 +12,7 @@ import {MAIN_SELECT} from '../../enums/CustomIds.enum.js'
 import {SettingsClanSelectValuesCustomIds} from '../enums/CustomIds.enum.js'
 import {BaseSettingsClan} from '../structures/BaseSettingsClan.js'
 import {defaultCooldown} from './constants/defaults.js'
-import {
-    AD_CHANNEL,
-    AD_COOLDOWN_EDIT,
-    AD_COOLDOWN_RESET,
-    AD_SWITCH
-} from './enums/CustomIds.enum.js'
+import {AD_CHANNEL, AD_COOLDOWN_EDIT, AD_COOLDOWN_RESET, AD_SWITCH} from './enums/CustomIds.enum.js'
 import SettingsClanAdManager from './managers/settings-clan-ad.manager.js'
 
 export class Ad extends BaseSettingsClan {
@@ -39,7 +33,7 @@ export class Ad extends BaseSettingsClan {
                 '',
                 SwitchEmoji(adManager.value) + ' ' + bold(this.t('settings:clan:options:ad')),
                 '',
-                InteractionEmoji.MINUS + ' ' + bold(titleCase(channels(this.i, 1)) + ': ')
+                InteractionEmoji.MINUS + ' ' + bold(this.t('channel') + ': ')
                 + (adManager.channelId ? channelMention(adManager.channelId) : this.t('no')),
                 InteractionEmoji.MINUS + ' ' + bold(this.t('cooldown') + ': ')
                 + minutes(this.i, adManager.cooldown)
