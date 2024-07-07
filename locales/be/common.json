@@ -1,63 +1,63 @@
 {
-  "emoji": "Эмодзи",
-  "name": "Название",
-  "yes": "Да",
-  "no": "Нет",
-  "use": "Используйте",
-  "before": "До",
-  "after": "После",
-  "from": "От",
-  "to": "До",
-  "level": "Уровень",
-  "rank": "Ранг",
-  "limit": "Лимит",
-  "duration": "Длительность",
-  "back": "Назад",
+  "emoji": "",
+  "name": "",
+  "yes": "",
+  "no": "",
+  "use": "",
+  "before": "",
+  "after": "",
+  "from": "",
+  "to": "",
+  "level": "",
+  "rank": "",
+  "limit": "",
+  "duration": "",
+  "back": "",
   "turn": {
-    "on": "Включить",
-    "off": "Выключить"
+    "on": "",
+    "off": ""
   },
-  "edit": "Изменить",
-  "reset": "Сбросить",
-  "not_set": "Не установлен",
-  "hex": "HEX цвет",
-  "rights": "Права",
-  "cooldown": "Задержка",
-  "create": "Создать",
-  "delete": "Удалить",
-  "add": "Добавить",
-  "send": "Отправить",
+  "edit": "",
+  "reset": "",
+  "not_set": "",
+  "hex": "",
+  "rights": "",
+  "cooldown": "",
+  "create": "",
+  "delete": "",
+  "add": "",
+  "send": "",
   "paginator": {
-    "jump": "Перейти на страницу",
-    "page": "Страница # (Максимум: {max})"
+    "jump": "",
+    "page": ""
   },
   "ignored": {
-    "channels": "Игнорируемые каналы",
-    "roles": "Игнорируемые роли"
+    "channels": "",
+    "roles": ""
   },
-  "voice_states": "Голосовое состояние",
-  "xp": "Опыт",
-  "created_at": "Создан",
-  "joined_at": "Присоединился",
-  "title": "Заголовок",
-  "description": "Описание",
-  "nickname": "Никнейм",
-  "roles": "Роли",
+  "voice_states": "",
+  "xp": "",
+  "created_at": "",
+  "joined_at": "",
+  "title": "",
+  "description": "",
+  "nickname": "",
+  "roles": "",
   "modal": {
-    "title": "Изменить данные"
+    "title": ""
   },
-  "write": "Написать",
-  "jump_to_message": "Перейти к сообщению",
+  "write": "",
+  "jump_to_message": "",
   "statuses": {
-    "online": "В сети",
-    "dnd": "Не беспокоить",
-    "idle": "Неактивен",
-    "streaming": "Стрим",
-    "offline": "Оффлайн"
+    "online": "",
+    "dnd": "",
+    "idle": "",
+    "streaming": "",
+    "offline": ""
   },
-  "channel": "Канал",
+  "channel": "",
   "error": {
-    "cooldown": "Вы недавно уже использовали команду, попробуйте {time}",
-    "paginator_max_page": "Вы указали страницу которой не существует"
+    "cooldown": "",
+    "paginator_max_page": ""
   }
 }
