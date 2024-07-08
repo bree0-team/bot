@@ -1,0 +1,46 @@
+{
+  "author": {
+    "label": "",
+    "description": "",
+    "options": {
+      "name": "",
+      "url": "",
+      "iconUrl": ""
+    }
+  },
+  "body": {
+    "label": "",
+    "description": "",
+    "options": {
+      "color": "",
+      "title": "",
+      "url": "",
+      "description": ""
+    }
+  },
+  "fields": {
+    "label": "",
+    "description": "",
+    "options": {
+      "name": "",
+      "value": "",
+      "inline": ""
+    }
+  },
+  "images": {
+    "label": "",
+    "description": "",
+    "options": {
+      "image": "",
+      "thumbnail": ""
+    }
+  },
+  "footer": {
+    "label": "",
+    "description": "",
+    "options": {
+      "text": "",
+      "iconUrl": ""
+    }
+  }
+}
