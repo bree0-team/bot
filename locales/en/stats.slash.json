@@ -1,0 +1,47 @@
+{
+  "name": "",
+  "user": {
+    "name": "",
+    "description": "",
+    "options": {
+      "user": {
+        "name": "",
+        "description": ""
+      }
+    }
+  },
+  "channel": {
+    "name": "",
+    "description": "",
+    "options": {
+      "channel": {
+        "name": "",
+        "description": ""
+      }
+    }
+  },
+  "qa": {
+    "name": "",
+    "description": "",
+    "options": {
+      "channel": {
+        "name": "",
+        "description": ""
+      },
+      "user": {
+        "name": "",
+        "description": ""
+      }
+    }
+  },
+  "mun": {
+    "name": "",
+    "description": "",
+    "options": {
+      "user": {
+        "name": "",
+        "description": ""
+      }
+    }
+  }
+}
