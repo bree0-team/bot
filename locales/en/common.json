@@ -1,0 +1,60 @@
+{
+  "emoji": "",
+  "name": "",
+  "no": "",
+  "use": "",
+  "before": "",
+  "after": "",
+  "from": "",
+  "to": "",
+  "level": "",
+  "rank": "",
+  "limit": "",
+  "turn": {
+    "on": "",
+    "off": ""
+  },
+  "edit": "",
+  "reset": "",
+  "not_set": "",
+  "hex": "",
+  "rights": "",
+  "cooldown": "",
+  "create": "",
+  "delete": "",
+  "add": "",
+  "send": "",
+  "paginator": {
+    "jump": "",
+    "page": ""
+  },
+  "ignored": {
+    "channels": "",
+    "roles": ""
+  },
+  "voice_states": "",
+  "xp": "",
+  "created_at": "",
+  "joined_at": "",
+  "title": "",
+  "description": "",
+  "nickname": "",
+  "roles": "",
+  "modal": {
+    "title": ""
+  },
+  "write": "",
+  "jump_to_message": "",
+  "statuses": {
+    "online": "",
+    "dnd": "",
+    "idle": "",
+    "streaming": "",
+    "offline": ""
+  },
+  "channel": "",
+  "error": {
+    "cooldown": "",
+    "paginator_max_page": ""
+  }
+}
