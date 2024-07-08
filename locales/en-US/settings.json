@@ -169,7 +169,7 @@
       "label": "Formula"
     },
     "rewards": {
-      "description": "These roles, which will be automatically assigned to the player upon reaching a certain level.",
+      "description": "",
       "type": "Reward type",
       "types": {
         "STACKED": "Stacking rewards",
