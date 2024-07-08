@@ -80,69 +80,69 @@
     },
     "new": {
       "name": "створити",
-      "description": "Створити кланову роль",
+      "description": "",
       "options": {
         "name": {
-          "name": "назва",
-          "description": "Введіть назву ролі в клані"
+          "name": "",
+          "description": ""
         }
       }
     },
     "delete": {
-      "name": "видалити",
-      "description": "Видалити кланову роль",
+      "name": "",
+      "description": "",
       "options": {
         "role": {
-          "name": "роль",
-          "description": "Оберіть роль, яку потрібно видалити"
+          "name": "",
+          "description": ""
         }
       }
     },
     "rename": {
-      "name": "перейменувати",
-      "description": "Перейменувати кланову роль",
+      "name": "",
+      "description": "",
       "options": {
         "role": {
-          "name": "роль",
-          "description": "Оберіть роль, яку потрібно перейменувати"
+          "name": "",
+          "description": ""
         },
         "name": {
-          "name": "назва",
-          "description": "Введіть нову назву ролі в клані"
+          "name": "",
+          "description": ""
         }
       }
     },
     "give": {
-      "name": "видати",
-      "description": "Видати роль учаснику клану",
+      "name": "",
+      "description": "",
       "options": {
         "user": {
-          "name": "учасник",
-          "description": "Оберіть учасника, якому потрібно видати кланову роль"
+          "name": "",
+          "description": ""
         },
         "role": {
-          "name": "роль",
-          "description": "Роль клану"
+          "name": "",
+          "description": ""
         }
       }
     }
   },
   "transfer": {
-    "name": "передати",
-    "description": "Передати володіння клану іншому учаснику",
+    "name": "",
+    "description": "",
     "options": {
       "user": {
-        "name": "учасник",
-        "description": "Оберіть учасника, якому хочете передати клан"
+        "name": "",
+        "description": ""
       }
     }
   },
   "appearance": {
-    "name": "вигляд",
-    "description": "Змінити вигляд клану"
+    "name": "",
+    "description": ""
   },
   "ad": {
-    "name": "реклама",
-    "description": "Керування рекламою"
+    "name": "",
+    "description": ""
   }
 }
