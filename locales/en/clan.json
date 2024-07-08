@@ -1,0 +1,127 @@
+{
+  "OWNER": "",
+  "CHIEF": "",
+  "CAPTAIN": "",
+  "RECRUITER": "",
+  "MEMBER": "",
+  "clan": "",
+  "list": "",
+  "create": "",
+  "created": "",
+  "create_for_user": "",
+  "invite": {
+    "send": "",
+    "accept": "",
+    "reject": ""
+  },
+  "leave": {
+    "send": "",
+    "confirm": ""
+  },
+  "kick": {
+    "send": "",
+    "confirm": ""
+  },
+  "rank": "",
+  "role": {
+    "new": "",
+    "list": "",
+    "delete": "",
+    "rename": "",
+    "give": ""
+  },
+  "transfer": {
+    "alert": "",
+    "confirm": ""
+  },
+  "appearance": {
+    "modification": "",
+    "options": {
+      "color": "",
+      "description": "",
+      "avatar": "",
+      "banner": ""
+    }
+  },
+  "channel": {
+    "select_channels_description": "",
+    "voice_channel": "",
+    "text_channel": "",
+    "user_rights": {
+      "description": "",
+      "options": {
+        "clanMember": "",
+        "clanGuest": "",
+        "everyone": ""
+      },
+      "updated": ""
+    },
+    "name": {
+      "modal": {
+        "title": ""
+      },
+      "set": ""
+    },
+    "delete": "",
+    "members_limit": {
+      "modal": {
+        "title": ""
+      },
+      "set": ""
+    },
+    "rights": {
+      "description": "",
+      "select": {
+        "add": "",
+        "remove": ""
+      },
+      "add": "",
+      "remove": ""
+    },
+    "kick_user": {
+      "description": "",
+      "confirmed": ""
+    }
+  },
+  "ad": {
+    "description": "",
+    "modal": {
+      "title": ""
+    },
+    "edit": "",
+    "delete": "",
+    "created": ""
+  },
+  "error": {
+    "not_exists": "",
+    "you_exist": "",
+    "member_exist": "",
+    "you_not_exist": "",
+    "member_not_exist": "",
+    "cmd_for_rank": "",
+    "owner_leave": "",
+    "not_exist": "",
+    "kick_yourself": "",
+    "kick_same_rank": "",
+    "change_same_rank": "",
+    "rank_yourself": "",
+    "same_rank": "",
+    "role_not_exist": "",
+    "delete_system_role": "",
+    "transfer_yourself": "",
+    "transfer_disabled": "",
+    "invite_limit": "",
+    "you_dont_have_role_to_create": "",
+    "channel_missing_category": "",
+    "dont_have_channels": "",
+    "members_limit_more_or_less": "",
+    "you_not_in_clan_voice": "",
+    "no_one_in_voice": "",
+    "channel_limit_exceeded": "",
+    "appearance_disabled": "",
+    "ad_channel_not_set": "",
+    "ad_cooldown": "",
+    "ad_disabled": "",
+    "interaction_not_for_you": ""
+  }
+}
