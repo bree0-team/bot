@@ -1,0 +1,294 @@
+{
+  "settings": "",
+  "select_module": "",
+  "options": {
+    "base": "",
+    "clan": "",
+    "commands": "",
+    "afk": "",
+    "activity": "",
+    "xp": "",
+    "mun": "",
+    "roles": "",
+    "qa": "",
+    "interaction": "",
+    "banner": ""
+  },
+  "send_interface": "",
+  "general": {
+    "description": "",
+    "options": {
+      "default_server_language": "",
+      "embed_color": "",
+      "timezone": ""
+    },
+    "server_language": {
+      "name": "",
+      "description": ""
+    },
+    "system_color": {
+      "description": "",
+      "set_color": "",
+      "modal": {
+        "title": ""
+      }
+    },
+    "timezone": ""
+  },
+  "clan": {
+    "description": "",
+    "options": {
+      "create_roles": "",
+      "command_rank_access": "",
+      "appearance": "",
+      "transfer": "",
+      "limit": "",
+      "channels": "",
+      "name_pattern": "",
+      "role": "",
+      "ad": ""
+    },
+    "transfer": {
+      "description": "",
+      "allow": ""
+    },
+    "create": {
+      "description": "",
+      "members": "",
+      "allowed_roles": "",
+      "roles": "",
+      "admin_have_rights": ""
+    },
+    "members_limit": {
+      "description": "",
+      "modal": {
+        "title": ""
+      }
+    },
+    "non_config_commands": "",
+    "select_rank": "",
+    "appearance": "",
+    "channel": {
+      "description": "",
+      "options": {
+        "voiceChannel": "",
+        "textChannel": "",
+        "userRights": "",
+        "name": "",
+        "delete": "",
+        "limitMembers": "",
+        "rights": "",
+        "kickUser": ""
+      },
+      "category": {
+        "name": "",
+        "for_create": "",
+        "not_set": "",
+        "created": ""
+      },
+      "interface": "",
+      "edit_limit": {
+        "description": "",
+        "modal": {
+          "title": ""
+        },
+        "button": ""
+      }
+    },
+    "name_pattern": {
+      "description": "",
+      "pattern": "",
+      "modal": {
+        "title": ""
+      }
+    },
+    "role": {
+      "description": "",
+      "allow": "",
+      "footer": ""
+    },
+    "ad": {
+      "description": "",
+      "modal": {
+        "title": ""
+      }
+    }
+  },
+  "commands": {
+    "description": "",
+    "options": {
+      "ephemeral": "",
+      "usage": "",
+      "reply": ""
+    },
+    "cooldown": {
+      "description": "",
+      "type": {
+        "undefined": "",
+        "SERVER": "",
+        "USER": ""
+      },
+      "modal": {
+        "label": ""
+      }
+    },
+    "ephemeral": "",
+    "usage": "",
+    "reply": ""
+  },
+  "afk": {
+    "description": "",
+    "sleep": "",
+    "channels": "",
+    "roles": "",
+    "modal": ""
+  },
+  "activity": {
+    "description": "",
+    "show_deleted": "",
+    "member_types": {
+      "description": "",
+      "select": "",
+      "USERS": "",
+      "BOTS": ""
+    }
+  },
+  "xp": {
+    "description": "",
+    "count": "",
+    "options": {
+      "ignored": "",
+      "formula": "",
+      "rewards": "",
+      "text_give": "",
+      "voice_give": "",
+      "text_voice": ""
+    },
+    "formula": {
+      "description": "",
+      "label": ""
+    },
+    "rewards": {
+      "description": "",
+      "type": "",
+      "types": {
+        "STACKED": "",
+        "REMOVED": ""
+      }
+    },
+    "text_give": "",
+    "voice_give": "",
+    "text_voice": {
+      "description": "",
+      "select": "",
+      "TEXT": "",
+      "VOICE": ""
+    }
+  },
+  "mun": {
+    "description": "",
+    "roles": "",
+    "modal": ""
+  },
+  "roles": "",
+  "qa": {
+    "description": "",
+    "db": {
+      "text": "",
+      "resp": "",
+      "addsResp": ""
+    },
+    "options": {
+      "text": "",
+      "resp": "",
+      "adds_resp": "",
+      "roles": "",
+      "interface": ""
+    },
+    "resp": {
+      "title": "",
+      "content": ""
+    },
+    "interface_modal": "",
+    "adds_resp": {
+      "title": "",
+      "content": ""
+    }
+  },
+  "banner": {
+    "types": {
+      "channels": "",
+      "data_time": "",
+      "members": "",
+      "members_with_status": "",
+      "members_in_role": "",
+      "roles": "",
+      "voice": ""
+    },
+    "background": "",
+    "elements": "",
+    "grid": {
+      "on": "",
+      "off": ""
+    },
+    "graph": {
+      "x": "",
+      "y": "",
+      "scale": "",
+      "color": "",
+      "placeholder": ""
+    },
+    "position": {
+      "left": "",
+      "center": "",
+      "right": ""
+    },
+    "channels": {
+      "description": "",
+      "types": {
+        "text": "",
+        "voice": "",
+        "category": ""
+      }
+    },
+    "date_time": {
+      "description": "",
+      "styles": {
+        "t": "",
+        "T": "",
+        "d": "",
+        "D": "",
+        "f": "",
+        "F": ""
+      }
+    },
+    "members": {
+      "description": "",
+      "types": {
+        "users": "",
+        "apps": ""
+      }
+    },
+    "statuses": "",
+    "roles": {
+      "description": "",
+      "types": {
+        "unmanaged": "",
+        "managed": ""
+      }
+    },
+    "voice": ""
+  },
+  "error": {
+    "min_cooldown": "",
+    "afk_min_max": "",
+    "xp_give_less_zero": "",
+    "xp_give_from_to": "",
+    "mun_missing_channel": "",
+    "banner_graph_min_max": {
+      "x": "",
+      "y": "",
+      "scale": ""
+    }
+  }
+}
