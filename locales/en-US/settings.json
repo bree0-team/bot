@@ -254,12 +254,12 @@
     "date_time": {
       "description": "Date and Time Style",
       "styles": {
-        "t": "Short time (16:20)",
-        "T": "Long time (16:20:30)",
-        "d": "Short date (20/04/2021)",
-        "D": "Long date (20 April 2021)",
-        "f": "Short date and time (20 April 2021 16:20)",
-        "F": "Long date and time (Tuesday, 20 April 2021 16:20)"
+        "t": "",
+        "T": "",
+        "d": "",
+        "D": "",
+        "f": "",
+        "F": ""
       }
     },
     "members": {
