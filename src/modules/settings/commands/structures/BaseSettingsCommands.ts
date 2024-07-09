@@ -1,8 +1,8 @@
 import {EmbedBuilder, StringSelectMenuBuilder, StringSelectMenuOptionBuilder} from 'discord.js'
 import {SelectService} from '../../../../builders/select.js'
 import {CommandName} from '../../../../builders/slash.js'
+import {SelectEmoji} from '../../../../enums/SelectEmoji.enum.js'
 import {ActionStringSelectRow, StringSelectRowBuilder} from '../../../../services/interaction.js'
-import {SelectEmoji} from '../../enums/SelectEmoji.enum.js'
 import {BaseSettings} from '../../structures/BaseSettings.js'
 import {
     COMMAND_TYPE_SELECT,
