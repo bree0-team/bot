@@ -2,6 +2,7 @@ import {InteractionReplyOptions, StringSelectMenuBuilder, StringSelectMenuOption
 import _ from 'lodash'
 import {ClanRankEmoji} from '../../../../enums/ClanRankEmoji.enum.js'
 import {DiscordLimits} from '../../../../enums/DiscordLimits.enum.js'
+import {SelectEmoji} from '../../../../enums/SelectEmoji.enum.js'
 import {EmbedField} from '../../../../helpers/embed.js'
 import {
     ActionStringSelectRow,
@@ -10,7 +11,6 @@ import {
 } from '../../../../services/interaction.js'
 import {ClanRank} from '../../../clan/enums/ClanRank.enum.js'
 import {MAIN_SELECT} from '../../enums/CustomIds.enum.js'
-import {SelectEmoji} from '../../enums/SelectEmoji.enum.js'
 import {SettingsClanSelectValuesCustomIds} from '../enums/CustomIds.enum.js'
 import {BaseSettingsClan} from '../structures/BaseSettingsClan.js'
 import {CommandRankAccessData} from '../types/data.type.js'

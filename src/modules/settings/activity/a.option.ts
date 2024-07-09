@@ -1,6 +1,5 @@
 import {SelectBuilder} from '../../../builders/select.js'
 import {MAIN_SELECT, MainSelectValuesCustomIds} from '../enums/CustomIds.enum.js'
-import {SelectEmoji} from '../enums/SelectEmoji.enum.js'
 import {Activity} from './Activity.js'
 
 export default new SelectBuilder(MAIN_SELECT, Activity, {
