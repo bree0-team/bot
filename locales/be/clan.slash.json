@@ -1,0 +1,148 @@
+{
+  "name": "",
+  "list": {
+    "name": "",
+    "description": ""
+  },
+  "members": {
+    "name": "",
+    "description": "",
+    "options": {
+      "clan": {
+        "name": "",
+        "description": ""
+      }
+    }
+  },
+  "leave": {
+    "name": "",
+    "description": ""
+  },
+  "invite": {
+    "name": "",
+    "description": "",
+    "options": {
+      "user": {
+        "name": "",
+        "description": ""
+      }
+    }
+  },
+  "kick": {
+    "name": "",
+    "description": "",
+    "options": {
+      "user": {
+        "name": "",
+        "description": ""
+      }
+    }
+  },
+  "rank": {
+    "name": "",
+    "description": "",
+    "options": {
+      "user": {
+        "name": "",
+        "description": ""
+      },
+      "rank": {
+        "name": "",
+        "description": "",
+        "choices": {
+          "Chief": "",
+          "Captain": "",
+          "Recruiter": "",
+          "Member": ""
+        }
+      }
+    }
+  },
+  "create": {
+    "name": "",
+    "description": "",
+    "options": {
+      "emoji": {
+        "name": "",
+        "description": ""
+      },
+      "name": {
+        "name": "",
+        "description": ""
+      }
+    }
+  },
+  "role": {
+    "name": "",
+    "list": {
+      "name": "",
+      "description": ""
+    },
+    "new": {
+      "name": "",
+      "description": "",
+      "options": {
+        "name": {
+          "name": "",
+          "description": ""
+        }
+      }
+    },
+    "delete": {
+      "name": "",
+      "description": "",
+      "options": {
+        "role": {
+          "name": "",
+          "description": ""
+        }
+      }
+    },
+    "rename": {
+      "name": "",
+      "description": "",
+      "options": {
+        "role": {
+          "name": "",
+          "description": ""
+        },
+        "name": {
+          "name": "",
+          "description": ""
+        }
+      }
+    },
+    "give": {
+      "name": "",
+      "description": "",
+      "options": {
+        "user": {
+          "name": "",
+          "description": ""
+        },
+        "role": {
+          "name": "",
+          "description": ""
+        }
+      }
+    }
+  },
+  "transfer": {
+    "name": "",
+    "description": "",
+    "options": {
+      "user": {
+        "name": "",
+        "description": ""
+      }
+    }
+  },
+  "appearance": {
+    "name": "",
+    "description": ""
+  },
+  "ad": {
+    "name": "",
+    "description": ""
+  }
+}

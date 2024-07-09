@@ -1,10 +1,10 @@
 {
-  "name": "ролі",
-  "description": "Змінити ролі учасника",
+  "name": "",
+  "description": "",
   "options": {
     "user": {
-      "name": "учасник",
-      "description": "Оберіть учасника, чиї ролі хочете змінити"
+      "name": "",
+      "description": ""
     }
   }
 }

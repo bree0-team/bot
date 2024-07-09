@@ -11,7 +11,8 @@
     "unknown_member": "Unknown Member",
     "unknown_emoji": "Unknown Emoji",
     "unknown_voice": "You are not in the voice channel",
-    "unknown_role": "Unknown Role"
+    "unknown_role": "Unknown Role",
+    "unknown_channel": "Unknown Channel"
   },
   "servererror": {
     "valid_url": "This link is not valid"
