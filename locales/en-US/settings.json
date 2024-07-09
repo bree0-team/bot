@@ -254,12 +254,12 @@
     "date_time": {
       "description": "Date and Time Style",
       "styles": {
-        "t": "",
-        "T": "",
-        "d": "",
-        "D": "",
-        "f": "",
-        "F": ""
+        "t": "Short time format (14:00)",
+        "T": "Long time format (14:00:29)",
+        "d": "Short date format (07/09/2020)",
+        "D": "Long date format (07 September 2020)",
+        "f": "Short date and time format (07 September 2020 14:00)",
+        "F": "Long date and time format (Monday, September 07, 2020 14:00)"
       }
     },
     "members": {
