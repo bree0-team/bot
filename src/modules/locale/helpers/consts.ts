@@ -4,7 +4,7 @@ import {ValueOf} from '../../../types/base.type.js'
 
 export const SERVER_LANGUAGE = 'server_language'
 
-enum BotLocale {
+export enum BotLocale {
 	Belarusian = 'be'
 }
 const AppLocale = {...Locale, ...BotLocale}

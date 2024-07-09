@@ -23,6 +23,7 @@ import {
 import {readdirSync, readFileSync} from 'fs'
 import _ from 'lodash'
 import fs from 'node:fs'
+import {BotLocale} from '../modules/locale/helpers/consts.js'
 import {SplitUtils} from '../utils/split.js'
 import {__dirname} from '../services/file.js'
 
@@ -49,6 +50,7 @@ function getKeys(options: CommandKeysOptions): string[] {
 function setLocalizations(self: SharedNameAndDescription, ...keys: string[]): void {
     const names = language.t(...keys, 'name')
     const descriptions = language.t(...keys, 'description')
+    if (names['en-US']) self.setName(names['en-US'])
     self.setDescription(descriptions['en-US'] ?? 'Unknown')
     if (names) self.setNameLocalizations(names)
     if (descriptions) self.setDescriptionLocalizations(descriptions)
@@ -154,8 +156,10 @@ class SlashBuilder {
     }
 
     loadLanguages() {
+        const notLoadLanguage: string[] = Object.values(BotLocale)
         const i18n = readdirSync(localePath)
             .filter(locale => fs.statSync(`${localePath}/${locale}`).isDirectory())
+            .filter(locale => !notLoadLanguage.includes(locale))
             .map(locale => {
                 const json = readdirSync(`${localePath}/${locale}`)
                     .filter(file => file.endsWith('.slash.json'))
