@@ -8,7 +8,7 @@
   "list": "Список кланів {guild_name}",
   "create": "Створити клан?",
   "created": "Клан створено",
-  "create_for_user": "",
+  "create_for_user": "Оберіть учасника для якого буде створено клан",
   "invite": {
     "send": "{user}, вас запрошує {author} в клан",
     "accept": "{user} прийняв запрошення в клан",
