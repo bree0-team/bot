@@ -1,4 +1,4 @@
-import {InteractionHandler, PrivateHandler, SelectOneValueHandlerOptions} from '../../../../handlers/interaction.js'
+import {PrivateHandler, SelectOneValueHandlerOptions} from '../../../../handlers/interaction.js'
 import {CreateData} from '../../types/data.type.js'
 import {Create} from '../Create.js'
 import {CLAN_CREATE_SELECT_USER} from '../enums/CustomIds.enum.js'
