@@ -14,6 +14,7 @@ class ClanManager extends ModelManager<ClanId, ClanModel> {
     findOne = (clanId: ClanId): ClanModel | undefined => super.$findOne(clanId)
     findAllByGuildId = (guildId: GuildId): Collection<ClanId, ClanModel> => super.findAll()
         .filter(i => i.guildId === guildId)
+    remove = (clanId: ClanId): Promise<boolean> => super.$remove(clanId, {id: clanId})
 }
 
 export default new ClanManager(collection, ClanModel)
