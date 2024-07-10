@@ -4,7 +4,7 @@ import {SelectEmoji} from '../enums/SelectEmoji.enum.js'
 import {Create} from './Create.js'
 
 export default new SelectBuilder(CLAN_SELECT, Create, {
-    emoji: SelectEmoji.WhoCreated,
+    emoji: SelectEmoji.Manage,
     label: 'settings:clan:options:manage',
     value: SettingsClanSelectValuesCustomIds.Create
 })
