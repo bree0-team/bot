@@ -5,6 +5,6 @@ import {Create} from './Create.js'
 
 export default new SelectBuilder(CLAN_SELECT, Create, {
     emoji: SelectEmoji.WhoCreated,
-    label: 'settings:clan:options:create_roles',
+    label: 'settings:clan:options:manage',
     value: SettingsClanSelectValuesCustomIds.Create
 })

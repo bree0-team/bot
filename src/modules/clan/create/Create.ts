@@ -5,8 +5,8 @@ import {UnknownEmojiError} from '../../../errors/notfound.js'
 import {EmbedField, GuildEmbed} from '../../../helpers/embed.js'
 import {UserSelectRowBuilder} from '../../../services/interaction.js'
 import {UserId} from '../../../types/base.type.js'
-import {WhoCreate} from '../../settings/clan/create/enums/WhoCreate.enum.js'
-import SettingsClanCreateManager from '../../settings/clan/create/managers/settings-clan-create.manager.js'
+import {WhoManage} from '../../settings/clan/manage/enums/WhoManage.enum.js'
+import SettingsClanManageManager from '../../settings/clan/manage/managers/settings-clan-manage.manager.js'
 import {ClanRoleToCreateError, ClanYouExistError} from '../errors/clan.error.js'
 import {createRoleAccess} from '../helpers/createRoleAccess.js'
 import {BaseClan} from '../structures/BaseClan.js'
@@ -42,10 +42,10 @@ export class Create extends BaseClan {
 		if (this.isMember()) throw new ClanYouExistError(this.i)
 
 		const emoji = emojiArr[0].symbol
-		const createManager = await SettingsClanCreateManager.getOne(this.guildId)
-		if (!createManager.roles.length && createManager.who === WhoCreate.MEMBER) return this.members(emoji, name)
+		const createManager = await SettingsClanManageManager.getOne(this.guildId)
+		if (!createManager.roles.length && createManager.who === WhoManage.MEMBER) return this.members(emoji, name)
 		if (!createRoleAccess(this.i.member as GuildMember, createManager.roles)) throw new ClanRoleToCreateError(this.i)
-		if (createManager.who === WhoCreate.MEMBER) return this.members(emoji, name)
+		if (createManager.who === WhoManage.MEMBER) return this.members(emoji, name)
 		else return this.roles(emoji, name)
 	}
 	async members(emoji: string, name: string, ownerId?: UserId) {
