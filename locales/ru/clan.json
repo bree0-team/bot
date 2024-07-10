@@ -111,7 +111,7 @@
     "transfer_yourself": "Вы не можете передать клан себе",
     "transfer_disabled": "Передача клана отключена на сервере",
     "invite_limit": "В клане максимальное количество участников",
-    "you_dont_have_role_to_create": "У вас нет разрешенной роли для создания клана",
+    "you_dont_have_role_to_create": "У вас нет разрешенной роли для создания/удаления клана",
     "channel_missing_category": "Категория не установлена",
     "dont_have_channels": "У вас нет клановых каналов",
     "members_limit_more_or_less": "Лимит не может быть больше 99 и не меньше 0",
