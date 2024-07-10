@@ -16,6 +16,7 @@ export enum ClanSlashCommands {
     TRANSFER = 'transfer',
     APPEARANCE = 'appearance',
     AD = 'ad',
+    DELETE = 'delete'
 }
 
 export enum ClanAccessCommands {
@@ -34,4 +35,5 @@ export enum ClanAccessCommands {
     TRANSFER = 'transfer',
     APPEARANCE = 'appearance',
     AD = 'ad',
+    DELETE = 'delete'
 }

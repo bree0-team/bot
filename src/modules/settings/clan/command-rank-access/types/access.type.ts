@@ -7,7 +7,8 @@ export type NotAccessCommands =
     ClanAccessCommands.MEMBERS |
     ClanAccessCommands.TRANSFER |
     ClanAccessCommands.APPEARANCE |
-    ClanAccessCommands.AD
+    ClanAccessCommands.AD |
+    ClanAccessCommands.DELETE
 
 export type AllCommandsAccess = Exclude<ClanAccessCommands, NotAccessCommands>
 export type ChiefCommandsAccess = Exclude<AllCommandsAccess,

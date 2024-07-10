@@ -5,7 +5,7 @@ import {
     ChiefCommandsAccess,
     MemberCommandsAccess,
     NotAccessCommands,
-    RecruiterCommandsAccess,
+    RecruiterCommandsAccess
 } from '../types/access.type.js'
 
 export const defaultNotAccess: NotAccessCommands[] = [
@@ -16,6 +16,7 @@ export const defaultNotAccess: NotAccessCommands[] = [
     ClanAccessCommands.TRANSFER,
     ClanAccessCommands.APPEARANCE,
     ClanAccessCommands.AD,
+    ClanAccessCommands.DELETE
 ]
 export const defaultOwner: AllCommandsAccess[] = [
     ClanAccessCommands.INVITE,

@@ -27,6 +27,10 @@ export type TransferData = ClanIdData & UserIdData
 
 export type AppearanceData = ClanIdData
 
+export interface DeleteData extends ClanIdData {
+    ownerId: UserId
+}
+
 export type ClanData =
     CreateData |
     InviteData |
@@ -35,5 +39,6 @@ export type ClanData =
     TransferData |
     AppearanceData |
     ChannelData |
-    AdData
+    AdData |
+    DeleteData
 
