@@ -1,6 +1,7 @@
 import {Client, GatewayIntentBits} from 'discord.js'
 import {config} from 'dotenv'
 import _ from 'lodash'
+import {ConnectionError} from 'sequelize'
 import {SyncOptions} from 'sequelize/types/sequelize.js'
 import {SubcommandService} from './builders/subcommands.js'
 import {CommandRegistration} from './services/command-registration.js'
@@ -12,6 +13,19 @@ import {Logger, Logs} from './services/logger.js'
 
 config()
 const Debug = require('../../config/debug.json')
+
+async function sequelizeSync(reconnectTime: number = 60) {
+    try {
+        sequelize.addModels(await importModels())
+        const syncOptions: SyncOptions = {}
+        if (Debug.alterTable) Object.assign(syncOptions, {alter: true})
+        await sequelize.sync(syncOptions)
+    } catch (error) {
+        if (error instanceof ConnectionError && ['ETIMEDOUT'].includes(error.original['code']))
+            return setTimeout(() => sequelizeSync(reconnectTime * 2), reconnectTime * 1000)
+        throw error
+    }
+}
 
 async function start() {
     const client = new Client({
@@ -40,10 +54,7 @@ async function start() {
         process.exit()
     }
 
-    sequelize.addModels(await importModels())
-    const syncOptions: SyncOptions = {}
-    if (Debug.alterTable) Object.assign(syncOptions, {alter: true})
-    await sequelize.sync(syncOptions)
+    await sequelizeSync()
 
     await loader.loadEvents()
     await loader.loadInteractions()
