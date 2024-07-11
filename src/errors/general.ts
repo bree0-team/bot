@@ -2,7 +2,6 @@ import {EmbedBuilder, InteractionReplyOptions, RepliableInteraction} from 'disco
 import {EmbedColors} from '../enums/EmbedColors.enum.js'
 import {EmotesImages} from '../enums/EmotesImages.enum.js'
 import {EmbedField} from '../helpers/embed.js'
-import {iFollowUp, iReply} from '../services/interaction.js'
 
 export class CustomError extends Error {
     public fields: EmbedField[]
