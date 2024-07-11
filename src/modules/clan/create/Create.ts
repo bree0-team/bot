@@ -37,7 +37,7 @@ export class Create extends BaseClan {
 		const emojiId = this.getString('emoji')
 		const emojiArr = new EmojiService().getEmojiById(emojiId)
 		const name = this.getString('name')
-		if (!emojiArr) throw new UnknownEmojiError(this.i)
+		if (!emojiArr || !emojiArr.length) throw new UnknownEmojiError(this.i)
 		const emoji = emojiArr[0].symbol
 		const createManager = await SettingsClanManageManager.getOne(this.guildId)
 		if (!createManager.roles.length && createManager.who === WhoManage.MEMBER) return this.members(emoji, name)
