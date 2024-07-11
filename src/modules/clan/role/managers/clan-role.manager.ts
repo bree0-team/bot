@@ -26,6 +26,12 @@ class ClanRoleManager extends ModelManager<ClanRoleId, ClanRoleModel> {
             }))
         return super.$remove(clanRoleId, {id: clanRoleId})
     }
+    async removeAll(clanId: ClanId): Promise<boolean[]> {
+        await this.model.destroy({where: {clanId}})
+        return this.findAll()
+            .filter(i => i.clanId === clanId)
+            .map(i => this.collection.delete(i.id))
+    }
 }
 
 export default new ClanRoleManager(collection, ClanRoleModel)

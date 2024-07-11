@@ -23,6 +23,11 @@ class ClanMemberManager extends ModelManager<ClanMemberId, ClanMemberModel> {
         const memberKey = this.resolveId(this.findOne(clanId, userId))
         return super.$remove(memberKey, {clanId, userId})
     }
+    async removeAll(clanId: ClanId): Promise<boolean[]> {
+        await this.model.destroy({where: {clanId}})
+        return this.findAllByClanId(clanId)
+            .map(i => this.collection.delete(i.id))
+    }
 }
 
 export default new ClanMemberManager(collection, ClanMemberModel)
