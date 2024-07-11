@@ -1,0 +1,24 @@
+{
+  "actions": {
+    "reply": "",
+    "edit": "",
+    "resolve": "",
+    "delete": ""
+  },
+  "deleted": "",
+  "edited": "",
+  "modal": {
+    "title": "",
+    "label": ""
+  },
+  "replied": "",
+  "replied_at": "",
+  "resolved": "",
+  "resolved_at": "",
+  "error": {
+    "user_no_rights": "",
+    "not_in_this_channel": "",
+    "you_dont_have_rights": "",
+    "already_resolved": ""
+  }
+}

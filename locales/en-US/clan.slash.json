@@ -144,5 +144,9 @@
   "ad": {
     "name": "ad",
     "description": "Ad Management"
+  },
+  "delete": {
+    "name": "delete",
+    "description": "Delete clan"
   }
 }

@@ -1,0 +1,14 @@
+{
+  "name": "",
+  "description": "",
+  "options": {
+    "user": {
+      "name": "",
+      "description": ""
+    },
+    "nick": {
+      "name": "",
+      "description": ""
+    }
+  }
+}

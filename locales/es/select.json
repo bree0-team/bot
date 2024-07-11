@@ -1,0 +1,20 @@
+{
+  "role": "",
+  "roles": "",
+  "channel": "",
+  "channels": "",
+  "ed_channels": "",
+  "commands": "",
+  "user": "",
+  "users": "",
+  "rights": "",
+  "voice_states": {
+    "placeholder": "",
+    "Normal": "",
+    "SelfMute": "",
+    "SelfDeaf": "",
+    "ServerMute": "",
+    "ServerDeaf": "",
+    "Afk": ""
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "forbidden": {
+    "channel": {
+      "missing_permission": ""
+    },
+    "user": {
+      "missing_permission": ""
+    }
+  },
+  "notfound": {
+    "unknown_member": "",
+    "unknown_emoji": "",
+    "unknown_voice": "",
+    "unknown_role": "",
+    "unknown_channel": ""
+  },
+  "servererror": {
+    "valid_url": ""
+  }
+}

@@ -38,7 +38,7 @@
   "clan": {
     "description": "Clan settings allow you to manage the appearance, functionality, and behavior of the clan using various modules. Modify the parameters to customize the clan to your needs and preferences.\n\nSelect the appropriate section for configuration.",
     "options": {
-      "create_roles": "Who can create a clan",
+      "manage": "Who manages the clan",
       "command_rank_access": "Command rights",
       "appearance": "Appearance settings",
       "transfer": "Clan Transfer",
@@ -52,12 +52,12 @@
       "description": "This is the process of transferring control and responsibility for the clan from one member to another.",
       "allow": "Allow transferring clan"
     },
-    "create": {
-      "description": "Creating a clan is available to any registered user. However, you can configure certain roles for creating a clan or allow members to create a clan with them.",
-      "members": "Members create a clan",
-      "allowed_roles": "Allowed roles create a clan for members",
-      "roles": "Authorized roles for creating a clan",
-      "admin_have_rights": "Default administrators have the right to create a clan"
+    "manage": {
+      "description": "Creating and deleting clans is available to any user. However, you can configure certain roles or allow members to create/delete a clan with them.",
+      "members": "Members manage clans",
+      "allowed_roles": "Authorized roles manage clans",
+      "roles": "Allowed roles",
+      "admin_have_rights": "Default administrators have the right to manage clans"
     },
     "members_limit": {
       "description": "These settings allow you to change the limit on the number of members who can join the clan.",
@@ -169,7 +169,7 @@
       "label": "Formula"
     },
     "rewards": {
-      "description": "",
+      "description": "These roles will be automatically assigned to the player upon reaching a certain level.",
       "type": "Reward type",
       "types": {
         "STACKED": "Stacking rewards",
@@ -254,12 +254,12 @@
     "date_time": {
       "description": "Date and Time Style",
       "styles": {
-        "t": "Short time (16:20)",
-        "T": "Long time (16:20:30)",
-        "d": "Short date (20/04/2021)",
-        "D": "Long date (20 April 2021)",
-        "f": "Short date and time (20 April 2021 16:20)",
-        "F": "Long date and time (Tuesday, 20 April 2021 16:20)"
+        "t": "Short time format (14:00)",
+        "T": "Long time format (14:00:29)",
+        "d": "Short date format (07/09/2020)",
+        "D": "Long date format (07 September 2020)",
+        "f": "Short date and time format (07 September 2020 14:00)",
+        "F": "Long date and time format (Monday, September 07, 2020 14:00)"
       }
     },
     "members": {

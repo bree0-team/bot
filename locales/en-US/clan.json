@@ -5,6 +5,7 @@
   "RECRUITER": "Recruiter",
   "MEMBER": "Member",
   "clan": "Clan",
+  "select": "Select Clan",
   "list": "A list of clans {guild_name}",
   "create": "Create Clan?",
   "created": "Clan created",
@@ -92,6 +93,11 @@
     "delete": "Delete ad",
     "created": "A new advertisement has been created: `{ad}`"
   },
+  "delete": {
+    "description": "Are you sure you want to delete the clan?",
+    "select_description": "Choose the clan you want to delete",
+    "confirmed": "Clan removed"
+  },
   "error": {
     "not_exists": "There are no clans on the server **{guild_name}**",
     "you_exist": "You are already a member of a clan",
@@ -111,7 +117,7 @@
     "transfer_yourself": "You cannot give a clan to yourself",
     "transfer_disabled": "Clan transfer disabled on the server",
     "invite_limit": "The clan already has a maximum number of members",
-    "you_dont_have_role_to_create": "You do not have the authorized role to create a clan",
+    "you_dont_have_role_to_create": "You do not have the authorized role to create/delete a clan",
     "channel_missing_category": "Category not set",
     "dont_have_channels": "You do not have clan channels",
     "members_limit_more_or_less": "Limit cannot be greater than 99 and not less than 0",

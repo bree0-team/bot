@@ -1,38 +1,38 @@
 {
-  "OWNER": "Власник",
-  "CHIEF": "Керівник",
-  "CAPTAIN": "Капітан",
-  "RECRUITER": "Рекрутер",
-  "MEMBER": "Учасник",
-  "clan": "Клан",
-  "list": "Список кланів {guild_name}",
-  "create": "Створити клан?",
-  "created": "Клан створено",
-  "create_for_user": "Оберіть учасника для якого буде створено клан",
+  "OWNER": "",
+  "CHIEF": "",
+  "CAPTAIN": "",
+  "RECRUITER": "",
+  "MEMBER": "",
+  "clan": "",
+  "list": "",
+  "create": "",
+  "created": "",
+  "create_for_user": "",
   "invite": {
-    "send": "{user}, вас запрошує {author} в клан",
-    "accept": "{user} прийняв запрошення в клан",
-    "reject": "{user} відхилив запрошення в клан"
+    "send": "",
+    "accept": "",
+    "reject": ""
   },
   "leave": {
-    "send": "Ви впевнені, що хочете залишити клан?",
-    "confirm": "{user} залишив клан"
+    "send": "",
+    "confirm": ""
   },
   "kick": {
-    "send": "Ви хочете вигнати {user}?",
-    "confirm": "{author} вигнав {user}"
+    "send": "",
+    "confirm": ""
   },
-  "rank": "{author} встановив для {user} ранг: `{rank}`",
+  "rank": "",
   "role": {
-    "new": "{user} створив роль: `{name}`",
+    "new": "",
     "list": "",
-    "delete": "{user} видалив роль: `{role}`",
-    "rename": "{user} перейменував роль",
-    "give": "{author} встановив для {user} роль: `{role}`"
+    "delete": "",
+    "rename": "",
+    "give": ""
   },
   "transfer": {
     "alert": "",
-    "confirm": "{author} передав клан {user}"
+    "confirm": ""
   },
   "appearance": {
     "modification": "",
@@ -110,7 +110,7 @@
     "delete_system_role": "",
     "transfer_yourself": "",
     "transfer_disabled": "",
-    "invite_limit": "В клані максимальна кількість учасників",
+    "invite_limit": "",
     "you_dont_have_role_to_create": "",
     "channel_missing_category": "",
     "dont_have_channels": "",
