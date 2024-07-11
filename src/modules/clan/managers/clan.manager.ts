@@ -4,7 +4,9 @@ import {GuildId} from '../../../types/base.type.js'
 import {CreateClanDto} from '../dto/clan/create-clan.dto.js'
 import {UpdateClanDto} from '../dto/clan/update-clan.dto.js'
 import {ClanModel} from '../models/clan.model.js'
+import ClanRoleManager from '../role/managers/clan-role.manager.js'
 import {ClanId} from '../types/clan.type.js'
+import ClanMemberManager from './clan-member.manager.js'
 
 const collection = new Collection<ClanId, ClanModel>()
 
@@ -14,7 +16,11 @@ class ClanManager extends ModelManager<ClanId, ClanModel> {
     findOne = (clanId: ClanId): ClanModel | undefined => super.$findOne(clanId)
     findAllByGuildId = (guildId: GuildId): Collection<ClanId, ClanModel> => super.findAll()
         .filter(i => i.guildId === guildId)
-    remove = (clanId: ClanId): Promise<boolean> => super.$remove(clanId, {id: clanId})
+    async remove(clanId: ClanId): Promise<boolean> {
+        await ClanMemberManager.removeAll(clanId)
+        await ClanRoleManager.removeAll(clanId)
+        return super.$remove(clanId, {id: clanId})
+    }
 }
 
 export default new ClanManager(collection, ClanModel)
