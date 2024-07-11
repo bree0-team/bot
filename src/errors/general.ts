@@ -9,6 +9,7 @@ export class CustomError extends Error {
 
     constructor(message: string, ...fields: EmbedField[]) {
         super(message)
+        this.fields = fields
     }
 }
 
