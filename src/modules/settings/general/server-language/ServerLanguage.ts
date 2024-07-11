@@ -1,8 +1,7 @@
 import {bold, InteractionReplyOptions, StringSelectMenuBuilder, StringSelectMenuOptionBuilder} from 'discord.js'
-import _ from 'lodash'
 import {InteractionEmoji} from '../../../../enums/InteractionEmoji.enum.js'
 import {InteractionReplyComponent, StringSelectRowBuilder} from '../../../../services/interaction.js'
-import {LanguageChoice, languageChoices} from '../../../locale/helpers/consts.js'
+import {AppLocaleValues, LanguageChoice} from '../../../locale/helpers/consts.js'
 import {MAIN_SELECT} from '../../enums/CustomIds.enum.js'
 import {SettingsGeneralSelectValuesCustomIds} from '../enums/CustomIds.enum.js'
 import SettingsGeneralManager from '../managers/settings-general.manager.js'
@@ -12,8 +11,7 @@ import {SERVER_LANGUAGE} from './enums/CustomIds.enum.js'
 export class ServerLanguage extends BaseSettingsGeneral {
     async run() {
         const {server_language} = await SettingsGeneralManager.getOne(this.guildId)
-        const languages: LanguageChoice[] = _.drop(languageChoices(this.t))
-        const language: LanguageChoice = languages.find(i => i.value === server_language)
+        const language: LanguageChoice = AppLocaleValues.find(i => i.value === server_language)
         const embed = this.embed
             .setDescription(
                 [
@@ -26,7 +24,7 @@ export class ServerLanguage extends BaseSettingsGeneral {
         const select = new StringSelectMenuBuilder({
             customId: SERVER_LANGUAGE
         }).setOptions(
-            languages.map(i => new StringSelectMenuOptionBuilder({
+            AppLocaleValues.map(i => new StringSelectMenuOptionBuilder({
                 emoji: i.emoji,
                 label: i.name,
                 value: i.value,

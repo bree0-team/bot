@@ -5,7 +5,7 @@ import {request} from 'undici'
 import {defaultLocale} from '../../helpers/defaults.js'
 import {__dirname} from '../../services/file.js'
 import {SplitUtils} from '../../utils/split.js'
-import {AppLocaleValues} from '../locale/helpers/consts.js'
+import {AppLocale} from '../locale/helpers/consts.js'
 import {defaultMaxX, defaultMaxY} from '../settings/banner/constants/defaults.js'
 import SettingsBannerDataManager from '../settings/banner/managers/settings-banner-data.manager.js'
 import SettingsBannerManager from '../settings/banner/managers/settings-banner.manager.js'
@@ -113,7 +113,7 @@ export class BannerImage {
         })
         return channels.size.toString()
     }
-    private dateTime(data: BannerDateTimeData, locale: AppLocaleValues, timeZone: string): string {
+    private dateTime(data: BannerDateTimeData, locale: AppLocale, timeZone: string): string {
         const date = new Date()
         switch (data.style) {
             case DateTimeConst.ShortTime: return date.toLocaleTimeString(locale, {
