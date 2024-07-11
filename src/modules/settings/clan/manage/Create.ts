@@ -63,7 +63,7 @@ export class Create extends BaseSettingsClan {
                     RadioEmoji(createManager.who === WhoManage.ROLES) + ' '
                     + this.t('settings:clan:manage:allowed_roles'),
                     '',
-                    bold(this.t('settings:manage:create:roles') + ': '),
+                    bold(this.t('settings:clan:manage:roles') + ': '),
                     (createManager.roles?.length ? createManager.roles.map(i => roleMention(i)).join(', ')
                         : this.t('no')),
                 ].join('\n')
