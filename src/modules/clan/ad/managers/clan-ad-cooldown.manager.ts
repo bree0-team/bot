@@ -12,4 +12,4 @@ class ClanAdCooldownManager extends ModelManager<ClanId, ClanAdCooldownModel> {
     remove = (clanId: ClanId): Promise<boolean> => super.$remove(clanId, {clanId})
 }
 
-export default new ClanAdCooldownManager(collection, ClanAdCooldownModel)
+export default new ClanAdCooldownManager(collection, ClanAdCooldownModel, 'clanId')
