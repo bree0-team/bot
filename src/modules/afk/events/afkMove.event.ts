@@ -1,18 +1,18 @@
 import {Client, Guild, GuildMember, VoiceState} from 'discord.js'
 import _ from 'lodash'
 import {VoiceStateUpdateEventBuilder} from '../../../builders/event.js'
+import {delay} from '../../../helpers/delay.js'
 import {ChannelId, RoleId, UserId} from '../../../types/base.type.js'
 import SettingsAfkManager from '../../settings/afk/managers/settings-afk.manager.js'
 
 class AfkMoveEvent extends VoiceStateUpdateEventBuilder {
-    moveToAfk(member: GuildMember, sleep: number, channels: ChannelId[]): NodeJS.Timeout {
-        return setTimeout(() => {
-            const {guild, voice} = member
-            if (voice && voice.selfDeaf && channels.includes(voice.channelId)) {
-                if (guild.afkChannelId === voice.channelId) return;
-                member.edit({channel: guild.afkChannel})
-            }
-        }, sleep * 1000)
+    async moveToAfk(member: GuildMember, sleep: number, channels: ChannelId[]): Promise<void> {
+        await delay(sleep * 1000)
+        const {guild, voice} = member
+        if (voice && voice.selfDeaf && channels.includes(voice.channelId)) {
+            if (guild.afkChannelId === voice.channelId) return;
+            member.edit({channel: guild.afkChannel})
+        }
     }
     getRoles(guild: Guild, roles: RoleId[]): UserId[] {
         const members = roles

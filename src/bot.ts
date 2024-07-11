@@ -3,6 +3,7 @@ import {config} from 'dotenv'
 import _ from 'lodash'
 import {SyncOptions} from 'sequelize/types/sequelize.js'
 import {SubcommandService} from './builders/subcommands.js'
+import {delay} from './helpers/delay.js'
 import {CommandRegistration} from './services/command-registration.js'
 import {importModels, sequelize} from './services/database.js'
 import {require} from './services/file.js'
@@ -36,7 +37,7 @@ async function start() {
             Logger.error(Logs.error.commandAction, error);
         }
         // Wait for any final logs to be written.
-        await new Promise(resolve => setTimeout(resolve, 1000))
+        await delay(1000)
         process.exit()
     }
 
