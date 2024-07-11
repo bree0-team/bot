@@ -18,14 +18,14 @@ import {
     SlashCommandSubcommandBuilder,
     SlashCommandSubcommandGroupBuilder,
     SlashCommandSubcommandsOnlyBuilder,
-    SlashCommandUserOption,
+    SlashCommandUserOption
 } from 'discord.js'
 import {readdirSync, readFileSync} from 'fs'
 import _ from 'lodash'
 import fs from 'node:fs'
-import {BotLocale} from '../modules/locale/helpers/consts.js'
-import {SplitUtils} from '../utils/split.js'
+import {AppLocale} from '../modules/locale/helpers/consts.js'
 import {__dirname} from '../services/file.js'
+import {SplitUtils} from '../utils/split.js'
 
 const localePath = `${__dirname}/../locales`
 
@@ -156,10 +156,11 @@ class SlashBuilder {
     }
 
     loadLanguages() {
-        const notLoadLanguage: string[] = Object.values(BotLocale)
+        const appLanguages: string[] = Object.values(AppLocale)
+        const loadLanguages: string[] = Object.values(Locale)
         const i18n = readdirSync(localePath)
             .filter(locale => fs.statSync(`${localePath}/${locale}`).isDirectory())
-            .filter(locale => !notLoadLanguage.includes(locale))
+            .filter(locale => appLanguages.includes(locale) && loadLanguages.includes(locale))
             .map(locale => {
                 const json = readdirSync(`${localePath}/${locale}`)
                     .filter(file => file.endsWith('.slash.json'))
