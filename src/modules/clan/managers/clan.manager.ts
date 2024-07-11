@@ -1,6 +1,8 @@
 import {Collection} from 'discord.js'
 import {ModelManager} from '../../../managers/model.js'
 import {GuildId} from '../../../types/base.type.js'
+import ClanAdCooldownManager from '../ad/managers/clan-ad-cooldown.manager.js'
+import ClanAdManager from '../ad/managers/clan-ad.manager.js'
 import {CreateClanDto} from '../dto/clan/create-clan.dto.js'
 import {UpdateClanDto} from '../dto/clan/update-clan.dto.js'
 import {ClanModel} from '../models/clan.model.js'
@@ -17,6 +19,8 @@ class ClanManager extends ModelManager<ClanId, ClanModel> {
     findAllByGuildId = (guildId: GuildId): Collection<ClanId, ClanModel> => super.findAll()
         .filter(i => i.guildId === guildId)
     async remove(clanId: ClanId): Promise<boolean> {
+        await ClanAdManager.removeAll(clanId)
+        await ClanAdCooldownManager.remove(clanId)
         await ClanMemberManager.removeAll(clanId)
         await ClanRoleManager.removeAll(clanId)
         return super.$remove(clanId, {id: clanId})
