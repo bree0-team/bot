@@ -1,6 +1,7 @@
 import {DataTypes, Optional} from "sequelize";
 import {AllowNull, Column, Table, Model, HasMany} from 'sequelize-typescript'
 import {GuildId, RoleId} from '../../../types/base.type.js'
+import {ClanAdCooldownModel} from '../ad/models/clan-ad-cooldown.model.js'
 import {ClanAdModel} from '../ad/models/clan-ad.model.js'
 import {ClanChannelModel} from '../channel/models/clan-channel.model.js'
 import {ClanId} from '../types/clan.type.js'
@@ -61,4 +62,7 @@ export class ClanModel extends Model<ClanAttrs, ClanCreationAttrs> {
 
     @HasMany(() => ClanAdModel, {onDelete: 'CASCADE', onUpdate: 'RESTRICT'})
     clanAds: ReturnType<() => ClanAdModel[]>
+
+    @HasMany(() => ClanAdCooldownModel, {onDelete: 'CASCADE', onUpdate: 'RESTRICT'})
+    clanAdCooldowns: ReturnType<() => ClanAdCooldownModel[]>
 }
