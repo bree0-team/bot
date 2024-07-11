@@ -9,6 +9,7 @@ class ClanAdCooldownManager extends ModelManager<ClanId, ClanAdCooldownModel> {
     createOrUpdate = (clanId: ClanId): Promise<ClanAdCooldownModel> =>
         super.$createOrUpdate(this.findOne(clanId), {clanId, updatedAt: new Date()})
     findOne = (clanId: ClanId): ClanAdCooldownModel | undefined => super.$findOne(clanId)
+    remove = (clanId: ClanId): Promise<boolean> => super.$remove(clanId, {clanId})
 }
 
 export default new ClanAdCooldownManager(collection, ClanAdCooldownModel)
