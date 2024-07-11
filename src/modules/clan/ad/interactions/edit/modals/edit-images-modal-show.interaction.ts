@@ -2,7 +2,7 @@ import {TextInputBuilder, TextInputStyle} from 'discord.js'
 import {ButtonHandlerOptions, ModalHandler} from '../../../../../../handlers/interaction.js'
 import {Modal} from '../../../../../../services/interaction.js'
 import {ClanAdEditButtons, ClanAdEditImagesModal} from '../../../enums/CustomIds.enum.js'
-import ClanAdManager from '../../../managers/clan-ad-manager.js'
+import ClanAdManager from '../../../managers/clan-ad.manager.js'
 import {AdEditData} from '../../../types/data.type.js'
 
 class EditImagesModalShowInteraction extends ModalHandler {

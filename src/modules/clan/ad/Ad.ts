@@ -17,7 +17,7 @@ import {BaseClan} from '../structures/BaseClan.js'
 import {CLAN_AD_CREATE, CLAN_AD_SELECT} from './enums/CustomIds.enum.js'
 import {enabledAd} from './helpers/enabledAd.js'
 import {getOwner} from './helpers/getOwner.js'
-import ClanAdManager from './managers/clan-ad-manager.js'
+import ClanAdManager from './managers/clan-ad.manager.js'
 import {ClanAdModel} from './models/clan-ad.model.js'
 
 export class Ad extends BaseClan {

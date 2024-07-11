@@ -33,7 +33,7 @@ import {
 import {enabledAd} from './helpers/enabledAd.js'
 import {getOwner} from './helpers/getOwner.js'
 import {makeEmbed} from './helpers/makeEmbed.js'
-import ClanAdManager from './managers/clan-ad-manager.js'
+import ClanAdManager from './managers/clan-ad.manager.js'
 import {AdEditData} from './types/data.type.js'
 
 export class AdEdit extends BaseClan {

@@ -4,7 +4,7 @@ import {ButtonHandlerOptions, ModalHandler} from '../../../../../../handlers/int
 import {Modal} from '../../../../../../services/interaction.js'
 import {SplitUtils} from '../../../../../../utils/split.js'
 import {ClanAdEditBodyModal, ClanAdEditButtons} from '../../../enums/CustomIds.enum.js'
-import ClanAdManager from '../../../managers/clan-ad-manager.js'
+import ClanAdManager from '../../../managers/clan-ad.manager.js'
 import {AdEditData} from '../../../types/data.type.js'
 
 class EditBodyModalShowInteraction extends ModalHandler {

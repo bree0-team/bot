@@ -24,6 +24,11 @@ class ClanAdManager extends ModelManager<number, ClanAdModel> {
         const adKey = this.resolveId(clanAdId)
         return super.$remove(adKey, {id: clanAdId})
     }
+    async removeAll(clanId: ClanId): Promise<boolean[]> {
+        await this.model.destroy({where: {clanId}})
+        return this.findAllByClanId(clanId)
+            .map(i => this.collection.delete(i.id))
+    }
 }
 
 export default new ClanAdManager(collection, ClanAdModel)

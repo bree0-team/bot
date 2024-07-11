@@ -6,7 +6,7 @@ import {AdEdit} from '../../../AdEdit.js'
 import {ClanAdEditBodyModal} from '../../../enums/CustomIds.enum.js'
 import {enabledAd} from '../../../helpers/enabledAd.js'
 import {getOwner} from '../../../helpers/getOwner.js'
-import ClanAdManager from '../../../managers/clan-ad-manager.js'
+import ClanAdManager from '../../../managers/clan-ad.manager.js'
 import {AdEditData} from '../../../types/data.type.js'
 
 class EditBodyModalInteraction extends InteractionHandler {

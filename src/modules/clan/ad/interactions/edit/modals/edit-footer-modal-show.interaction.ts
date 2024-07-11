@@ -3,7 +3,7 @@ import {DiscordLimits} from '../../../../../../enums/DiscordLimits.enum.js'
 import {ButtonHandlerOptions, ModalHandler} from '../../../../../../handlers/interaction.js'
 import {Modal} from '../../../../../../services/interaction.js'
 import {ClanAdEditButtons, ClanAdEditFooterModal} from '../../../enums/CustomIds.enum.js'
-import ClanAdManager from '../../../managers/clan-ad-manager.js'
+import ClanAdManager from '../../../managers/clan-ad.manager.js'
 import {AdEditData} from '../../../types/data.type.js'
 
 class EditFooterModalShowInteraction extends ModalHandler {

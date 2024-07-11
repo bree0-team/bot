@@ -3,7 +3,7 @@ import {AdEdit} from '../../../AdEdit.js'
 import {ClanAdEditFieldModal} from '../../../enums/CustomIds.enum.js'
 import {enabledAd} from '../../../helpers/enabledAd.js'
 import {getOwner} from '../../../helpers/getOwner.js'
-import ClanAdManager from '../../../managers/clan-ad-manager.js'
+import ClanAdManager from '../../../managers/clan-ad.manager.js'
 import {AdEditData} from '../../../types/data.type.js'
 
 class EditFieldsModalInteraction extends PrivateHandler {

@@ -6,7 +6,7 @@ import {Ad} from '../Ad.js'
 import {CLAN_AD_CREATE_MODAL, CLAN_AD_CREATE_MODAL_VALUE} from '../enums/CustomIds.enum.js'
 import {enabledAd} from '../helpers/enabledAd.js'
 import {getOwner} from '../helpers/getOwner.js'
-import ClanAdManager from '../managers/clan-ad-manager.js'
+import ClanAdManager from '../managers/clan-ad.manager.js'
 
 class CreateInteraction extends PrivateHandler {
     protected async runFields({interaction, fields}: ModalHandlerOptions) {
