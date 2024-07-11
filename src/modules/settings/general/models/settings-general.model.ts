@@ -1,12 +1,12 @@
 import {AllowNull, Column, Default, Table} from 'sequelize-typescript'
 import {BaseGuildModel} from '../../../../models/base-guild.model.js'
 import {GuildId} from '../../../../types/base.type.js'
-import {AppLocaleValues} from '../../../locale/helpers/consts.js'
+import {AppLocale} from '../../../locale/helpers/consts.js'
 import {defaultEmbedColor, defaultTimezone} from '../constants/defaults.js'
 
 interface SettingsGeneralAttrs {
     guildId: GuildId
-    server_language: AppLocaleValues
+    server_language: AppLocale
     embed_color: number
     timezone: string
 }
@@ -16,7 +16,7 @@ interface SettingsGeneralCreationAttrs extends Pick<SettingsGeneralAttrs, 'guild
 @Table({tableName: 'settings_general'})
 export class SettingsGeneralModel extends BaseGuildModel<SettingsGeneralAttrs, SettingsGeneralCreationAttrs> {
     @Column
-    server_language: AppLocaleValues
+    server_language: AppLocale
 
     @AllowNull(false)
     @Default(defaultEmbedColor)
