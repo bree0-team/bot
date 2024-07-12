@@ -63,6 +63,7 @@ export class BaseStructure {
     protected customId: CustomId
 
     protected paginator = PaginatorButtons
+    protected back = BackButton
 
     constructor(interaction: RepliableInteraction) {
         this.i = interaction
@@ -91,7 +92,6 @@ export class BaseStructure {
         options: FollowUpOptions
     ): Promise<void | Message<BooleanCache<CacheType>> | InteractionResponse<boolean>> =>
         this.reply({...options, followUp: true})
-    protected back = (backId: string, buttons?: ButtonBuilder[]): ActionButtonRow => BackButton(backId, buttons)
     protected confirm = (options: iConfirmOptions) => ConfirmButton({
         ...options, interaction: this.i
     })
