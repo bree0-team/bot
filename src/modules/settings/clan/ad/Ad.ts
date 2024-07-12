@@ -1,5 +1,11 @@
-import {bold, channelMention, ChannelSelectMenuBuilder, ChannelType, InteractionReplyOptions} from 'discord.js'
-import {InteractionEmoji} from '../../../../enums/InteractionEmoji.enum.js'
+import {
+    bold,
+    channelMention,
+    ChannelSelectMenuBuilder,
+    ChannelType,
+    InteractionReplyOptions,
+    unorderedList
+} from 'discord.js'
 import {SwitchEmoji} from '../../../../helpers/buttons.js'
 import {minutes} from '../../../../helpers/counts.js'
 import {
@@ -33,10 +39,11 @@ export class Ad extends BaseSettingsClan {
                 '',
                 SwitchEmoji(adManager.value) + ' ' + bold(this.t('settings:clan:options:ad')),
                 '',
-                InteractionEmoji.MINUS + ' ' + bold(this.t('channel') + ': ')
-                + (adManager.channelId ? channelMention(adManager.channelId) : this.t('no')),
-                InteractionEmoji.MINUS + ' ' + bold(this.t('cooldown') + ': ')
-                + minutes(this.i, adManager.cooldown)
+                unorderedList([
+                    bold(this.t('channel') + ': ')
+                    + (adManager.channelId ? channelMention(adManager.channelId) : this.t('no')),
+                    bold(this.t('cooldown') + ': ') + minutes(this.i, adManager.cooldown)
+                ])
             ].join('\n'))
         const components: InteractionReplyComponent[] = [
             this.select(SettingsClanSelectValuesCustomIds.Ad),

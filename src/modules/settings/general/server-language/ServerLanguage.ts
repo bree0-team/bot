@@ -1,5 +1,4 @@
 import {bold, InteractionReplyOptions, StringSelectMenuBuilder, StringSelectMenuOptionBuilder} from 'discord.js'
-import {InteractionEmoji} from '../../../../enums/InteractionEmoji.enum.js'
 import {InteractionReplyComponent, StringSelectRowBuilder} from '../../../../services/interaction.js'
 import {AppLocaleValues, LanguageChoice} from '../../../locale/helpers/consts.js'
 import {MAIN_SELECT} from '../../enums/CustomIds.enum.js'
@@ -15,10 +14,10 @@ export class ServerLanguage extends BaseSettingsGeneral {
         const embed = this.embed
             .setDescription(
                 [
-                    InteractionEmoji.MINUS + ' ' + this.t('settings:general:server_language:description'),
+                    this.t('settings:general:server_language:description'),
                     '',
-                    InteractionEmoji.MINUS + ' ' + bold(this.t('settings:general:server_language:name')
-                        + ':') + ' ' + (language ? (language.emoji + ' ' + language.name) : this.t('not_set'))
+                    bold(this.t('settings:general:server_language:name') + ':') + ' '
+                    + (language ? (language.emoji + ' ' + language.name) : this.t('not_set'))
                 ].join('\n')
             )
         const select = new StringSelectMenuBuilder({

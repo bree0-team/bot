@@ -8,12 +8,12 @@ import {
     inlineCode,
     InteractionReplyOptions,
     StringSelectMenuBuilder,
-    StringSelectMenuOptionBuilder
+    StringSelectMenuOptionBuilder,
+    unorderedList
 } from 'discord.js'
 import _ from 'lodash'
 import {ClanRankEmoji} from '../../../../enums/ClanRankEmoji.enum.js'
 import {DiscordLimits} from '../../../../enums/DiscordLimits.enum.js'
-import {InteractionEmoji} from '../../../../enums/InteractionEmoji.enum.js'
 import {EmbedField} from '../../../../helpers/embed.js'
 import {
     ActionChannelSelectRow,
@@ -92,17 +92,23 @@ export class Channel extends BaseSettingsClan {
         } = await SettingsClanChannelRankAccessManager.getOne(this.guildId)
         const entries = {owner, chief, captain, recruiter, member}
         const fields: EmbedField[] = Object.entries(entries)
-            .map(([name, value]: ListFields) => EmbedField(this.t('clan:' + name.toUpperCase()), value
-                .map(i => InteractionEmoji.MINUS + ' '
-                    + this.t('settings:clan:channel:options:' + i)).join('\n') || this.t('no')))
+            .map(([name, value]: ListFields) => {
+                const values = value.map(i => this.t('settings:clan:channel:options:' + i))
+                return EmbedField(
+                    this.t('clan:' + name.toUpperCase()),
+                    values ? unorderedList(values) : this.t('no')
+                )
+            })
         const embed = this.embed()
             .setDescription([
                 this.t('settings:clan:channel:description'),
                 '',
-                bold(this.t('settings:clan:channel:category:for_create') + ': ')
-                + (channelManager.categoryId ? channelMention(channelManager.categoryId) : this.t('no')),
-                bold(this.t('settings:clan:channel:edit_limit:description') + ': ')
-                + inlineCode(channelManager.limit.toString())
+                unorderedList([
+                    bold(this.t('settings:clan:channel:category:for_create') + ': ')
+                    + (channelManager.categoryId ? channelMention(channelManager.categoryId) : this.t('no')),
+                    bold(this.t('settings:clan:channel:edit_limit:description') + ': ')
+                    + inlineCode(channelManager.limit.toString())
+                ])
             ].join('\n'))
             .addFields(...fields)
         const buttons = [

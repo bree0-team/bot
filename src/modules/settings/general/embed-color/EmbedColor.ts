@@ -1,6 +1,5 @@
 import {bold, codeBlock, InteractionReplyOptions} from 'discord.js'
 import {EmbedColors} from '../../../../enums/EmbedColors.enum.js'
-import {InteractionEmoji} from '../../../../enums/InteractionEmoji.enum.js'
 import {InteractionReplyComponent} from '../../../../services/interaction.js'
 import {SplitUtils} from '../../../../utils/split.js'
 import {MAIN_SELECT} from '../../enums/CustomIds.enum.js'
@@ -15,10 +14,9 @@ export class EmbedColor extends BaseSettingsGeneral {
         const embed = this.embed
             .setDescription(
                 [
-                    InteractionEmoji.MINUS + ' ' + this.t('settings:general:system_color:description'),
+                    this.t('settings:general:system_color:description'),
                     '',
-                    InteractionEmoji.MINUS + ' ' + bold(this.t('settings:general:system_color:set_color')
-                        + ':'),
+                    bold(this.t('settings:general:system_color:set_color') + ':'),
                     codeBlock('md', '#' + SplitUtils.decimalToHex(embed_color))
                 ].join('\n')
             )

@@ -1,5 +1,4 @@
-import {InteractionReplyOptions, StringSelectMenuBuilder, StringSelectMenuOptionBuilder} from 'discord.js'
-import {InteractionEmoji} from '../../enums/InteractionEmoji.enum.js'
+import {bold, InteractionReplyOptions, StringSelectMenuBuilder, StringSelectMenuOptionBuilder} from 'discord.js'
 import {GuildEmbed} from '../../helpers/embed.js'
 import {StringSelectRowBuilder} from '../../services/interaction.js'
 import {BaseStructure} from '../../structures/base.js'
@@ -16,8 +15,7 @@ export class Language extends BaseStructure {
             .setDescription([
                 this.t('language:chose_lang'),
                 '',
-                InteractionEmoji.MINUS + ' ' + this.t('language:selected_lang') + ': '
-                + `\`${toStringLocale.name}\``
+                bold(this.t('language:selected_lang') + ': ') + `\`${toStringLocale.name}\``
             ].join('\n'))
         const select = new StringSelectMenuBuilder()
             .setCustomId(LOCALE_SELECT)

@@ -5,6 +5,5 @@ export enum InteractionEmoji {
     RADIO_OFF = '<:radioOff:1234392395685040222>',
     CHECK_ON = '<:checkOn:1246739759196274698>',
     CHECK_OFF = '<:checkOff:1246739756138893312>',
-    MINUS = '<:minus:1190589896885276722>',
-    EMPTY = '<:empty:1188410713039970364> '
+    EMPTY = '<:empty:1188410713039970364>'
 }
