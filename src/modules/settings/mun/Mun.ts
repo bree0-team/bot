@@ -24,7 +24,7 @@ import SettingsMunManager from './managers/settings-mun.manager.js'
 import {BaseSettingsMun} from './structures/BaseSettingsMun.js'
 
 export class Mun extends BaseSettingsMun {
-    channelRow(channelId?: ChannelId): ActionChannelSelectRow {
+    private channelRow(channelId?: ChannelId): ActionChannelSelectRow {
         const select = new ChannelSelectMenuBuilder({
             customId: MUN_CHANNEL,
             placeholder: this.t('select:channel'),
@@ -33,7 +33,7 @@ export class Mun extends BaseSettingsMun {
         if (channelId) select.setDefaultChannels(channelId)
         return ChannelSelectRowBuilder(select)
     }
-    rolesRow(roleIds?: RoleId[]): ActionRoleSelectRow {
+    private rolesRow(roleIds?: RoleId[]): ActionRoleSelectRow {
         const select = new RoleSelectMenuBuilder({
             customId: MUN_ROLES,
             placeholder: this.t('select:roles'),
