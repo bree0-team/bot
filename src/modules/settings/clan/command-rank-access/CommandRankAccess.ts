@@ -13,7 +13,7 @@ import {ClanRank} from '../../../clan/enums/ClanRank.enum.js'
 import {MAIN_SELECT} from '../../enums/CustomIds.enum.js'
 import {SettingsClanSelectValuesCustomIds} from '../enums/CustomIds.enum.js'
 import {BaseSettingsClan} from '../structures/BaseSettingsClan.js'
-import {CommandRankAccessData} from '../types/data.type.js'
+import {RankAccessData} from '../types/data.type.js'
 import {defaultNotAccess, defaultOwner} from './constants/defaults.js'
 import {CRA_COMMAND, CRA_RANK} from './enums/CustomIds.enum.js'
 import SettingsClanCommandRankAccessManager from './managers/settings-clan-command-rank-access.manager.js'
@@ -73,7 +73,7 @@ export class CommandRankAccess extends BaseSettingsClan {
             this.back(MAIN_SELECT)
         ]
         const replyData: InteractionReplyOptions = {embeds: [embed], components}
-        const data: CommandRankAccessData = {rank}
+        const data: RankAccessData = {rank}
         return this.reply({replyData, data})
     }
 }
