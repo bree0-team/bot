@@ -12,7 +12,7 @@ class UrlEditModalInteraction extends ModalHandler {
             style: TextInputStyle.Short,
             label: interaction.t('settings:banner:background')
         })
-        if (item) urlInput.setValue(item.url)
+        if (item?.url) urlInput.setValue(item.url)
         return Modal(interaction, URL_MODAL, interaction.t('modal:title'), [urlInput])
     }
 }
