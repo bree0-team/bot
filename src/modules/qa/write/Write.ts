@@ -1,7 +1,6 @@
 import {ButtonBuilder, ButtonStyle, TextChannel} from 'discord.js'
 import {GuildEmbed} from '../../../helpers/embed.js'
 import {ActionButtonRow, ButtonRowBuilder, InteractionReplyComponent} from '../../../services/interaction.js'
-import MunManager from '../../mun/managers/mun.manager.js'
 import SettingsQaManager from '../../settings/qa/managers/settings-qa.manager.js'
 import {QA_ACTION} from '../enums/CustomIds.enum.js'
 import {QaEmoji} from '../enums/QaEmoji.enum.js'
