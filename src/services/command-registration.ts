@@ -10,7 +10,7 @@ import {
 import {Logger, Logs} from './logger.js'
 import {CommandName, CommandOnlyBuilder} from '../builders/slash.js'
 
-type ProcessArgs = [string, CommandName, CommandName]
+export type ProcessArgs = [string, CommandName, CommandName]
 
 export class CommandRegistration {
     private rest: REST = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN)

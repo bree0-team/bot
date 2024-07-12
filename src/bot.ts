@@ -4,7 +4,7 @@ import _ from 'lodash'
 import {SyncOptions} from 'sequelize/types/sequelize.js'
 import {SubcommandService} from './builders/subcommands.js'
 import {delay} from './helpers/delay.js'
-import {CommandRegistration} from './services/command-registration.js'
+import {CommandRegistration, ProcessArgs} from './services/command-registration.js'
 import {importModels, sequelize} from './services/database.js'
 import {require} from './services/file.js'
 import {LocalizationManager} from './services/i18n.js'
@@ -32,7 +32,7 @@ async function start() {
     const processArgs = _.drop(process.argv, 2) as string[]
     if (_.head(processArgs) as string === 'commands') {
         try {
-            await new CommandRegistration(client).run(_.drop(processArgs))
+            await new CommandRegistration(client).run(_.drop(processArgs) as ProcessArgs)
         } catch (error) {
             Logger.error(Logs.error.commandAction, error);
         }
