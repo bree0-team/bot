@@ -21,7 +21,6 @@ import {
     SlashCommandUserOption
 } from 'discord.js'
 import {readdirSync, readFileSync} from 'fs'
-import _ from 'lodash'
 import fs from 'node:fs'
 import {AppLocale} from '../modules/locale/helpers/consts.js'
 import {__dirname} from '../services/file.js'
@@ -180,8 +179,8 @@ class SlashBuilder {
         const items = this.keys.map(i => ({
             [i]: SplitUtils.findInObject([i, ...keys], this.languages)
         }))
-        return _.fromPairs(_.toPairs(_.assign({}, ...items))
-            .filter(([_, value]) => value !== undefined))
+        return Object.fromEntries(Object.entries(Object.assign({}, ...items))
+            .filter(([_, value]) => value !== undefined)) as Record<Locale, string>
     }
 }
 
