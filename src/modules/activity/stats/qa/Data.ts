@@ -7,6 +7,7 @@ import {
     TextChannel,
     time
 } from 'discord.js'
+import {UnknownChannelError} from '../../../../errors/notfound.js'
 import {InteractionReplyComponent} from '../../../../services/interaction.js'
 import {ChannelId, UserId} from '../../../../types/base.type.js'
 import {PageData} from '../../../../types/data.type.js'
@@ -34,6 +35,7 @@ export class Data extends BaseQa {
     ) {
         const user = this.getClientUser(userId)
         const channel = this.getGuildChannel(channelId) as TextChannel
+        if (channel) throw new UnknownChannelError(this.i)
         const lookBack = this.getLookBack(after)
         const {
             items, totalPages, totalItems

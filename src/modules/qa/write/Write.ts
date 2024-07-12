@@ -42,6 +42,7 @@ export class Write extends BaseQa {
         if (!qaManager) throw new QaNotInThisChannelError(this.i)
         const {channelId, title, description, text} = qaManager
         const channel = this.getGuildChannel(channelId) as TextChannel
+        if (!channel) return;
         await this.deleteMessages(channel)
         const embed = this.embed(this.text(text, this.user), valueDescription)
         if (valueTitle) embed.setTitle(valueTitle)

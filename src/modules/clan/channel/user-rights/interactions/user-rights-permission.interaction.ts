@@ -19,6 +19,7 @@ class UserRightsPermissionInteraction extends PublicHandler {
         const bigValue = values.map(i => PermissionFlagsBits[i])
             .reduce((prev, current) => prev | current, BigInt(0))
         channels.map(channelId => interaction.guild.channels.resolve(channelId) as (TextChannel | VoiceChannel))
+            .filter(channel => channel)
             .map(channel => RightsUtils.updateUserRights(channel, right, bigValue,
                 right === UserRight.everyone ? OverwriteType.Role : OverwriteType.Member))
         const embed = (await clanTitleEmbed(clan, interaction.t('clan:clan')))

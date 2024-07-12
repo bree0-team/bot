@@ -13,6 +13,7 @@ class MLSelectedInteraction extends PublicHandler {
         const {clan} = await allCheck(interaction)
         const {limit} = data
         values.map(channelId => interaction.guild.channels.resolve(channelId) as VoiceChannel)
+            .filter(channel => channel)
             .map(channel => channel.edit({userLimit: limit}))
         const embed = (await clanTitleEmbed(clan, interaction.t('clan:clan')))
             .setDescription(interaction.t('clan:channel:members_limit:set', {limit}))

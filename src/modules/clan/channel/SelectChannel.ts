@@ -19,7 +19,7 @@ export class SelectChannel extends BaseClan {
         const channelManager = ClanChannelManager.findAllByClanId(clanId)
         let channels = channelManager
             .map(i => {
-                const channel = this.guild.channels.resolve(i.channelId)
+                const channel = this.getGuildChannel(i.channelId)
                 if (!channel) ClanChannelManager.remove(i.channelId)
                 return channel
             })

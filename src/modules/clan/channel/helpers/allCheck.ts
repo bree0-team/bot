@@ -1,4 +1,5 @@
 import {CategoryChannel, RepliableInteraction} from 'discord.js'
+import {UnknownChannelError} from '../../../../errors/notfound.js'
 import SettingsClanChannelManager from '../../../settings/clan/channel/managers/settings-clan-channel.manager.js'
 import {AllChannelRights} from '../../../settings/clan/channel/types/rights.type.js'
 import {ClanYouNotExistError} from '../../errors/clan.error.js'
@@ -19,9 +20,9 @@ export const allCheck = async (interaction: RepliableInteraction): Promise<AllCh
     if (!RankUtils.checkMember(interaction.guildId, interaction.user.id)) throw new ClanYouNotExistError(interaction)
     const member = await channelRankAccess(interaction, AllChannelRights.voiceChannel)
     const channelManager = await SettingsClanChannelManager.getOne(interaction.guildId)
-    const category = (channelManager.categoryId &&
-        interaction.guild.channels.resolve(channelManager.categoryId)) as CategoryChannel
-    if (!category) throw new ClanChannelMissingCategoryError(interaction)
+    if (!channelManager.categoryId) throw new ClanChannelMissingCategoryError(interaction)
+    const category = interaction.guild.channels.resolve(channelManager.categoryId) as CategoryChannel
+    if (!category) throw new UnknownChannelError(interaction)
     const clan = ClanManager.findOne(member.clanId)
     return {clan, member, category}
 }

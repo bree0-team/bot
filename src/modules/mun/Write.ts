@@ -53,6 +53,7 @@ export class Write extends BaseMun {
         const {channelId, title, description} = await SettingsMunManager.getOne(this.guildId)
         if (channelId !== this.channelId) throw new MunNotInThisChannelError(this.i)
         const channel = this.getGuildChannel(channelId) as TextChannel
+        if (!channel) return;
         await this.deleteMessages(channel)
         const member = this.i.member as GuildMember
         const embed = this.embed(member, member.displayName, value)

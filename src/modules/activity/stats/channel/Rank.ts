@@ -1,4 +1,5 @@
 import {bold, inlineCode, InteractionReplyOptions, TextChannel, time, userMention, VoiceChannel} from 'discord.js'
+import {UnknownChannelError} from '../../../../errors/notfound.js'
 import {days, users} from '../../../../helpers/counts.js'
 import {EmbedField} from '../../../../helpers/embed.js'
 import {InteractionReplyComponent} from '../../../../services/interaction.js'
@@ -21,6 +22,7 @@ export class Rank extends BaseChannel {
             [_days, (text ? this.getTexts : this.getVoices)(channelId, data).items.length])
     async run(channelId: ChannelId, after: string = 'month') {
         const channel = this.getGuildChannel(channelId)
+        if (!channel) throw new UnknownChannelError(this.i)
         const lookBack = this.getLookBack(after)
         const text = !channel.isVoiceBased()
         const serverLookBack = (text ? this.messages : this.duration)(this.getCounts(text, channelId, lookBack))

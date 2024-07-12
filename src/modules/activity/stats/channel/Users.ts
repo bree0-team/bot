@@ -1,4 +1,5 @@
 import {inlineCode, InteractionReplyOptions, TextChannel, userMention, VoiceChannel} from 'discord.js'
+import {UnknownChannelError} from '../../../../errors/notfound.js'
 import {InteractionReplyComponent} from '../../../../services/interaction.js'
 import {ChannelId} from '../../../../types/base.type.js'
 import {PageData} from '../../../../types/data.type.js'
@@ -11,6 +12,7 @@ const limit: number = 10
 export class Users extends BaseChannel {
     async run(channelId: ChannelId, after: string = 'month', page: number = 0) {
         const channel = this.getGuildChannel(channelId)
+        if (!channel) throw new UnknownChannelError(this.i)
         const lookBack = this.getLookBack(after)
         const text = !channel.isVoiceBased()
         const {items, pages} = (text

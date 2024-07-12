@@ -76,10 +76,7 @@ class ChannelSendInteraction extends PrivateHandler {
     }
     protected async run({interaction, data}: ButtonHandlerOptions<RankAccessData>) {
         const channelManager = await SettingsClanChannelManager.getOne(interaction.guildId)
-        const categoryChannel = channelManager.categoryId &&
-            interaction.guild.channels.resolve(channelManager.categoryId)
-
-        if (!categoryChannel) {
+        if (!channelManager.categoryId) {
             const embed = GuildEmbed(interaction.guildId)
                 .setDescription(interaction.t('settings:clan:channel:category:not_set'))
             return ConfirmButton({
@@ -89,9 +86,13 @@ class ChannelSendInteraction extends PrivateHandler {
             })
         }
 
-        let textChannel = (channelManager.channelId &&
-            interaction.guild.channels.resolve(channelManager.channelId)) as TextChannel
+        const categoryChannel = interaction.guild.channels.resolve(channelManager.categoryId)
+        if (!categoryChannel) {
+            await SettingsClanChannelManager.createOrUpdate(interaction.guildId, {categoryId: undefined})
+            return this.run({interaction, data})
+        }
 
+        let textChannel = interaction.guild.channels.resolve(channelManager.channelId) as TextChannel
         if (!textChannel) {
             textChannel = await InteractionUtils.createChannel(interaction, {
                 type: ChannelType.GuildText,

@@ -15,7 +15,9 @@ export function description(interaction: RepliableInteraction, data: BannerData)
             interaction.t('statuses:' + i)).join(', ')
         case BannerType.Roles: return data.roleTypes.map(i =>
             interaction.t('settings:banner:roles:types:' + i)).join(', ')
-        case BannerType.Voice: return data.channels.map(i =>
-            interaction.guild.channels.resolve(i).name).slice(0, 3).join(', ')
+        case BannerType.Voice: return data.channels.map(i => interaction.guild.channels.resolve(i))
+            .filter(i => i)
+            .map(i => i.name)
+            .slice(0, 3).join(', ')
     }
 }
