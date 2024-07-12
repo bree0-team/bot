@@ -18,12 +18,10 @@ import {
     TextBasedChannel,
     User
 } from 'discord.js'
-import _ from 'lodash'
 import {defaultLocale} from '../helpers/defaults.js'
 import LocaleManager from '../modules/locale/managers/locale.manager.js'
 import {ITranslate} from '../services/i18n.js'
 import {
-    ActionButtonRow,
     BackButton,
     ConfirmButton,
     ConfirmOptions,
