@@ -12,7 +12,7 @@ class MlEditInteraction extends PublicHandler {
         await allCheck(interaction)
         const limit = fields.getTextInputValue(CLAN_CHANNEL_ML_MODAL_VALUE)
         const finalLimit = _.toLength(limit) as number
-        if (99 > finalLimit && finalLimit < 0) throw new ClanChannelLimitMoreLessError(interaction)
+        if (0 > finalLimit || finalLimit > 99) throw new ClanChannelLimitMoreLessError(interaction)
         const data: ChannelMemberLimitData = {limit: finalLimit}
         return new SelectChannel(interaction).run(CLAN_CHANNEL_ML_SELECT, ChannelType.GuildVoice, data)
     }

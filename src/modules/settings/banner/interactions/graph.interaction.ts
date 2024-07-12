@@ -28,9 +28,9 @@ class GraphInteraction extends PrivateHandler {
         const y = _.toInteger(fields.getTextInputValue(ITEM_EDIT_MODAL_Y)) as number
         const scale = _.toInteger(fields.getTextInputValue(ITEM_EDIT_MODAL_SCALE)) as number
         const valueColor = fields.getTextInputValue(ITEM_EDIT_MODAL_COLOR)
-        if (defaultMinX > x && x > defaultMaxX) throw new GraphXMinMaxError(interaction)
-        if (defaultMinY > y && y > defaultMaxY) throw new GraphYMinMaxError(interaction)
-        if (defaultMinScale > scale && scale > defaultMaxScale) throw new GraphScaleMinMaxError(interaction)
+        if (defaultMinX > x || x > defaultMaxX) throw new GraphXMinMaxError(interaction)
+        if (defaultMinY > y || y > defaultMaxY) throw new GraphYMinMaxError(interaction)
+        if (defaultMinScale > scale || scale > defaultMaxScale) throw new GraphScaleMinMaxError(interaction)
         const {itemId} = data
         const bannerManager = SettingsBannerDataManager
             .findOne<BannerData>(itemId)

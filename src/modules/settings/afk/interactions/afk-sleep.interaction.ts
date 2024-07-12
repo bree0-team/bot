@@ -10,7 +10,7 @@ class AfkSleepInteraction extends PrivateHandler {
     protected async runFields({interaction, fields}: ModalHandlerOptions) {
         const value = fields.getTextInputValue(AFK_SLEEP_EDIT_MODAL_VALUE)
         const sleep = _.toLength(value) as number
-        if (sleep < defaultMinSleep || sleep > defaultMaxSleep) throw new AfkSleepMinMaxError(interaction)
+        if (defaultMinSleep > sleep || sleep > defaultMaxSleep) throw new AfkSleepMinMaxError(interaction)
         await SettingsAfkManager.createOrUpdate(interaction.guildId, {sleep})
         return new Afk(interaction).run()
     }
