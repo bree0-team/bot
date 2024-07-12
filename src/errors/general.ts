@@ -12,9 +12,6 @@ export class CustomError extends Error {
     }
 }
 
-export class NoRightsError extends CustomError {
-}
-
 export class CommandsCooldownError extends CustomError {
     constructor(interaction: RepliableInteraction, time: string) {
         super(interaction.t('common:error:cooldown', {time}))
