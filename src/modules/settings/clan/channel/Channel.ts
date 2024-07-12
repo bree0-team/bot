@@ -27,7 +27,7 @@ import {ClanRank} from '../../../clan/enums/ClanRank.enum.js'
 import {MAIN_SELECT} from '../../enums/CustomIds.enum.js'
 import {SettingsClanSelectValuesCustomIds} from '../enums/CustomIds.enum.js'
 import {BaseSettingsClan} from '../structures/BaseSettingsClan.js'
-import {ChannelRankAccessData} from '../types/data.type.js'
+import {RankAccessData} from '../types/data.type.js'
 import {
     CHANNEL_CATEGORY,
     CHANNEL_EDIT_LIMIT,
@@ -81,7 +81,7 @@ export class Channel extends BaseSettingsClan {
         )
         return StringSelectRowBuilder(select)
     }
-    async run(rank?: ClanRank, rights?: AllChannelAccess[]) {
+    async run(rank?: ClanRank) {
         const channelManager = await SettingsClanChannelManager.getOne(this.guildId)
         const {
             owner,
@@ -120,11 +120,11 @@ export class Channel extends BaseSettingsClan {
             this.select(SettingsClanSelectValuesCustomIds.Channel),
             this.categoryRow(channelManager.categoryId),
             this.rankRow(rank),
-            this.rightsRow(rank, rights),
+            this.rightsRow(rank, entries[rank?.toLowerCase()]),
             this.back(MAIN_SELECT, buttons)
         ]
         const replyData: InteractionReplyOptions = {embeds: [embed], components}
-        const data: ChannelRankAccessData = {rank, rights}
+        const data: RankAccessData = {rank}
         return this.reply({replyData, data})
     }
 }

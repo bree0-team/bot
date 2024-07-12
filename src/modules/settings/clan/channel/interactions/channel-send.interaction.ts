@@ -5,7 +5,7 @@ import {GuildEmbed} from '../../../../../helpers/embed.js'
 import {ActionButtonRow, ButtonRowBuilder, ConfirmButton} from '../../../../../services/interaction.js'
 import {InteractionUtils} from '../../../../../utils/interaction.js'
 import {ClanChannelButtonCustomIds} from '../../../../clan/channel/enums/CustomIds.enum.js'
-import {ChannelRankAccessData} from '../../types/data.type.js'
+import {RankAccessData} from '../../types/data.type.js'
 import {Channel} from '../Channel.js'
 import {ClanChannelEmoji} from '../enums/ClanChannelEmoji.enum.js'
 import {
@@ -74,7 +74,7 @@ class ChannelSendInteraction extends PrivateHandler {
         ]
         return [ButtonRowBuilder(...buttons1row), ButtonRowBuilder(...buttons2row)]
     }
-    protected async run({interaction, data}: ButtonHandlerOptions<ChannelRankAccessData>) {
+    protected async run({interaction, data}: ButtonHandlerOptions<RankAccessData>) {
         const channelManager = await SettingsClanChannelManager.getOne(interaction.guildId)
         const categoryChannel = channelManager.categoryId &&
             interaction.guild.channels.resolve(channelManager.categoryId)
@@ -116,8 +116,8 @@ class ChannelSendInteraction extends PrivateHandler {
             ].join('\n'))
         const message = await textChannel.send({embeds: [embed], components: this.buttons()})
         await SettingsClanChannelManager.createOrUpdate(interaction.guildId, {messageId: message.id})
-        const {rank, rights} = data
-        return new Channel(interaction).run(rank, rights)
+        const {rank} = data
+        return new Channel(interaction).run(rank)
     }
 }
 
