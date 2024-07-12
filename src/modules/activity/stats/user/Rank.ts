@@ -31,7 +31,7 @@ export class Rank extends BaseUser {
         .map(([_days, data]) => [_days, this.getCounts(text, userId, data)])
     async run(userId: UserId, after: string = 'month') {
         const user = this.getClientUser(userId)
-        const member = this.getGuildMember(userId)
+        const member = await this.fetchGuildMember(userId)
         const lookBack = this.getLookBack(after)
         const embed = this.embed(user, after)
             .setFields(

@@ -152,7 +152,6 @@ export class BaseStructure {
     )
 
     protected getClientUser = (userId: UserId): User | null => this.client.users.resolve(userId)
-    protected getGuildMember = (userId: UserId): GuildMember | null => this.guild.members.resolve(userId)
     protected getGuildChannel = (channelId: ChannelId): GuildBasedChannel | null =>
         this.guild.channels.resolve(channelId)
     protected getGuildRole = (roleId: RoleId): Role | null => this.guild.roles.resolve(roleId)
