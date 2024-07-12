@@ -29,7 +29,7 @@ class DeleteInteraction extends PrivateHandler {
         await interaction.editReply({embeds: [embed], components: []})
         if (clanManager.roleId) {
             const role = interaction.guild.roles.resolve(clanManager.roleId)
-            role.delete()
+            if (role) role.delete()
         }
         ClanChannelManager.findAllByClanId(clanId)
             .map(i => interaction.guild.channels.resolve(i.channelId))

@@ -21,7 +21,8 @@ export class Members extends BaseStructure {
     }
     async page(roleId: RoleId, page: number = 0) {
         if (this.guild.members.cache.size !== this.guild.memberCount) await this.guild.members.fetch()
-        const role = this.guild.roles.resolve(roleId)
+        const role = this.getGuildRole(roleId)
+        if (!role) throw new UnknownRoleError(this.i)
         const members = role.members.map(i => i)
         const membersString = members.join('\n')
         let embeds: EmbedBuilder[];
