@@ -1,4 +1,5 @@
 import {EmbedBuilder, GuildMember, InteractionReplyOptions, Role} from 'discord.js'
+import _ from 'lodash'
 import {UnknownRoleError} from '../../errors/notfound.js'
 import {GuildEmbed, EmbedField} from '../../helpers/embed.js'
 import {BaseStructure} from '../../structures/base.js'
@@ -12,7 +13,7 @@ import {MembersData} from './types/data.type.js'
 export class Members extends BaseStructure {
     getField = (data: GuildMember[]): EmbedField => EmbedField('\u200B', data.join('\n'), true)
     getFields = (members: GuildMember[], size: number): EmbedField[] =>
-        this.chunk(members, size).map(item => this.getField(item))
+        _.chunk(members, size).map(item => this.getField(item))
     async run() {
         const role = this.getRole('role')
         if (role.id === this.guildId) throw new MembersEveryoneError(this.i)
@@ -30,12 +31,12 @@ export class Members extends BaseStructure {
             .setTitle(this.t('members:title', {role: role.name}))
             .setFooter({text: this.t('members:size', {size: role.members.size})})
         if (role.color) embed.setColor(role.color)
-        if (membersString.length > 6000) embeds = this.chunk(this.getFields(members, 20), 6)
+        if (membersString.length > 6000) embeds = _.chunk(this.getFields(members, 20), 6)
             .map(item => new EmbedBuilder({...embed.data, fields: item}))
         else if (membersString.length > 1024) embeds = [embed.addFields(this.getFields(members, 15))];
         else {
             if (membersString.length) {
-                const membersList = this.chunk(members, 10);
+                const membersList = _.chunk(members, 10);
                 if (membersList.length > 1) embeds = [embed.addFields(this.getFields(members, 10))];
                 else embeds = [embed.setDescription(membersString)];
             } else {

@@ -82,7 +82,6 @@ export class BaseStructure {
     }
 
     run(...items: any[]) {}
-    protected chunk = <Type> (item: Type, size: number): Type[] => _.chunk(item, size)
 
     protected reply = (
         options: ReplyOptions

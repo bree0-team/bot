@@ -9,6 +9,7 @@ import {
     StringSelectMenuOptionBuilder,
     time
 } from 'discord.js'
+import _ from 'lodash'
 import {DiscordLimits} from '../../enums/DiscordLimits.enum.js'
 import {UnknownMemberError} from '../../errors/notfound.js'
 import {EmbedField, GuildEmbed} from '../../helpers/embed.js'
@@ -84,7 +85,7 @@ export class Roles extends BaseStructure {
             userId, roles: rolesAccess.map(i => i.id), page, size: rolesAccess.length
         }
         if (rolesAccess.length > limit) {
-            const roles = this.chunk(rolesAccess, limit)
+            const roles = _.chunk(rolesAccess, limit)
             Object.assign(data, {roles: roles[page].map(i => i.id), size: roles.length})
             components.push(
                 this.rolesRow(roles[page], guildMemberRoles),
