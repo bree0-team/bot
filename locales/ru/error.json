@@ -12,7 +12,7 @@
     "unknown_emoji": "Неизвестный Эмодзи",
     "unknown_voice": "Вас нет в голосовом канале",
     "unknown_role": "Неизвестная Роль",
-    "unknown_channel": "Неизвестный канал"
+    "unknown_channel": "Неизвестный Канал"
   },
   "servererror": {
     "valid_url": "Эта ссылка не валидна"
