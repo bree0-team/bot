@@ -2,8 +2,8 @@ import fs from 'node:fs'
 import {dirname, join} from 'path'
 import {fileURLToPath} from 'url'
 
-const __filename = fileURLToPath(import.meta.url)
-export const __dirname = dirname(join(__filename, '..'))
+const __filename = import.meta.url
+export const __dirname = (url: string | URL) => dirname(fileURLToPath(url))
 
 export function getFiles(dir: string, files: string[] = []): string[] {
     const fileList = fs.readdirSync(dir)
@@ -25,7 +25,7 @@ export function getFiles(dir: string, files: string[] = []): string[] {
  * @return {string[]}
  */
 export function getFilteredFiles(pathName: string, filesName: string = ''): string[] {
-    const filesPath = join(__dirname, pathName)
+    const filesPath = join(__dirname(__filename), '..', pathName)
     return getFiles(filesPath).filter(file => file.endsWith(`${filesName}.js`))
 }
 

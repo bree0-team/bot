@@ -34,7 +34,7 @@ interface TextOptions extends Omit<GraphData, 'type' | 'position'>{
 }
 
 export class BannerImage {
-    private readonly grid = join(__dirname, 'modules', 'banner', 'assets', 'grid.png')
+    private readonly grid = join(__dirname(import.meta.url), 'assets', 'grid.png')
     private readonly canvas = createCanvas(defaultMaxX*2, defaultMaxY*2)
     private readonly context = this.canvas.getContext('2d')
     constructor(private readonly guild: Guild) {}

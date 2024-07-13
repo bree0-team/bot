@@ -22,11 +22,12 @@ import {
 } from 'discord.js'
 import {readdirSync, readFileSync} from 'fs'
 import fs from 'node:fs'
+import {join} from 'path'
 import {AppLocale} from '../modules/locale/helpers/consts.js'
 import {__dirname} from '../services/file.js'
 import {SplitUtils} from '../utils/split.js'
 
-const localePath = `${__dirname}/../locales`
+const localePath = join(__dirname(import.meta.url), '..', '..', 'locales')
 
 export type CommandName = string
 export type SubcommandName = string

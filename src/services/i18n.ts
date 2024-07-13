@@ -1,11 +1,12 @@
 import {readdirSync, readFileSync} from 'fs'
 import fs from 'node:fs'
+import {join} from 'path'
 import {defaultLocale} from '../helpers/defaults.js'
 import {AppLocale} from '../modules/locale/helpers/consts.js'
 import {SplitUtils} from '../utils/split.js'
 import {__dirname} from './file.js'
 
-const localePath = __dirname + `/../locales`
+const localePath = join(__dirname(import.meta.url), '..', '..', 'locales')
 
 type FileName = string
 type ITranslateLine = string | [string, string, string]

@@ -96,7 +96,7 @@ export class Channel extends BaseSettingsClan {
                 const values = value.map(i => this.t('settings:clan:channel:options:' + i))
                 return EmbedField(
                     this.t('clan:' + name.toUpperCase()),
-                    values ? unorderedList(values) : this.t('no')
+                    values.length ? unorderedList(values) : this.t('no')
                 )
             })
         const embed = this.embed()
