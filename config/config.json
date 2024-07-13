@@ -18,19 +18,15 @@
     }
   },
   "rateLimiting": {
-    "commands": {
-      "amount": 10,
-      "interval": 30
-    },
     "buttons": {
       "amount": 10,
       "interval": 30
     },
-    "triggers": {
+    "selects": {
       "amount": 10,
       "interval": 30
     },
-    "reactions": {
+    "modals": {
       "amount": 10,
       "interval": 30
     }
