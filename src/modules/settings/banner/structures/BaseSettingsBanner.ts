@@ -7,6 +7,7 @@ import {
     StringSelectMenuBuilder,
     StringSelectMenuOptionBuilder
 } from 'discord.js'
+import {AlignEmoji} from '../../../../enums/AlignEmoji.enum.js'
 import {EmbedField} from '../../../../helpers/embed.js'
 import {
     ActionButtonRow,
@@ -18,10 +19,10 @@ import {
 import {SplitUtils} from '../../../../utils/split.js'
 import {BannerImage} from '../../../banner/BannerImage.js'
 import {BaseSettings} from '../../structures/BaseSettings.js'
-import {ITEM_CENTER, ITEM_LEFT, ITEM_RIGHT} from '../enums/CustomIds.enum.js'
+import {ITEM_BOTTOM, ITEM_CENTER, ITEM_LEFT, ITEM_MIDDLE, ITEM_RIGHT, ITEM_TOP} from '../enums/CustomIds.enum.js'
 import {description} from '../helpers/description.js'
 import {SettingsBannerDataModel} from '../models/settings-banner-data.model.js'
-import {BannerType, PositionType} from '../types/banner.type.js'
+import {BannerType, AlignType, ValignType} from '../types/banner.type.js'
 
 export abstract class BaseSettingsBanner extends BaseSettings {
     protected get embed(): EmbedBuilder {
@@ -63,16 +64,29 @@ export abstract class BaseSettingsBanner extends BaseSettings {
         else select.setDisabled(true).setOptions(StringEmptyOption)
         return StringSelectRowBuilder(select)
     }
-    protected positionRow(position: PositionType): ActionButtonRow {
-        const customIds: Record<PositionType, string> = {
-            [PositionType.Left]: ITEM_LEFT,
-            [PositionType.Center]: ITEM_CENTER,
-            [PositionType.Right]: ITEM_RIGHT
+    protected alignRow(position: AlignType): ActionButtonRow {
+        const items: Record<AlignType, [string, AlignEmoji]> = {
+            [AlignType.Left]: [ITEM_LEFT, AlignEmoji.Left],
+            [AlignType.Center]: [ITEM_CENTER, AlignEmoji.Center],
+            [AlignType.Right]: [ITEM_RIGHT, AlignEmoji.Right]
         }
-        const buttons = Object.values(PositionType).map(i => new ButtonBuilder({
-            customId: customIds[i],
+        const buttons = Object.values(AlignType).map(i => new ButtonBuilder({
+            customId: items[i][0],
             style: ButtonStyle[position === i ? 'Primary' : 'Secondary'],
-            label: this.t('settings:banner:position:' + i)
+            emoji: items[i][1]
+        }))
+        return ButtonRowBuilder(...buttons)
+    }
+    protected valignRow(position: ValignType): ActionButtonRow {
+        const items: Record<ValignType, [string, AlignEmoji]> = {
+            [ValignType.Top]: [ITEM_TOP, AlignEmoji.Top],
+            [ValignType.Middle]: [ITEM_MIDDLE, AlignEmoji.Middle],
+            [ValignType.Bottom]: [ITEM_BOTTOM, AlignEmoji.Bottom]
+        }
+        const buttons = Object.values(ValignType).map(i => new ButtonBuilder({
+            customId: items[i][0],
+            style: ButtonStyle[position === i ? 'Primary' : 'Secondary'],
+            emoji: items[i][1]
         }))
         return ButtonRowBuilder(...buttons)
     }

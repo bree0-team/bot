@@ -11,10 +11,16 @@ export enum BannerType {
     Voice = 'voice'
 }
 
-export enum PositionType {
+export enum AlignType {
     Left = 'left',
     Center = 'center',
     Right = 'right'
+}
+
+export enum ValignType {
+    Top = 'top',
+    Middle = 'middle',
+    Bottom = 'bottom'
 }
 
 export interface GraphData {
@@ -23,7 +29,8 @@ export interface GraphData {
     y: number
     scale: number
     color: number
-    position: PositionType
+    align: AlignType
+    valign: ValignType
 }
 
 export enum BannerChannelsType {

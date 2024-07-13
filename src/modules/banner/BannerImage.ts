@@ -10,6 +10,7 @@ import {defaultMaxX, defaultMaxY} from '../settings/banner/constants/defaults.js
 import SettingsBannerDataManager from '../settings/banner/managers/settings-banner-data.manager.js'
 import SettingsBannerManager from '../settings/banner/managers/settings-banner.manager.js'
 import {
+    AlignType,
     BannerChannelsData,
     BannerChannelsType,
     BannerDateTimeData,
@@ -24,13 +25,18 @@ import {
     BannerVoiceData,
     DateTimeConst,
     GraphData,
-    PositionType
+    ValignType
 } from '../settings/banner/types/banner.type.js'
 import SettingsGeneralManager from '../settings/general/managers/settings-general.manager.js'
 import {BannerImageManager} from './managers/banner-image.manager.js'
 
-interface TextOptions extends Omit<GraphData, 'type' | 'position'>{
+interface TextOptions extends Omit<GraphData, 'type' | 'align' | 'valign'>{
     text: string
+}
+
+interface TextSize {
+    width: number
+    height: number
 }
 
 export class BannerImage {
@@ -58,7 +64,8 @@ export class BannerImage {
         dataManager.map(i => i.data)
             .map(i => {
                 let count: string;
-                let position: number;
+                let align: number;
+                let valign: number;
                 const {scale, color} = i
                 let {x, y} = i
                 x += defaultMaxX
@@ -75,12 +82,19 @@ export class BannerImage {
                     case BannerType.Roles: count = this.roles(i); break
                     case BannerType.Voice: count = this.voice(i); break
                 }
-                switch (i.position) {
-                    case PositionType.Left: position = x; break
-                    case PositionType.Center: position = (x - this.widthSize(count, scale) / 2); break
-                    case PositionType.Right: position = (x - this.widthSize(count, scale)); break
+                const {width, height} = this.textSize(count, scale)
+                switch (i.align) {
+                    case AlignType.Left: align = x; break
+                    case AlignType.Center: align = (x - width / 2); break
+                    case AlignType.Right: align = (x - width); break
                 }
-                return this.text({text: count, x: position, y, scale, color})
+                switch (i.valign) {
+                    case ValignType.Top: valign = y; break
+                    case ValignType.Middle: valign = (y + height / 2); break
+                    case ValignType.Bottom: valign = (y + height); break
+                }
+                console.log(valign)
+                return this.text({text: count, x: align, y: valign, scale, color})
             })
         const attachment = await this.canvas.encode('png')
         BannerImageManager.set(this.guild.id, {attachment, grid, updatedAt: new Date()})
@@ -97,9 +111,12 @@ export class BannerImage {
         this.context.fillStyle = '#' + SplitUtils.decimalToHex(color)
         return this.context.fillText(text, x, y)
     }
-    private widthSize(text: string, scale: number): number {
+    private textSize(text: string, scale: number): TextSize {
         this.context.font = `bold ${scale}px sans-serif`
-        return this.context.measureText(text).width as number
+        const measure = this.context.measureText(text)
+        const {width, actualBoundingBoxAscent, actualBoundingBoxDescent} = measure
+        const height = actualBoundingBoxAscent + actualBoundingBoxDescent
+        return {width, height}
     }
     private async request(url: string) {
         const { body } = await request(url)

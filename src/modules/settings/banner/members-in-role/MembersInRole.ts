@@ -32,7 +32,7 @@ export class MembersInRole extends BaseSettingsBannerStatus {
             .findOne<BannerMembersInRoleData>(itemId)
         const {
             roles, statuses, x, y, scale,
-            color, position
+            color, align, valign
         } = bannerManager.data
         // todo
         const embed = this.embedWithFields(x, y, scale, color)
@@ -48,7 +48,8 @@ export class MembersInRole extends BaseSettingsBannerStatus {
         const components: InteractionReplyComponent[] = [
             this.rolesRow(roles),
             this.statusesRow(STATUS_SELECT, statuses),
-            this.positionRow(position),
+            this.alignRow(align),
+            this.valignRow(valign),
             this.back(ITEMS_SELECT, [
                 this.editButton(ITEM_EDIT_GRAPH),
                 this.deleteButton(ITEM_DELETE)

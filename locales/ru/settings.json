@@ -238,11 +238,6 @@
       "color": "Цвет",
       "placeholder": "Минимум {min}, Максимум {max}"
     },
-    "position": {
-      "left": "От левого края",
-      "center": "По центру",
-      "right": "От правого края"
-    },
     "channels": {
       "description": "Типы каналов",
       "types": {

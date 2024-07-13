@@ -1,4 +1,5 @@
 import {
+    AlignType,
     BannerChannelsData,
     BannerChannelsType,
     BannerData,
@@ -13,7 +14,7 @@ import {
     BannerType,
     BannerVoiceData,
     DateTimeConst,
-    PositionType
+    ValignType
 } from '../types/banner.type.js'
 
 export const defaultEnabled: boolean = true
@@ -27,13 +28,15 @@ export const defaultX: number = 0
 export const defaultY: number = 0
 export const defaultScale: number = defaultMaxScale/2
 export const defaultColor: number = 16777215
-export const defaultPosition: PositionType = PositionType.Left
+export const defaultAlign: AlignType = AlignType.Left
+export const defaultValign: ValignType = ValignType.Top
 const defaultGraphData: Omit<BannerData, 'type'> = {
     x: defaultX,
     y: defaultY,
     scale: defaultScale,
     color: defaultColor,
-    position: defaultPosition
+    align: defaultAlign,
+    valign: defaultValign
 }
 export const defaultChannelsData: BannerChannelsData = {
     type: BannerType.Channels,

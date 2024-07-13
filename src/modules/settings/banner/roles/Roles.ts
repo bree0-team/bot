@@ -35,7 +35,8 @@ export class Roles extends BaseSettingsBanner {
         const bannerManager = SettingsBannerDataManager
             .findOne<BannerRolesData>(itemId)
         const {
-            roleTypes, x, y, scale, color, position
+            roleTypes, x, y, scale, color, align,
+            valign
         } = bannerManager.data
         const embed = this.embedWithFields(x, y, scale, color)
             .setDescription([
@@ -46,7 +47,8 @@ export class Roles extends BaseSettingsBanner {
         const attachment = await this.addEmbedAttachment(embed)
         const components: InteractionReplyComponent[] = [
             this.rolesRow(roleTypes),
-            this.positionRow(position),
+            this.alignRow(align),
+            this.valignRow(valign),
             this.back(ITEMS_SELECT, [
                 this.editButton(ITEM_EDIT_GRAPH),
                 this.deleteButton(ITEM_DELETE)
