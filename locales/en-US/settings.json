@@ -238,11 +238,6 @@
       "color": "Color",
       "placeholder": "Minimum {min}, Maximum {max}"
     },
-    "position": {
-      "left": "From the left edge",
-      "center": "Centered",
-      "right": "From the right edge"
-    },
     "channels": {
       "description": "Channel Types",
       "types": {
