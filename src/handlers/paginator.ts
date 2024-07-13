@@ -6,9 +6,9 @@ import {
     TextInputStyle
 } from 'discord.js'
 import _ from 'lodash'
-import {PaginatorMaxPageError} from '../errors/general.js'
 import {Modal} from '../services/interaction.js'
 import {InteractionData, PageData} from '../types/data.type.js'
+import {PaginatorMaxPageError} from './errors/interaction.error.js'
 import {
     ButtonHandlerOptions,
     InteractionHandler,

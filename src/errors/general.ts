@@ -18,12 +18,6 @@ export class CommandsCooldownError extends CustomError {
     }
 }
 
-export class PaginatorMaxPageError extends CustomError {
-    constructor(interaction: RepliableInteraction) {
-        super(interaction.t('common:error:paginator_max_page'))
-    }
-}
-
 export async function catchError(interaction: RepliableInteraction, error: Error) {
     const {user} = interaction
     const embed = new EmbedBuilder()
