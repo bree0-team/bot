@@ -89,9 +89,9 @@ export class BannerImage {
                     case AlignType.Right: align = (x - width); break
                 }
                 switch (i.valign) {
-                    case ValignType.Top: valign = y; break
+                    case ValignType.Top: valign = (y + height); break
                     case ValignType.Middle: valign = (y + height / 2); break
-                    case ValignType.Bottom: valign = (y + height); break
+                    case ValignType.Bottom: valign = y; break
                 }
                 return this.text({text: count, x: align, y: valign, scale, color})
             })
