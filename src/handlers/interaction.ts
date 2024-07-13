@@ -5,11 +5,29 @@ import {
     ModalSubmitFields,
     ModalSubmitInteraction
 } from 'discord.js'
+import {RateLimiter} from 'discord.js-rate-limiter'
+import {createRequire} from 'node:module'
 import {CustomError} from '../errors/general.js'
 import InteractionManager from '../modules/interaction/managers/interaction.manager.js'
 import SettingsInteractionManager from '../modules/settings/interaction/managers/settings-interaction.manager.js'
 import {CustomId} from '../types/base.type.js'
 import {InteractionData} from '../types/data.type.js'
+import {InteractionRateLimitError} from './errors/interaction.error.js'
+
+const require = createRequire(import.meta.url)
+const Config = require('../../config/config.json')
+const buttonRateLimit = new RateLimiter(
+    Config.rateLimiting.buttons.amount,
+    Config.rateLimiting.buttons.interval * 1000
+)
+const selectRateLimit = new RateLimiter(
+    Config.rateLimiting.selects.amount,
+    Config.rateLimiting.selects.interval * 1000
+)
+const modalRateLimit = new RateLimiter(
+    Config.rateLimiting.modals.amount,
+    Config.rateLimiting.modals.interval * 1000
+)
 
 export interface ButtonHandlerOptions<Data extends InteractionData = InteractionData> {
     interaction: ButtonInteraction
@@ -83,13 +101,16 @@ export abstract class InteractionHandler {
         const data = await this.check(interaction)
         await this.$defer(interaction)
         await this.$delete(interaction)
-        if (interaction.isButton()) return this.run({interaction, data})
-        else if (interaction.isAnySelectMenu()) return this.runValues({
-            interaction, data, values: interaction.values
-        })
-        else if (interaction.isModalSubmit()) return this.runFields({
-            interaction, data, fields: interaction.fields
-        })
+        if (interaction.isButton()) {
+            if (buttonRateLimit.take(interaction.user.id)) throw new InteractionRateLimitError(interaction)
+            return this.run({interaction, data})
+        } else if (interaction.isAnySelectMenu()) {
+            if (selectRateLimit.take(interaction.user.id)) throw new InteractionRateLimitError(interaction)
+            return this.runValues({interaction, data, values: interaction.values})
+        } else if (interaction.isModalSubmit()) {
+            if (modalRateLimit.take(interaction.user.id)) throw new InteractionRateLimitError(interaction)
+            return this.runFields({interaction, data, fields: interaction.fields})
+        }
     }
     protected run(options: ButtonHandlerOptions): void {}
     protected runValues(options: SelectManyValuesHandlerOptions): void {
