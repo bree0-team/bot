@@ -1,6 +1,6 @@
 import {SelectBuilder} from '../../../../builders/select.js'
+import {SelectEmoji} from '../../../../enums/SelectEmoji.enum.js'
 import {GENERAL_SELECT, SettingsGeneralSelectValuesCustomIds} from '../enums/CustomIds.enum.js'
-import {SelectEmoji} from '../enums/SelectEmoji.enum.js'
 import {EmbedColor} from './EmbedColor.js'
 
 export default new SelectBuilder(GENERAL_SELECT, EmbedColor, {
