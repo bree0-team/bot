@@ -1,18 +1,19 @@
 import {Client, GatewayIntentBits} from 'discord.js'
 import {config} from 'dotenv'
 import _ from 'lodash'
+import {createRequire} from 'node:module'
 import {SyncOptions} from 'sequelize/types/sequelize.js'
 import {SubcommandService} from './builders/subcommands.js'
 import {delay} from './helpers/delay.js'
 import {CommandRegistration, ProcessArgs} from './services/command-registration.js'
 import {importModels, sequelize} from './services/database.js'
-import {require} from './services/file.js'
 import {LocalizationManager} from './services/i18n.js'
 import {Loader} from './services/loader.js'
 import {Logger, Logs} from './services/logger.js'
 
 config()
-const Debug = require('../../config/debug.json')
+const require = createRequire(import.meta.url)
+const Debug = require('../config/debug.json')
 
 async function start() {
     const client = new Client({

@@ -1,12 +1,12 @@
 import {fetchRecommendedShardCount, ShardingManager} from 'discord.js'
 import {config} from 'dotenv'
 import _ from 'lodash'
+import {createRequire} from 'node:module'
 import {Logger, Logs} from './services/logger.js'
-import {require} from './services/file.js'
 
 config()
-
-const Config = require('../../config/config.json')
+const require = createRequire(import.meta.url)
+const Config = require('../config/config.json')
 
 async function start() {
     Logger.info(Logs.info.appStarted);

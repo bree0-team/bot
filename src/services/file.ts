@@ -1,11 +1,9 @@
 import fs from 'node:fs'
-import {createRequire} from 'node:module'
 import {dirname, join} from 'path'
 import {fileURLToPath} from 'url'
 
 const __filename = fileURLToPath(import.meta.url)
 export const __dirname = dirname(join(__filename, '..'))
-export const require = createRequire(import.meta.url)
 
 export function getFiles(dir: string, files: string[] = []): string[] {
     const fileList = fs.readdirSync(dir)

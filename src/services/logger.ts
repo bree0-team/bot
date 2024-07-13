@@ -1,10 +1,11 @@
 import {DiscordAPIError} from 'discord.js'
-import { Response } from 'node-fetch'
+import {Response} from 'node-fetch'
+import {createRequire} from 'node:module'
 import pino from 'pino'
 import pretty from 'pino-pretty'
 import {CustomError} from '../errors/general.js'
-import {require} from './file.js'
 
+const require = createRequire(import.meta.url)
 const Debug = require('../../config/debug.json')
 
 const stream = pretty({

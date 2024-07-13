@@ -1,7 +1,9 @@
+import {createRequire} from 'node:module'
 import {ModelCtor, Sequelize} from 'sequelize-typescript'
-import {importFiles, require} from './file.js'
+import {importFiles} from './file.js'
 import {Logger} from './logger.js'
 
+const require = createRequire(import.meta.url)
 const Debug = require('../../config/debug.json')
 
 export const sequelize = new Sequelize({
