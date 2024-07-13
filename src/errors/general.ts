@@ -1,4 +1,4 @@
-import {EmbedBuilder, InteractionReplyOptions, RepliableInteraction} from 'discord.js'
+import {EmbedBuilder, InteractionReplyOptions, RepliableInteraction, RESTJSONErrorCodes} from 'discord.js'
 import {EmbedColors} from '../enums/EmbedColors.enum.js'
 import {EmotesImages} from '../enums/EmotesImages.enum.js'
 import {EmbedField} from '../helpers/embed.js'
@@ -19,6 +19,7 @@ export class CommandsCooldownError extends CustomError {
 }
 
 export async function catchError(interaction: RepliableInteraction, error: Error) {
+    if (error['code'] === RESTJSONErrorCodes.UnknownInteraction) return;
     const {user} = interaction
     const embed = new EmbedBuilder()
         .setAuthor({name: user.displayName, iconURL: user.displayAvatarURL()})
@@ -37,7 +38,7 @@ export async function catchError(interaction: RepliableInteraction, error: Error
         if (!interaction.deferred) await interaction.deferReply({ephemeral: true})
         await (interaction.isChatInputCommand() ? interaction.reply(replyData) : interaction.followUp(replyData))
     } catch (error) {
-        if (['InteractionAlreadyReplied', 10062].includes(error.code))
+        if (['InteractionAlreadyReplied', RESTJSONErrorCodes.UnknownInteraction].includes(error.code))
             return interaction.followUp(replyData).catch(e => {
                 if (['InteractionNotReplied'].includes(e.code))
                     return interaction.channel.send({embeds: [embed]})
