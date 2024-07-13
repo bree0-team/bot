@@ -93,7 +93,6 @@ export class BannerImage {
                     case ValignType.Middle: valign = (y + height / 2); break
                     case ValignType.Bottom: valign = (y + height); break
                 }
-                console.log(valign)
                 return this.text({text: count, x: align, y: valign, scale, color})
             })
         const attachment = await this.canvas.encode('png')
