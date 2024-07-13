@@ -16,5 +16,8 @@
   },
   "servererror": {
     "valid_url": "This link is not valid"
+  },
+  "rate_limit": {
+    "interactions": "You are interacting too quickly, please try again later."
   }
 }
