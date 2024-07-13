@@ -18,6 +18,7 @@ import {
 } from '../../../../services/interaction.js'
 import {SplitUtils} from '../../../../utils/split.js'
 import {BannerImage} from '../../../banner/BannerImage.js'
+import {BannerImageManager} from '../../../banner/managers/banner-image.manager.js'
 import {BaseSettings} from '../../structures/BaseSettings.js'
 import {ITEM_BOTTOM, ITEM_CENTER, ITEM_LEFT, ITEM_MIDDLE, ITEM_RIGHT, ITEM_TOP} from '../enums/CustomIds.enum.js'
 import {description} from '../helpers/description.js'
@@ -43,7 +44,8 @@ export abstract class BaseSettingsBanner extends BaseSettings {
             )
         )
     async addEmbedAttachment(embed: EmbedBuilder): Promise<AttachmentBuilder> {
-        const image = await new BannerImage(this.guild).run()
+        const imageManager = BannerImageManager.findOne(this.guildId)
+        const image = await new BannerImage(this.guild).run(false, imageManager?.grid)
         const attachment = new AttachmentBuilder(image, { name: `banner.png` })
         embed.setImage('attachment://banner.png')
         return attachment
