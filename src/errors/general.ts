@@ -19,7 +19,11 @@ export class CommandsCooldownError extends CustomError {
 }
 
 export async function catchError(interaction: RepliableInteraction, error: Error) {
-    if (error['code'] === RESTJSONErrorCodes.UnknownInteraction) return;
+    // UND_ERR_CONNECT_TIMEOUT - network error
+    if ([
+        RESTJSONErrorCodes.UnknownInteraction,
+        'UND_ERR_CONNECT_TIMEOUT'
+    ].includes(error['code'])) return;
     const {user} = interaction
     const embed = new EmbedBuilder()
         .setAuthor({name: user.displayName, iconURL: user.displayAvatarURL()})
