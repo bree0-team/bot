@@ -80,73 +80,73 @@
     },
     "new": {
       "name": "створити",
-      "description": "Создать клановую роль",
+      "description": "",
       "options": {
         "name": {
-          "name": "название",
-          "description": "Введите название роли в клане"
+          "name": "",
+          "description": ""
         }
       }
     },
     "delete": {
-      "name": "удалить",
-      "description": "Удалить клановую роль",
+      "name": "",
+      "description": "",
       "options": {
         "role": {
-          "name": "роль",
-          "description": "Выберите роль, которую нужно удалить"
+          "name": "",
+          "description": ""
         }
       }
     },
     "rename": {
-      "name": "переименовать",
-      "description": "Переименовать клановую роль",
+      "name": "",
+      "description": "",
       "options": {
         "role": {
-          "name": "роль",
-          "description": "Выберите роль, которую нужно переименовать"
+          "name": "",
+          "description": ""
         },
         "name": {
-          "name": "название",
-          "description": "Введите новое название роли в клане"
+          "name": "",
+          "description": ""
         }
       }
     },
     "give": {
-      "name": "выдать",
-      "description": "Выдать роль участнику клана",
+      "name": "",
+      "description": "",
       "options": {
         "user": {
-          "name": "участник",
-          "description": "Выберите участника, которому нужно выдать клановую роль"
+          "name": "",
+          "description": ""
         },
         "role": {
-          "name": "роль",
-          "description": "Роль клана"
+          "name": "",
+          "description": ""
         }
       }
     }
   },
   "transfer": {
-    "name": "передать",
-    "description": "Передать владение клана другому участнику",
+    "name": "",
+    "description": "",
     "options": {
       "user": {
-        "name": "участник",
-        "description": "Выберите участника, которому хотите передать клан"
+        "name": "",
+        "description": ""
       }
     }
   },
   "appearance": {
-    "name": "облик",
-    "description": "Изменить облик клана"
+    "name": "",
+    "description": ""
   },
   "ad": {
-    "name": "реклама",
-    "description": "Управление рекламой"
+    "name": "",
+    "description": ""
   },
   "delete": {
-    "name": "удалить",
-    "description": "Удалить клан"
+    "name": "",
+    "description": ""
   }
 }
