@@ -1,127 +1,133 @@
 {
-  "OWNER": "",
-  "CHIEF": "",
-  "CAPTAIN": "",
-  "RECRUITER": "",
-  "MEMBER": "",
-  "clan": "",
-  "list": "",
-  "create": "",
-  "created": "",
-  "create_for_user": "",
+  "OWNER": "Владелец",
+  "CHIEF": "Начальник",
+  "CAPTAIN": "Капитан",
+  "RECRUITER": "Рекрутер",
+  "MEMBER": "Участник",
+  "clan": "Клан",
+  "select": "Выберите клан",
+  "list": "Список кланов {guild_name}",
+  "create": "Создать клан?",
+  "created": "Клан создан",
+  "create_for_user": "Выберите участника для которого будет создан клан",
   "invite": {
-    "send": "",
-    "accept": "",
-    "reject": ""
+    "send": "{user}, вас приглашает {author} в клан",
+    "accept": "{user} принял приглашение в клан",
+    "reject": "{user} отклонил приглашение в клан"
   },
   "leave": {
-    "send": "",
-    "confirm": ""
+    "send": "Вы уверены что хотите покинуть клан?",
+    "confirm": "{user} покинул клан"
   },
   "kick": {
-    "send": "",
-    "confirm": ""
+    "send": "Вы хотите выгнать {user}?",
+    "confirm": "{author} выгнал {user}"
   },
-  "rank": "",
+  "rank": "{author} установил для {user} ранг: `{rank}`",
   "role": {
-    "new": "",
-    "list": "",
-    "delete": "",
-    "rename": "",
-    "give": ""
+    "new": "{user} создал роль: `{name}`",
+    "list": "Роли клана {name}",
+    "delete": "{user} удалил роль: `{role}`",
+    "rename": "{user} переименовал роль",
+    "give": "{author} установил для {user} роль: `{role}`"
   },
   "transfer": {
-    "alert": "",
-    "confirm": ""
+    "alert": "ВНИМАНИЕ: Вы в процессе полной передачи власти клана **{name}** участнику {user}!\nЭто важное решение, удостоверьтесь, что ваш выбор отражает долгосрочные цели клана и готовность нового Владельца к этой ответственности.\nНапоминаем, что передачу клана нельзя будет отменить.\nВы уверены в своем решении?",
+    "confirm": "{author} передал клан {user}"
   },
   "appearance": {
-    "modification": "",
+    "modification": "Модификация клана",
     "options": {
-      "color": "",
-      "description": "",
-      "avatar": "",
-      "banner": ""
+      "color": "Цвет",
+      "description": "Описание",
+      "avatar": "Аватар",
+      "banner": "Баннер"
     }
   },
   "channel": {
-    "select_channels_description": "",
-    "voice_channel": "",
-    "text_channel": "",
+    "select_channels_description": "Выберите каналы для взаимодействия чтобы продолжить",
+    "voice_channel": "Создан голосовой канал: {channel}",
+    "text_channel": "Создан текстовый канал: {channel}",
     "user_rights": {
-      "description": "",
+      "description": "Выберите категорию прав которой вы хотите задать новые права, а затем и сами права которые будут заданы.\nДля категории `{right}` будут заданы запрещающие права в отличии от остальных.",
       "options": {
-        "clanMember": "",
-        "clanGuest": "",
-        "everyone": ""
+        "clanMember": "Участник клана",
+        "clanGuest": "Гость клана",
+        "everyone": "Все"
       },
-      "updated": ""
+      "updated": "Заданы новые права каналов для `{right}`"
     },
     "name": {
       "modal": {
-        "title": ""
+        "title": "Изменить название каналов"
       },
-      "set": ""
+      "set": "Установлено новое название для каналов: `{name}`"
     },
-    "delete": "",
+    "delete": "Удалены каналы: {channels}",
     "members_limit": {
       "modal": {
-        "title": ""
+        "title": "Задать лимит участников в канале"
       },
-      "set": ""
+      "set": "Задан новый лимит участников каналов: `{limit}`"
     },
     "rights": {
-      "description": "",
+      "description": "Выберите участников которых вы хотите добавить как гостей в ваши каналы или которых хотите убрать",
       "select": {
-        "add": "",
-        "remove": ""
+        "add": "Выберите кого добавить",
+        "remove": "Выберите кого убрать"
       },
-      "add": "",
-      "remove": ""
+      "add": "Добавлены гости в каналы",
+      "remove": "Удалены гости из каналов"
     },
     "kick_user": {
-      "description": "",
-      "confirmed": ""
+      "description": "Выберите кого нужно выгнать из комнаты",
+      "confirmed": "Вы выгнали участников из канала"
     }
   },
   "ad": {
-    "description": "",
+    "description": "Вы можете создавать новую рекламу или выбрать уже существующую для настроек и модификаций.",
     "modal": {
-      "title": ""
+      "title": "Создание новой рекламы"
     },
-    "edit": "",
-    "delete": "",
-    "created": ""
+    "edit": "Изменить название",
+    "delete": "Удалить рекламу",
+    "created": "Создана новая реклама: `{ad}`"
+  },
+  "delete": {
+    "description": "Вы уверены что хотите удалить клан?",
+    "select_description": "Выберите клан, который вы хотите удалить",
+    "confirmed": "Клан удален"
   },
   "error": {
-    "not_exists": "",
-    "you_exist": "",
-    "member_exist": "",
-    "you_not_exist": "",
-    "member_not_exist": "",
-    "cmd_for_rank": "",
-    "owner_leave": "",
-    "not_exist": "",
-    "kick_yourself": "",
-    "kick_same_rank": "",
-    "change_same_rank": "",
-    "rank_yourself": "",
-    "same_rank": "",
-    "role_not_exist": "",
-    "delete_system_role": "",
-    "transfer_yourself": "",
-    "transfer_disabled": "",
-    "invite_limit": "",
-    "you_dont_have_role_to_create": "",
-    "channel_missing_category": "",
-    "dont_have_channels": "",
-    "members_limit_more_or_less": "",
-    "you_not_in_clan_voice": "",
-    "no_one_in_voice": "",
-    "channel_limit_exceeded": "",
-    "appearance_disabled": "",
-    "ad_channel_not_set": "",
-    "ad_cooldown": "",
-    "ad_disabled": "",
-    "interaction_not_for_you": ""
+    "not_exists": "На сервере **{guild_name}** еще нет кланов",
+    "you_exist": "Вы уже состоите в клане",
+    "member_exist": "{user} уже состоит в клане",
+    "you_not_exist": "Вы не состоите в клане",
+    "member_not_exist": "{user} не состоит в клане",
+    "cmd_for_rank": "Эта команда не доступна для вашего ранга",
+    "owner_leave": "Вы не можете выйти из клана, так как вы Владелец",
+    "not_exist": "Такого клана нет",
+    "kick_yourself": "Нельзя выгнать себя",
+    "kick_same_rank": "Нельзя выгнать участника с таким же рангом или выше",
+    "change_same_rank": "Нельзя изменить ранг участника с таким же рангом или выше",
+    "rank_yourself": "Нельзя изменить свой ранг",
+    "same_rank": "Нельзя выдать ранг выше своего",
+    "role_not_exist": "Такой роли не существует",
+    "delete_system_role": "Нельзя удалить системную роль",
+    "transfer_yourself": "Вы не можете передать клан себе",
+    "transfer_disabled": "Передача клана отключена на сервере",
+    "invite_limit": "В клане максимальное количество участников",
+    "you_dont_have_role_to_create": "У вас нет разрешенной роли для создания/удаления клана",
+    "channel_missing_category": "Категория не установлена",
+    "dont_have_channels": "У вас нет клановых каналов",
+    "members_limit_more_or_less": "Лимит не может быть больше 99 и не меньше 0",
+    "you_not_in_clan_voice": "Вас нет в голосовом клановом канале",
+    "no_one_in_voice": "В вашем голосовом канале никого нет",
+    "channel_limit_exceeded": "Превышен лимит каналов",
+    "appearance_disabled": "На сервере отключены все внешние модификации",
+    "ad_channel_not_set": "Канал для рекламы не задан",
+    "ad_cooldown": "Вы недавно уже отправляли рекламу, попробуйте {time}",
+    "ad_disabled": "Реклама клана отключена на сервере",
+    "interaction_not_for_you": "Вам не доступно это взаимодействие"
   }
 }
