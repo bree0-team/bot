@@ -1,152 +1,152 @@
 {
-  "name": "клан",
+  "name": "",
   "list": {
-    "name": "список",
-    "description": "Список кланов"
+    "name": "",
+    "description": ""
   },
   "members": {
-    "name": "участники",
-    "description": "Список участников клана",
+    "name": "",
+    "description": "",
     "options": {
       "clan": {
-        "name": "клан",
-        "description": "Клан для проверки"
+        "name": "",
+        "description": ""
       }
     }
   },
   "leave": {
-    "name": "выйти",
-    "description": "Выйти из клана"
+    "name": "",
+    "description": ""
   },
   "invite": {
-    "name": "пригласить",
-    "description": "Пригласить участника в клан",
+    "name": "",
+    "description": "",
     "options": {
       "user": {
-        "name": "участник",
-        "description": "Выберите участника, которого вы хотите пригласить в клан"
+        "name": "",
+        "description": ""
       }
     }
   },
   "kick": {
-    "name": "выгнать",
-    "description": "Выгнать участника из клана",
+    "name": "",
+    "description": "",
     "options": {
       "user": {
-        "name": "участник",
-        "description": "Выберите участника, которого нужно выгнать из клана"
+        "name": "",
+        "description": ""
       }
     }
   },
   "rank": {
-    "name": "ранг",
-    "description": "Выдать ранг участнику клана",
+    "name": "",
+    "description": "",
     "options": {
       "user": {
-        "name": "участник",
-        "description": "Выберите участника, которому нужно выдать ранг"
+        "name": "",
+        "description": ""
       },
       "rank": {
-        "name": "ранг",
-        "description": "Выберите ранг",
+        "name": "",
+        "description": "",
         "choices": {
-          "Chief": "Начальник",
-          "Captain": "Капитан",
-          "Recruiter": "Рекрутер",
-          "Member": "Участник"
+          "Chief": "",
+          "Captain": "",
+          "Recruiter": "",
+          "Member": ""
         }
       }
     }
   },
   "create": {
-    "name": "создать",
-    "description": "Создать клан",
+    "name": "",
+    "description": "",
     "options": {
       "emoji": {
-        "name": "эмодзи",
-        "description": "Введите Эмодзи (только стандартные)"
+        "name": "",
+        "description": ""
       },
       "name": {
-        "name": "название",
-        "description": "Введите название клана"
+        "name": "",
+        "description": ""
       }
     }
   },
   "role": {
-    "name": "роли",
+    "name": "",
     "list": {
-      "name": "список",
-      "description": "Список ролей клана"
+      "name": "",
+      "description": ""
     },
     "new": {
-      "name": "создать",
-      "description": "Создать клановую роль",
+      "name": "",
+      "description": "",
       "options": {
         "name": {
-          "name": "название",
-          "description": "Введите название роли в клане"
+          "name": "",
+          "description": ""
         }
       }
     },
     "delete": {
-      "name": "удалить",
-      "description": "Удалить клановую роль",
+      "name": "",
+      "description": "",
       "options": {
         "role": {
-          "name": "роль",
-          "description": "Выберите роль, которую нужно удалить"
+          "name": "",
+          "description": ""
         }
       }
     },
     "rename": {
-      "name": "переименовать",
-      "description": "Переименовать клановую роль",
+      "name": "",
+      "description": "",
       "options": {
         "role": {
-          "name": "роль",
-          "description": "Выберите роль, которую нужно переименовать"
+          "name": "",
+          "description": ""
         },
         "name": {
-          "name": "название",
-          "description": "Введите новое название роли в клане"
+          "name": "",
+          "description": ""
         }
       }
     },
     "give": {
-      "name": "выдать",
-      "description": "Выдать роль участнику клана",
+      "name": "",
+      "description": "",
       "options": {
         "user": {
-          "name": "участник",
-          "description": "Выберите участника, которому нужно выдать клановую роль"
+          "name": "",
+          "description": ""
         },
         "role": {
-          "name": "роль",
-          "description": "Роль клана"
+          "name": "",
+          "description": ""
         }
       }
     }
   },
   "transfer": {
-    "name": "передать",
-    "description": "Передать владение клана другому участнику",
+    "name": "",
+    "description": "",
     "options": {
       "user": {
-        "name": "участник",
-        "description": "Выберите участника, которому хотите передать клан"
+        "name": "",
+        "description": ""
       }
     }
   },
   "appearance": {
-    "name": "облик",
-    "description": "Изменить облик клана"
+    "name": "",
+    "description": ""
   },
   "ad": {
-    "name": "реклама",
-    "description": "Управление рекламой"
+    "name": "",
+    "description": ""
   },
   "delete": {
-    "name": "удалить",
-    "description": "Удалить клан"
+    "name": "",
+    "description": ""
   }
 }
