@@ -1,0 +1,23 @@
+{
+  "forbidden": {
+    "channel": {
+      "missing_permission": "У меня нет прав для создания канала"
+    },
+    "user": {
+      "missing_permission": "У меня нет прав для изменения участника"
+    }
+  },
+  "notfound": {
+    "unknown_member": "Неизвестный Участник",
+    "unknown_emoji": "Неизвестный Эмодзи",
+    "unknown_voice": "Вас нет в голосовом канале",
+    "unknown_role": "Неизвестная Роль",
+    "unknown_channel": "Канал неизвестен или удален"
+  },
+  "servererror": {
+    "valid_url": "Эта ссылка не валидна"
+  },
+  "rate_limit": {
+    "interactions": "Вы слишком быстро взаимодействуйте, попробуйте позже."
+  }
+}
