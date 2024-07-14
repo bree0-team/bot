@@ -5,7 +5,7 @@
   "RECRUITER": "Рекрутер",
   "MEMBER": "Учасник",
   "clan": "Клан",
-  "select": "Выберите клан",
+  "select": "",
   "list": "Список кланів {guild_name}",
   "create": "Створити клан?",
   "created": "Клан створено",
@@ -94,9 +94,9 @@
     "created": "Створена нова реклама: `{ad}`"
   },
   "delete": {
-    "description": "Вы уверены что хотите удалить клан?",
-    "select_description": "Выберите клан, который вы хотите удалить",
-    "confirmed": "Клан удален"
+    "description": "",
+    "select_description": "",
+    "confirmed": ""
   },
   "error": {
     "not_exists": "На сервері **{guild_name}** ще немає кланів",
@@ -126,8 +126,8 @@
     "channel_limit_exceeded": "Перевищено ліміт каналів",
     "appearance_disabled": "На сервері вимкнено всі зовнішні модифікації",
     "ad_channel_not_set": "Канал для реклами не задано",
-    "ad_cooldown": "Вы недавно уже отправляли рекламу, попробуйте {time}",
-    "ad_disabled": "Реклама клана отключена на сервере",
-    "interaction_not_for_you": "Вам не доступно это взаимодействие"
+    "ad_cooldown": "",
+    "ad_disabled": "",
+    "interaction_not_for_you": ""
   }
 }
