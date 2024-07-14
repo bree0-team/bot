@@ -67,8 +67,12 @@ export class LocalizationManager implements LocaleManager {
         }
 
         const value: ITranslateLine = SplitUtils.findInObject([ns, ...values], strings)
-        if (!value) return key
+        // fix for crowdin export
+        if (!value || !value.length) return key
         if (value instanceof Array) {
+            // fix for crowdin export
+            const crowdinFix = value.filter(i => i.length)
+            if (!crowdinFix.length) return key
             let count = 1
             if (args && 'count' in args) count = args.count as number
             return SplitUtils.getEnding(count, ...value)

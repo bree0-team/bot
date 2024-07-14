@@ -181,7 +181,7 @@ class SlashBuilder {
             [i]: SplitUtils.findInObject([i, ...keys], this.languages)
         }))
         return Object.fromEntries(Object.entries(Object.assign({}, ...items))
-            .filter(([_, value]) => value !== undefined)) as Record<Locale, string>
+        .filter(([_, value]) => value /* !== undefined // fix for crowdin export */ )) as Record<Locale, string>
     }
 }
 
