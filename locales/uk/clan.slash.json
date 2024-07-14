@@ -80,69 +80,73 @@
     },
     "new": {
       "name": "створити",
-      "description": "",
+      "description": "Создать клановую роль",
       "options": {
         "name": {
-          "name": "",
-          "description": ""
+          "name": "название",
+          "description": "Введите название роли в клане"
         }
       }
     },
     "delete": {
-      "name": "",
-      "description": "",
+      "name": "удалить",
+      "description": "Удалить клановую роль",
       "options": {
         "role": {
-          "name": "",
-          "description": ""
+          "name": "роль",
+          "description": "Выберите роль, которую нужно удалить"
         }
       }
     },
     "rename": {
-      "name": "",
-      "description": "",
+      "name": "переименовать",
+      "description": "Переименовать клановую роль",
       "options": {
         "role": {
-          "name": "",
-          "description": ""
+          "name": "роль",
+          "description": "Выберите роль, которую нужно переименовать"
         },
         "name": {
-          "name": "",
-          "description": ""
+          "name": "название",
+          "description": "Введите новое название роли в клане"
         }
       }
     },
     "give": {
-      "name": "",
-      "description": "",
+      "name": "выдать",
+      "description": "Выдать роль участнику клана",
       "options": {
         "user": {
-          "name": "",
-          "description": ""
+          "name": "участник",
+          "description": "Выберите участника, которому нужно выдать клановую роль"
         },
         "role": {
-          "name": "",
-          "description": ""
+          "name": "роль",
+          "description": "Роль клана"
         }
       }
     }
   },
   "transfer": {
-    "name": "",
-    "description": "",
+    "name": "передать",
+    "description": "Передать владение клана другому участнику",
     "options": {
       "user": {
-        "name": "",
-        "description": ""
+        "name": "участник",
+        "description": "Выберите участника, которому хотите передать клан"
       }
     }
   },
   "appearance": {
-    "name": "",
-    "description": ""
+    "name": "облик",
+    "description": "Изменить облик клана"
   },
   "ad": {
-    "name": "",
-    "description": ""
+    "name": "реклама",
+    "description": "Управление рекламой"
+  },
+  "delete": {
+    "name": "удалить",
+    "description": "Удалить клан"
   }
 }
