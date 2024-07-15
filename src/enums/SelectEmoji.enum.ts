@@ -10,5 +10,10 @@ export enum SelectEmoji {
     Limit = '<:limit:1249754437497655326>',
     Channels = '<:channels:1249667983635255358>',
     NamePattern = '<:namePattern:1249784557906038924>',
-    Role = '<:role:1260127366169104445>️'
+    Role = '<:role:1260127366169104445>️',
+    Timezone = '<:timezone:1261981224604405761>',
+    Cooldown = '<:cooldown:1261996213683617864>',
+    Ad = '<:ad:1261996221006876782>',
+    Reply = '<:reply:1262017645981466625>',
+    Cup = '<:cup:1262024303176712193>'
 }
