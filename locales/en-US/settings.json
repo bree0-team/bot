@@ -139,8 +139,8 @@
   "afk": {
     "description": "Settings for moving users to the AFK channel after a certain time allow administrators to set automatic moving of users if they show no activity within a certain time interval.",
     "sleep": "Delay before moving",
-    "channels": "Channels from which the movement will take place",
-    "roles": "Roles that will be ignored during movement",
+    "channels": "",
+    "roles": "",
     "modal": "Edit delay"
   },
   "activity": {
@@ -281,8 +281,8 @@
     "xp_give_from_to": "The amount of experience TO cannot be less than FROM",
     "mun_missing_channel": "Unable to send interface, channel is not established",
     "banner_graph_min_max": {
-      "x": "Cannot set X coordinates less than {min} and greater than {max}",
-      "y": "Cannot set Y coordinates less than {min} and greater than {max}",
+      "x": "",
+      "y": "",
       "scale": "The scale cannot be set less than {min} and greater than {max}"
     }
   }
