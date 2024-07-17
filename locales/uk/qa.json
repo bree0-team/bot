@@ -1,24 +1,24 @@
 {
   "actions": {
-    "reply": "",
-    "edit": "",
-    "resolve": "",
-    "delete": ""
+    "reply": "Відповісти",
+    "edit": "Змінити",
+    "resolve": "Вирішено",
+    "delete": "Видалити"
   },
-  "deleted": "",
-  "edited": "",
+  "deleted": "Повідомлення від {user} видалено",
+  "edited": "Ваше повідомлення змінено",
   "modal": {
-    "title": "",
-    "label": ""
+    "title": "Написати повідомлення",
+    "label": "Заголовок (Необовʼязково)"
   },
-  "replied": "",
-  "replied_at": "",
-  "resolved": "",
-  "resolved_at": "",
+  "replied": "Ви відповіли на повідомлення",
+  "replied_at": "Відповідь надано",
+  "resolved": "Ви відмітили повідомлення як вирішене",
+  "resolved_at": "Вирішено",
   "error": {
-    "user_no_rights": "",
-    "not_in_this_channel": "",
-    "you_dont_have_rights": "",
-    "already_resolved": ""
+    "user_no_rights": "У вас немає прав для взаємодій з цим повідомленням",
+    "not_in_this_channel": "В цьому каналі не увімкнена функція Питання / Відповідь",
+    "you_dont_have_rights": "У вас немає прав для цієї взаємодії",
+    "already_resolved": "Повідомлення вже вирішене"
   }
 }
