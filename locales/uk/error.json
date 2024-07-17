@@ -1,16 +1,16 @@
 {
   "forbidden": {
     "channel": {
-      "missing_permission": ""
+      "missing_permission": "В мене немає прав для створення каналу"
     },
     "user": {
-      "missing_permission": ""
+      "missing_permission": "У мене немає прав для зміни учасника"
     }
   },
   "notfound": {
-    "unknown_member": "",
-    "unknown_emoji": "",
-    "unknown_voice": "",
+    "unknown_member": "Невідомий Учасник",
+    "unknown_emoji": "Невідомий Емодзі",
+    "unknown_voice": "Вас немає в голосовому каналі",
     "unknown_role": "",
     "unknown_channel": ""
   },
