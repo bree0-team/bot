@@ -5,7 +5,7 @@
   "RECRUITER": "Рекрутер",
   "MEMBER": "Учасник",
   "clan": "Клан",
-  "select": "",
+  "select": "Оберіть клан",
   "list": "Список кланів {guild_name}",
   "create": "Створити клан?",
   "created": "Клан створено",
@@ -16,7 +16,7 @@
     "reject": "{user} відхилив запрошення в клан"
   },
   "leave": {
-    "send": "",
+    "send": "Ви впевнені, що хочете залишити клан?",
     "confirm": "{user} залишив клан"
   },
   "kick": {
@@ -94,9 +94,9 @@
     "created": "Створена нова реклама: `{ad}`"
   },
   "delete": {
-    "description": "",
-    "select_description": "",
-    "confirmed": ""
+    "description": "Ви впевнені, що хочете видалити клан?",
+    "select_description": "Оберіть клан, який ви хочете видалити",
+    "confirmed": "Клан видалено"
   },
   "error": {
     "not_exists": "На сервері **{guild_name}** ще немає кланів",
@@ -104,7 +104,7 @@
     "member_exist": "{user} вже перебуває в клані",
     "you_not_exist": "Ви не перебуваєте в клані",
     "member_not_exist": "{user} не перебуває в клані",
-    "cmd_for_rank": "Ця команда не доступна для вашого рангу",
+    "cmd_for_rank": "",
     "owner_leave": "Ви не можете вийти з клану, оскільки ви Власник",
     "not_exist": "Такого клану немає",
     "kick_yourself": "Не можна вигнати себе",
@@ -126,8 +126,8 @@
     "channel_limit_exceeded": "Перевищено ліміт каналів",
     "appearance_disabled": "На сервері вимкнено всі зовнішні модифікації",
     "ad_channel_not_set": "Канал для реклами не задано",
-    "ad_cooldown": "",
-    "ad_disabled": "",
+    "ad_cooldown": "Ви недавно вже надсилали рекламу, спробуйте {time}",
+    "ad_disabled": "Реклама клану вимкнена на сервері",
     "interaction_not_for_you": ""
   }
 }
