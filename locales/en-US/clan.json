@@ -16,7 +16,7 @@
     "reject": "{user} declined an invitation to a clan"
   },
   "leave": {
-    "send": "Are you sure you want to leave a clan?",
+    "send": "",
     "confirm": "{user} left a clan"
   },
   "kick": {
@@ -94,7 +94,7 @@
     "created": "A new advertisement has been created: `{ad}`"
   },
   "delete": {
-    "description": "Are you sure you want to delete the clan?",
+    "description": "",
     "select_description": "Choose the clan you want to delete",
     "confirmed": "Clan removed"
   },
