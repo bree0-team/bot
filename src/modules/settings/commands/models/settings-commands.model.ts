@@ -1,10 +1,9 @@
 import _ from 'lodash'
-import {AllowNull, Column, DataType, Default, IsIn, Model, PrimaryKey, Table} from 'sequelize-typescript'
-import {BaseGuildModel} from '../../../../models/base-guild.model.js'
+import {AllowNull, Column, DataType, Default, IsIn, Model, Table} from 'sequelize-typescript'
 import {CommandName} from '../../../../builders/slash.js'
 import {GuildId} from '../../../../types/base.type.js'
-import {CooldownType} from '../enums/CooldownType.enum.js'
 import {defaultCooldown, defaultEphemeral, defaultReply, defaultUsage} from '../constants/defaults.js'
+import {CooldownType} from '../enums/CooldownType.enum.js'
 
 interface SettingsCommandsAttrs {
     guildId: GuildId

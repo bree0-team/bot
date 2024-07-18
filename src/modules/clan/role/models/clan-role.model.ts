@@ -1,9 +1,9 @@
-import {Model, AllowNull, Column, Table, HasMany, BelongsTo, ForeignKey, Default} from 'sequelize-typescript'
-import {Optional} from "sequelize";
+import {Optional} from 'sequelize'
+import {AllowNull, BelongsTo, Column, ForeignKey, HasMany, Model, Table} from 'sequelize-typescript'
 import {GuildId} from '../../../../types/base.type.js'
-import {ClanId, ClanRoleId} from '../../types/clan.type.js'
-import {ClanModel} from '../../models/clan.model.js'
 import {ClanMemberModel} from '../../models/clan-member.model.js'
+import {ClanModel} from '../../models/clan.model.js'
+import {ClanId, ClanRoleId} from '../../types/clan.type.js'
 
 interface ClanRoleAttrs {
     id: ClanRoleId

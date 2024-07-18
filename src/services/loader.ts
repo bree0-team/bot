@@ -59,7 +59,7 @@ export class Loader {
         })
     }
     loadCrontabs = (): Promise<void> => importFilesDefault<ICrontabBuilder>('modules', '.crontab',
-        (crontab, file) => CronJob.from({
+        (crontab, _) => CronJob.from({
         cronTime: crontab.time,
         onTick: () => crontab.run(this.client),
         start: true

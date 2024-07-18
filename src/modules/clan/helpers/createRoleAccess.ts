@@ -1,4 +1,4 @@
-import {APIInteractionGuildMember, GuildMember, PermissionFlagsBits} from 'discord.js'
+import {GuildMember, PermissionFlagsBits} from 'discord.js'
 import _ from 'lodash'
 import {RoleId} from '../../../types/base.type.js'
 

@@ -20,7 +20,6 @@ const collection = new Collection<string, JoinLeaveVoice>()
 
 class _XpJoinLeaveService {
     constructor(private readonly collection: Collection<string, JoinLeaveVoice>) {}
-    private getSeconds = (i: JoinLeaveVoice): number => i.after.getTime()-i.before.getTime()
     private deleteKey(guildId: GuildId, userId: UserId): boolean {
         const value = this.collection.findKey(i =>
             i.guildId === guildId && i.userId === userId && !i.after)

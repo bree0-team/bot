@@ -1,5 +1,5 @@
 import {ButtonBuilder, ButtonStyle, InteractionReplyOptions} from 'discord.js'
-import {ActionButtonRow, ButtonRowBuilder, InteractionReplyComponent} from '../../../services/interaction.js'
+import {InteractionReplyComponent} from '../../../services/interaction.js'
 import {ChannelId} from '../../../types/base.type.js'
 import {MAIN_SELECT} from '../enums/CustomIds.enum.js'
 import {QA_CREATE, QA_DELETE} from './enums/CustomIds.enum.js'

@@ -1,5 +1,4 @@
 import {EmbedBuilder} from 'discord.js'
-import {GuildEmbed} from '../../../../helpers/embed.js'
 import {BaseSettings} from '../../structures/BaseSettings.js'
 
 export abstract class BaseSettingsActivity extends BaseSettings {
