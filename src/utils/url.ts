@@ -3,7 +3,7 @@ import {UserId} from '../types/base.type.js'
 export class UrlUtils {
     static user = (userId: UserId): string => 'discord://-/users/' + userId
     static isValidHttpUrl(url: string): boolean {
-        let finalUrl;
+        let finalUrl: URL;
 
         try {
             finalUrl = new URL(url)
