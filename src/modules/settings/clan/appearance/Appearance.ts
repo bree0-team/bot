@@ -1,5 +1,6 @@
 import {InteractionReplyOptions, StringSelectMenuBuilder, StringSelectMenuOptionBuilder} from 'discord.js'
 import {DiscordLimits} from '../../../../enums/DiscordLimits.enum.js'
+import {SelectEmoji} from '../../../../enums/SelectEmoji.enum.js'
 import {SwitchEmoji} from '../../../../helpers/buttons.js'
 import {
     ActionStringSelectRow,
@@ -20,25 +21,25 @@ export class Appearance extends BaseSettingsClan {
             maxValues: 4,
         }).setOptions(
             new StringSelectMenuOptionBuilder({
-                emoji: '🎨',
+                emoji: SelectEmoji.EmbedColor,
                 label: this.t('clan:appearance:options:color'),
                 value: SettingsClanAppearanceSelectValuesCustomIds.Color,
                 default: color,
             }),
             new StringSelectMenuOptionBuilder({
-                emoji: '💬',
+                emoji: SelectEmoji.Input,
                 label: this.t('clan:appearance:options:description'),
                 value: SettingsClanAppearanceSelectValuesCustomIds.Description,
                 default: description,
             }),
             new StringSelectMenuOptionBuilder({
-                emoji: '🖼️',
+                emoji: SelectEmoji.Avatar,
                 label: this.t('clan:appearance:options:avatar'),
                 value: SettingsClanAppearanceSelectValuesCustomIds.Avatar,
                 default: avatar,
             }),
             new StringSelectMenuOptionBuilder({
-                emoji: '🖼️',
+                emoji: SelectEmoji.Banner,
                 label: this.t('clan:appearance:options:banner'),
                 value: SettingsClanAppearanceSelectValuesCustomIds.Banner,
                 default: banner,
