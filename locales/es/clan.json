@@ -5,6 +5,7 @@
   "RECRUITER": "",
   "MEMBER": "",
   "clan": "",
+  "select": "",
   "list": "",
   "create": "",
   "created": "",
@@ -91,6 +92,11 @@
     "edit": "",
     "delete": "",
     "created": ""
+  },
+  "delete": {
+    "description": "",
+    "select_description": "",
+    "confirmed": ""
   },
   "error": {
     "not_exists": "",

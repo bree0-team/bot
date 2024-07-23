@@ -238,11 +238,6 @@
       "color": "Color",
       "placeholder": "Minimum {min}, Maximum {max}"
     },
-    "position": {
-      "left": "From the left edge",
-      "center": "Centered",
-      "right": "From the right edge"
-    },
     "channels": {
       "description": "Channel Types",
       "types": {
@@ -286,8 +281,8 @@
     "xp_give_from_to": "The amount of experience TO cannot be less than FROM",
     "mun_missing_channel": "Unable to send interface, channel is not established",
     "banner_graph_min_max": {
-      "x": "Cannot set X coordinates less than {min} and greater than {max}",
-      "y": "Cannot set Y coordinates less than {min} and greater than {max}",
+      "x": "You cannot set the X coordinate less than {min} and more than {max}",
+      "y": "You cannot set the Y coordinate less than {min} and more than {max}",
       "scale": "The scale cannot be set less than {min} and greater than {max}"
     }
   }

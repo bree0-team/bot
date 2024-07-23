@@ -1,20 +1,23 @@
 {
   "forbidden": {
     "channel": {
-      "missing_permission": ""
+      "missing_permission": "В мене немає прав для створення каналу"
     },
     "user": {
-      "missing_permission": ""
+      "missing_permission": "У мене немає прав для зміни учасника"
     }
   },
   "notfound": {
-    "unknown_member": "",
-    "unknown_emoji": "",
-    "unknown_voice": "",
-    "unknown_role": "",
-    "unknown_channel": ""
+    "unknown_member": "Невідомий Учасник",
+    "unknown_emoji": "Невідомий Емодзі",
+    "unknown_voice": "Вас немає в голосовому каналі",
+    "unknown_role": "Невідома Роль",
+    "unknown_channel": "Канал невідомий або видалений"
   },
   "servererror": {
-    "valid_url": ""
+    "valid_url": "Це посилання не є валідним"
+  },
+  "rate_limit": {
+    "interactions": "Ви надто швидко взаємодієте, спробуйте пізніше."
   }
 }

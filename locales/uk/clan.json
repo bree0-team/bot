@@ -5,6 +5,7 @@
   "RECRUITER": "Рекрутер",
   "MEMBER": "Учасник",
   "clan": "Клан",
+  "select": "Оберіть клан",
   "list": "Список кланів {guild_name}",
   "create": "Створити клан?",
   "created": "Клан створено",
@@ -25,103 +26,108 @@
   "rank": "{author} встановив для {user} ранг: `{rank}`",
   "role": {
     "new": "{user} створив роль: `{name}`",
-    "list": "",
+    "list": "Ролі клану {name}",
     "delete": "{user} видалив роль: `{role}`",
     "rename": "{user} перейменував роль",
     "give": "{author} встановив для {user} роль: `{role}`"
   },
   "transfer": {
-    "alert": "",
+    "alert": "УВАГА: Ви в процесі повної передачі влади клану **{name}** учаснику {user}!\nЦе важливе рішення, переконайтесь, що ваш вибір несе довгострокові цілі клану і готовність нового Власника до цієї відповідальності.\nНагадуємо, що передачу клану не можна буде скасувати.\nВи впевнені у своєму рішенні?",
     "confirm": "{author} передав клан {user}"
   },
   "appearance": {
-    "modification": "",
+    "modification": "Модифікація клану",
     "options": {
-      "color": "",
-      "description": "",
-      "avatar": "",
-      "banner": ""
+      "color": "Колір",
+      "description": "Опис",
+      "avatar": "Аватар",
+      "banner": "Банер"
     }
   },
   "channel": {
-    "select_channels_description": "",
-    "voice_channel": "",
-    "text_channel": "",
+    "select_channels_description": "Оберіть канали для взаємодії, щоб продовжити",
+    "voice_channel": "Створено голосовий канал: {channel}",
+    "text_channel": "Створено текстовий канал: {channel}",
     "user_rights": {
-      "description": "",
+      "description": "Оберіть категорію прав якій ви хочете задати нові права, а потім і самі права, які будуть задані.\nДля категорії `{right}` буде задано заборонні права на відміну від інших.",
       "options": {
-        "clanMember": "",
-        "clanGuest": "",
-        "everyone": ""
+        "clanMember": "Учасник клану",
+        "clanGuest": "Гість клану",
+        "everyone": "Усі"
       },
-      "updated": ""
+      "updated": "Задано нові права каналів для `{right}`"
     },
     "name": {
       "modal": {
-        "title": ""
+        "title": "Змінити назву каналів"
       },
-      "set": ""
+      "set": "Встановлена нова назва для каналів: `{name}`"
     },
-    "delete": "",
+    "delete": "Видалені канали: {channels}",
     "members_limit": {
       "modal": {
-        "title": ""
+        "title": "Задати ліміт учасників в каналів"
       },
-      "set": ""
+      "set": "Задано новий ліміт учасників каналів: `{limit}`"
     },
     "rights": {
-      "description": "",
+      "description": "Оберіть учасників яких ви хочете додати як гостей у ваші канали або яких хочете прибрати",
       "select": {
-        "add": "",
-        "remove": ""
+        "add": "Оберіть кого додати",
+        "remove": "Оберіть кого прибрати"
       },
-      "add": "",
-      "remove": ""
+      "add": "Додані гості в канали",
+      "remove": "Видалені гості з каналів"
     },
     "kick_user": {
-      "description": "",
-      "confirmed": ""
+      "description": "Оберіть кого треба вигнати з кімнати",
+      "confirmed": "Ви вигнали учасників з каналу"
     }
   },
   "ad": {
-    "description": "",
+    "description": "Ви можете створювати нову рекламу або обрати вже наявну для налаштувань і модифікацій.",
     "modal": {
-      "title": ""
+      "title": "Створення нової реклами"
     },
-    "edit": "",
-    "delete": "",
-    "created": ""
+    "edit": "Змінити назву",
+    "delete": "Видалити рекламу",
+    "created": "Створена нова реклама: `{ad}`"
+  },
+  "delete": {
+    "description": "Ви впевнені, що хочете видалити клан?",
+    "select_description": "Оберіть клан, який ви хочете видалити",
+    "confirmed": "Клан видалено"
   },
   "error": {
-    "not_exists": "",
-    "you_exist": "",
-    "member_exist": "",
-    "you_not_exist": "",
-    "member_not_exist": "",
-    "cmd_for_rank": "",
-    "owner_leave": "",
-    "not_exist": "",
-    "kick_yourself": "",
-    "kick_same_rank": "",
-    "change_same_rank": "",
-    "rank_yourself": "",
-    "same_rank": "",
-    "role_not_exist": "",
-    "delete_system_role": "",
-    "transfer_yourself": "",
-    "transfer_disabled": "",
+    "not_exists": "На сервері **{guild_name}** ще немає кланів",
+    "you_exist": "Ви вже перебуваєте в клані",
+    "member_exist": "{user} вже перебуває в клані",
+    "you_not_exist": "Ви не перебуваєте в клані",
+    "member_not_exist": "{user} не перебуває в клані",
+    "cmd_for_rank": "Ця команда недоступна для вашого рангу",
+    "owner_leave": "Ви не можете вийти з клану, оскільки ви Власник",
+    "not_exist": "Такого клану немає",
+    "kick_yourself": "Не можна вигнати себе",
+    "kick_same_rank": "Не можна вигнати учасника з таким самим рангом або вище",
+    "change_same_rank": "Не можна змінити ранг учасника з таким самим рангом або вище",
+    "rank_yourself": "Не можна змінити свій ранг",
+    "same_rank": "Не можна видати ранг вищий аніж свій",
+    "role_not_exist": "Такої ролі не існує",
+    "delete_system_role": "Не можна видалити системну роль",
+    "transfer_yourself": "Ви не можете передати клан собі",
+    "transfer_disabled": "Передача клану вимкнена на сервері",
     "invite_limit": "В клані максимальна кількість учасників",
-    "you_dont_have_role_to_create": "",
-    "channel_missing_category": "",
-    "dont_have_channels": "",
-    "members_limit_more_or_less": "",
-    "you_not_in_clan_voice": "",
-    "no_one_in_voice": "",
-    "channel_limit_exceeded": "",
-    "appearance_disabled": "",
-    "ad_channel_not_set": "",
-    "ad_cooldown": "",
-    "ad_disabled": "",
-    "interaction_not_for_you": ""
+    "you_dont_have_role_to_create": "У вас немає дозволеної ролі для створення/видалення клану",
+    "channel_missing_category": "Категорія не встановлена",
+    "dont_have_channels": "У вас немає кланових каналів",
+    "members_limit_more_or_less": "Ліміт не може бути більшим ніж 99 і меншим ніж 0",
+    "you_not_in_clan_voice": "Вас немає в голосовому клановому каналі",
+    "no_one_in_voice": "У вашому голосовому каналі нікого немає",
+    "channel_limit_exceeded": "Перевищено ліміт каналів",
+    "appearance_disabled": "На сервері вимкнено всі зовнішні модифікації",
+    "ad_channel_not_set": "Канал для реклами не задано",
+    "ad_cooldown": "Ви недавно вже надсилали рекламу, спробуйте {time}",
+    "ad_disabled": "Реклама клану вимкнена на сервері",
+    "interaction_not_for_you": "Вам недоступна ця взаємодія"
   }
 }

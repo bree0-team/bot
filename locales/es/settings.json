@@ -38,7 +38,7 @@
   "clan": {
     "description": "",
     "options": {
-      "create_roles": "",
+      "manage": "",
       "command_rank_access": "",
       "appearance": "",
       "transfer": "",
@@ -52,7 +52,7 @@
       "description": "",
       "allow": ""
     },
-    "create": {
+    "manage": {
       "description": "",
       "members": "",
       "allowed_roles": "",
@@ -237,11 +237,6 @@
       "scale": "",
       "color": "",
       "placeholder": ""
-    },
-    "position": {
-      "left": "",
-      "center": "",
-      "right": ""
     },
     "channels": {
       "description": "",

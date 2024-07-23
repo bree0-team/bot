@@ -1,46 +1,46 @@
 {
-  "name": "",
+  "name": "статистика",
   "user": {
-    "name": "",
-    "description": "",
+    "name": "учасник",
+    "description": "Подивитися свою статистику активності або іншого учасника",
     "options": {
       "user": {
-        "name": "",
-        "description": ""
+        "name": "учасник",
+        "description": "Оберіть учасника, чию статистику хочете переглянути"
       }
     }
   },
   "channel": {
-    "name": "",
-    "description": "",
+    "name": "канал",
+    "description": "Подивитись статистику активності каналу",
     "options": {
       "channel": {
-        "name": "",
-        "description": ""
+        "name": "канал",
+        "description": "Оберіть канал, статистику якого хочете переглянути"
       }
     }
   },
   "qa": {
-    "name": "",
-    "description": "",
+    "name": "пв",
+    "description": "Перевірити статистику питання/відповідь",
     "options": {
       "channel": {
-        "name": "",
-        "description": ""
+        "name": "канал",
+        "description": "Оберіть канал, статистику якого хочете переглянути"
       },
       "user": {
-        "name": "",
-        "description": ""
+        "name": "учасник",
+        "description": "Оберіть учасника, чию статистику хочете переглянути"
       }
     }
   },
   "mun": {
-    "name": "",
-    "description": "",
+    "name": "кну",
+    "description": "Перевірити статистику Керування нікнеймів учасника",
     "options": {
       "user": {
-        "name": "",
-        "description": ""
+        "name": "учасник",
+        "description": "Оберіть учасника, чию статистику хочете переглянути"
       }
     }
   }

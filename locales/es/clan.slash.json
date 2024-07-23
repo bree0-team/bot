@@ -144,5 +144,9 @@
   "ad": {
     "name": "",
     "description": ""
+  },
+  "delete": {
+    "name": "",
+    "description": ""
   }
 }

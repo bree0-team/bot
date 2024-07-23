@@ -16,7 +16,7 @@
     "reject": "{user} declined an invitation to a clan"
   },
   "leave": {
-    "send": "Are you sure you want to leave a clan?",
+    "send": "Are you sure you want to leave your clan?",
     "confirm": "{user} left a clan"
   },
   "kick": {

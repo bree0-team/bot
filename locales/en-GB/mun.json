@@ -1,0 +1,33 @@
+{
+  "title": "",
+  "current": "",
+  "desired": "",
+  "status": "",
+  "statuses": {
+    "accepted": "",
+    "rejected": "",
+    "cleared": "",
+    "assigned": ""
+  },
+  "executer": "",
+  "changed_at": "",
+  "rejected_at": "",
+  "buttons": {
+    "accept": "",
+    "reject": "",
+    "clear": "",
+    "assign": ""
+  },
+  "assign_modal": "",
+  "write_modal": {
+    "title": "",
+    "placeholder": ""
+  },
+  "error": {
+    "not_in_this_channel": "",
+    "you_dont_have_rights": "",
+    "already_managed": "",
+    "not_on_server": "",
+    "no_rights": ""
+  }
+}

@@ -16,5 +16,8 @@
   },
   "servererror": {
     "valid_url": ""
+  },
+  "rate_limit": {
+    "interactions": ""
   }
 }

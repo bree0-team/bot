@@ -1,14 +1,14 @@
 {
-  "name": "",
-  "description": "",
+  "name": "нікнейм",
+  "description": "Змінити нікнейм учаснику",
   "options": {
     "user": {
-      "name": "",
-      "description": ""
+      "name": "учасник",
+      "description": "Оберіть кому потрібно змінити нікнейм"
     },
     "nick": {
-      "name": "",
-      "description": ""
+      "name": "нік",
+      "description": "Новий нікнейм (залишити пустим для скидання)"
     }
   }
 }
