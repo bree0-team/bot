@@ -1,60 +1,60 @@
 {
-  "emoji": "",
-  "name": "",
-  "no": "",
-  "use": "",
-  "before": "",
-  "after": "",
-  "from": "",
-  "to": "",
-  "level": "",
-  "rank": "",
-  "limit": "",
+  "emoji": "Емодзі",
+  "name": "Назва",
+  "no": "Ні",
+  "use": "Використовуйте",
+  "before": "До",
+  "after": "Після",
+  "from": "Вiд",
+  "to": "До",
+  "level": "Рівень",
+  "rank": "Ранг",
+  "limit": "Ліміт",
   "turn": {
-    "on": "",
-    "off": ""
+    "on": "Увімкнути",
+    "off": "Вимкнути"
   },
-  "edit": "",
-  "reset": "",
-  "not_set": "",
-  "hex": "",
-  "rights": "",
-  "cooldown": "",
-  "create": "",
-  "delete": "",
-  "add": "",
-  "send": "",
+  "edit": "Змінити",
+  "reset": "Скинути",
+  "not_set": "Не встановлено",
+  "hex": "HEX-колір",
+  "rights": "Права",
+  "cooldown": "Затримка",
+  "create": "Створити",
+  "delete": "Видалити",
+  "add": "Додати",
+  "send": "Надіслати",
   "paginator": {
-    "jump": "",
-    "page": ""
+    "jump": "Перейти на сторінку",
+    "page": "Сторінка # (Максимум: {max})"
   },
   "ignored": {
-    "channels": "",
-    "roles": ""
+    "channels": "Канали, що ігноруються",
+    "roles": "Ролі, що ігноруються"
   },
-  "voice_states": "",
-  "xp": "",
-  "created_at": "",
-  "joined_at": "",
-  "title": "",
-  "description": "",
-  "nickname": "",
-  "roles": "",
+  "voice_states": "Голосовий стан",
+  "xp": "Досвід",
+  "created_at": "Створено",
+  "joined_at": "Приєднався",
+  "title": "Заголовок",
+  "description": "Опис",
+  "nickname": "Нікнейм",
+  "roles": "Ролі",
   "modal": {
-    "title": ""
+    "title": "Змінити дані"
   },
-  "write": "",
-  "jump_to_message": "",
+  "write": "Написати",
+  "jump_to_message": "Перейти до повідомлення",
   "statuses": {
-    "online": "",
-    "dnd": "",
-    "idle": "",
-    "streaming": "",
-    "offline": ""
+    "online": "В мережі",
+    "dnd": "Не турбувати",
+    "idle": "Неактивний",
+    "streaming": "Трансляція",
+    "offline": "Не в мережі"
   },
-  "channel": "",
+  "channel": "Канал",
   "error": {
-    "cooldown": "",
-    "paginator_max_page": ""
+    "cooldown": "Ви недавно вже надсилали рекламу, спробуйте {time}",
+    "paginator_max_page": "Ви вказали сторінку якої не існує"
   }
 }
