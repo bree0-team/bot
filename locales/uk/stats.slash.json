@@ -1,18 +1,18 @@
 {
-  "name": "",
+  "name": "статистика",
   "user": {
-    "name": "",
-    "description": "",
+    "name": "учасник",
+    "description": "Подивитися свою статистику активності або іншого учасника",
     "options": {
       "user": {
-        "name": "",
-        "description": ""
+        "name": "учасник",
+        "description": "Оберіть учасника, чию статистику хочете переглянути"
       }
     }
   },
   "channel": {
-    "name": "",
-    "description": "",
+    "name": "канал",
+    "description": "Подивитись статистику активності каналу",
     "options": {
       "channel": {
         "name": "",
