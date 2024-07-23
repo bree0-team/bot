@@ -1,20 +1,20 @@
 {
-  "role": "",
-  "roles": "",
-  "channel": "",
-  "channels": "",
-  "ed_channels": "",
-  "commands": "",
-  "user": "",
-  "users": "",
-  "rights": "",
+  "role": "Оберіть роль",
+  "roles": "Оберіть ролі",
+  "channel": "Оберіть канал",
+  "channels": "Оберіть канали",
+  "ed_channels": "Обрані канали",
+  "commands": "Оберіть команди",
+  "user": "Оберіть учасника",
+  "users": "Оберіть учасників",
+  "rights": "Оберіть права",
   "voice_states": {
-    "placeholder": "",
-    "Normal": "",
-    "SelfMute": "",
-    "SelfDeaf": "",
-    "ServerMute": "",
-    "ServerDeaf": "",
-    "Afk": ""
+    "placeholder": "Оберіть голосові стани",
+    "Normal": "Звичайний",
+    "SelfMute": "Мікрофон вимкнено",
+    "SelfDeaf": "Звук вимкнено",
+    "ServerMute": "Сервер: Мікрофон вимкнено",
+    "ServerDeaf": "Сервер: Звук вимкнено",
+    "Afk": "АФК"
   }
 }
