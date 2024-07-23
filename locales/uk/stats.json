@@ -1,19 +1,19 @@
 {
-  "n/a": "",
+  "n/a": "За цей період немає даних",
   "lookback": {
-    "day": "",
-    "week": "",
-    "month": ""
+    "day": "1 день",
+    "week": "7 днів",
+    "month": "30 днів"
   },
-  "after": "",
-  "data_after": "",
-  "server_rank": "",
-  "message": "",
-  "voice": "",
-  "rank_voice": "",
+  "after": "Дані після дати",
+  "data_after": "Дані за проміжок дати",
+  "server_rank": "Ранг серверу",
+  "message": "Повідомлення",
+  "voice": "Голосова Активність",
+  "rank_voice": "Голосовий",
   "top": {
-    "channels": "",
-    "users": ""
+    "channels": "Топ Канали",
+    "users": "Топ Учасники"
   },
-  "contributors": ""
+  "contributors": "Упорядники"
 }
