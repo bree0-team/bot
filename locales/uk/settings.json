@@ -202,88 +202,88 @@
       "text": "Заголовок питання",
       "resp": "Відповідь на питання",
       "adds_resp": "Додаткова відповідь на питання",
-      "roles": "",
-      "interface": ""
+      "roles": "Керівні ролі",
+      "interface": "Інтерфейс"
     },
     "resp": {
-      "title": "",
-      "content": ""
+      "title": "Заголовок відповіді",
+      "content": "Контент відповіді"
     },
-    "interface_modal": "",
+    "interface_modal": "Змінити опис інтерфейсу",
     "adds_resp": {
-      "title": "",
-      "content": ""
+      "title": "Заголовок додаткового запитання",
+      "content": "Контент додаткової відповіді"
     }
   },
   "banner": {
     "types": {
-      "channels": "",
-      "data_time": "",
-      "members": "",
-      "members_with_status": "",
-      "members_in_role": "",
-      "roles": "",
-      "voice": ""
+      "channels": "Канали",
+      "data_time": "Дата й час",
+      "members": "Учасники",
+      "members_with_status": "Учасники зі статусом",
+      "members_in_role": "Учасники в ролі",
+      "roles": "Ролі",
+      "voice": "Учасники в голосових каналах"
     },
-    "background": "",
-    "elements": "",
+    "background": "Фон",
+    "elements": "Елементи",
     "grid": {
-      "on": "",
-      "off": ""
+      "on": "Увімкнути сітку",
+      "off": "Вимкнути сітку"
     },
     "graph": {
-      "x": "",
-      "y": "",
-      "scale": "",
-      "color": "",
-      "placeholder": ""
+      "x": "Координата X",
+      "y": "Координата Y",
+      "scale": "Масштаб",
+      "color": "Колір",
+      "placeholder": "Мінімум {min}, Максимум {max}"
     },
     "channels": {
-      "description": "",
+      "description": "Типи каналів",
       "types": {
-        "text": "",
-        "voice": "",
-        "category": ""
+        "text": "Текстові",
+        "voice": "Голосові",
+        "category": "Категорії"
       }
     },
     "date_time": {
-      "description": "",
+      "description": "Стиль дати та часу",
       "styles": {
-        "t": "",
-        "T": "",
-        "d": "",
-        "D": "",
-        "f": "",
-        "F": ""
+        "t": "Короткий формат часу (14:00)",
+        "T": "Довгий формат часу (14:00:29)",
+        "d": "Короткий формат дати (07/09/2020)",
+        "D": "Довгий формат дати (07 Вересня 2020 р.)",
+        "f": "Короткий формат дати та часу (07 Вересня 2020 р. о 14:00)",
+        "F": "Довгий формат дати і часу (Понеділок, 07 Вересня 2020 р. о 14:00)"
       }
     },
     "members": {
-      "description": "",
+      "description": "Типи учасників",
       "types": {
-        "users": "",
-        "apps": ""
+        "users": "Учасники",
+        "apps": "Застосунки"
       }
     },
-    "statuses": "",
+    "statuses": "Статуси",
     "roles": {
-      "description": "",
+      "description": "Типи ролей",
       "types": {
-        "unmanaged": "",
-        "managed": ""
+        "unmanaged": "Звичайні ролі",
+        "managed": "Інтеграції"
       }
     },
-    "voice": ""
+    "voice": "Голосові канали"
   },
   "error": {
-    "min_cooldown": "",
-    "afk_min_max": "",
-    "xp_give_less_zero": "",
-    "xp_give_from_to": "",
-    "mun_missing_channel": "",
+    "min_cooldown": "Не можна встановити затримку менше `{cooldown}`",
+    "afk_min_max": "Неможливо встановити затримку менше {min} та більше {max}",
+    "xp_give_less_zero": "Кількість досвіду не може бути меншим ніж 0",
+    "xp_give_from_to": "Кількість досвіду ДО не може бути меншим ніж ВІД",
+    "mun_missing_channel": "Неможливо надіслати інтерфейс, канал не встановлено",
     "banner_graph_min_max": {
       "x": "Неможливо встановити координати X меншими {min} та більшими {max}",
       "y": "Неможливо встановити координату Y меншими {min} та більшими {max}",
-      "scale": ""
+      "scale": "Неможливо встановити масштаб менше {min} та більше {max}"
     }
   }
 }
